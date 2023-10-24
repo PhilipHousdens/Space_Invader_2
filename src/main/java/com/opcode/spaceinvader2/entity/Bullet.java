@@ -15,26 +15,35 @@ public class Bullet extends Pane {
     private ImageView bulletImagePreview;
     private TranslateTransition transition;
 
+    double initialY;
+    double initialX;
+
 
 
     public Bullet(double initialX, double initialY) {
         //Load the image for the bullet
         Image bulletImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/beams.png")).toExternalForm());
         bulletImagePreview = new ImageView(bulletImage);
+        this.initialX = initialX;
+        this.initialY = initialY;
         getChildren().add(bulletImagePreview);
 
         // Set initial position relative to the player ship
         setTranslateX(initialX / Platform.PANE_WIDTH + 10);
-        System.out.println("Bullet X" + getTranslateX());
         setTranslateY(initialY - Platform.PANE_HEIGHT + 100);
+    }
 
+    public void moveUp() {
         // Set up movement animation
         transition = new TranslateTransition(BULLET_DURATION, this);
         transition.setByY(-initialY);  // Move upward relative to the current position
         transition.setOnFinished(event -> getChildren().remove(this));  // Remove bullet when it reaches the top
+
+        // Play the transition when the bullet is created
+        transition.play();
     }
 
-    public void move() {
-        transition.play();
+    public ImageView getBulletImagePreview() {
+        return bulletImagePreview;
     }
 }

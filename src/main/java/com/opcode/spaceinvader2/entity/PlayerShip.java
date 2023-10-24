@@ -50,6 +50,14 @@ public class PlayerShip extends Pane {
         }
     }
 
+    public double getX() {
+        return getTranslateX();
+    }
+
+    public double getY() {
+        return getTranslateY();
+    }
+
     private void moveLeft() {
         double newX = getTranslateX() - MOVE_STEP;
         setTranslateX(Math.max(newX, MIN_X));
@@ -62,12 +70,10 @@ public class PlayerShip extends Pane {
         System.out.println(getTranslateX());
     }
 
-    private void shoot() {
-        System.out.println("Before: " + getTranslateX());
+    public void shoot() {
         Bullet bullet = new Bullet(getTranslateX() / 2 , getTranslateY());
-        System.out.println(getTranslateX());
+        bullet.moveUp();
         getChildren().add(bullet);
-        bullet.move();
     }
 
 
