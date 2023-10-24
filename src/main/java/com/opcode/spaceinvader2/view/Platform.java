@@ -1,6 +1,7 @@
 package com.opcode.spaceinvader2.view;
 
 import com.opcode.spaceinvader2.Launcher;
+import com.opcode.spaceinvader2.entity.EnemyShip;
 import com.opcode.spaceinvader2.entity.PlayerShip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -15,7 +16,7 @@ public class Platform extends Pane {
 
     private Image background;
 
-    public Platform() throws IOException {
+    public Platform() {
         background = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
         ImageView backgroundImg = new ImageView(background);
         backgroundImg.setFitHeight(background.getHeight());
@@ -24,7 +25,9 @@ public class Platform extends Pane {
         //PlayerShip
         PlayerShip playerShip = new PlayerShip();
 
+        //EnemyShip
+        EnemyShip enemyShip = new EnemyShip();
 
-        getChildren().addAll(backgroundImg,playerShip);
+        getChildren().addAll(backgroundImg,playerShip, enemyShip);
     }
 }
