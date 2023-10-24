@@ -1,10 +1,12 @@
 package com.opcode.spaceinvader2.view;
 
 import com.opcode.spaceinvader2.Launcher;
+import com.opcode.spaceinvader2.entity.PlayerShip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 
+import java.io.IOException;
 import java.util.Objects;
 
 public class Platform extends Pane {
@@ -13,12 +15,16 @@ public class Platform extends Pane {
 
     private Image background;
 
-    public Platform() {
+    public Platform() throws IOException {
         background = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
         ImageView backgroundImg = new ImageView(background);
         backgroundImg.setFitHeight(background.getHeight());
         backgroundImg.setFitWidth(background.getWidth());
 
-        getChildren().addAll(backgroundImg);
+        //PlayerShip
+        PlayerShip playerShip = new PlayerShip();
+
+
+        getChildren().addAll(backgroundImg,playerShip);
     }
 }
