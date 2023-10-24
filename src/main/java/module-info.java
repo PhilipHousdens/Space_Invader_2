@@ -8,7 +8,6 @@ module com.opcode.spaceinvader2 {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
     opens com.opcode.spaceinvader2 to javafx.fxml;
