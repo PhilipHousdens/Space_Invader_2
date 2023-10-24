@@ -1,7 +1,6 @@
 package com.opcode.spaceinvader2.entity;
 
 import com.opcode.spaceinvader2.Launcher;
-import com.opcode.spaceinvader2.view.Platform;
 import javafx.animation.TranslateTransition;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -29,8 +28,8 @@ public class Bullet extends Pane {
         getChildren().add(bulletImagePreview);
 
         // Set initial position relative to the player ship
-        setTranslateX(initialX / Platform.PANE_WIDTH + 10);
-        setTranslateY(initialY - Platform.PANE_HEIGHT + 100);
+        setTranslateX(initialX / Launcher.PANE_WIDTH + 10);
+        setTranslateY(initialY - Launcher.PANE_HEIGHT + 100);
     }
 
     public void moveUp() {

@@ -1,60 +1,40 @@
 package com.opcode.spaceinvader2;
 
 import com.opcode.spaceinvader2.entity.Bullet;
+import com.opcode.spaceinvader2.entity.EnemyShip;
 import com.opcode.spaceinvader2.entity.PlayerShip;
-import com.opcode.spaceinvader2.view.Platform;
 import javafx.animation.AnimationTimer;
-import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Launcher extends Application {
-    private boolean moveLeft = true;
+    public static final int PANE_WIDTH = 530;
+    public static final int PANE_HEIGHT = 730;
+    private Image background;
 
     private List<Bullet> bullets = new ArrayList<>();
-    private boolean moveRight = true;
+
     @Override
     public void start(Stage stage) throws IOException {
-        Platform platform = new Platform();
+        Pane platform = new Pane();
+        background = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
+        ImageView backgroundImg = new ImageView(background);
+        backgroundImg.setFitHeight(background.getHeight());
+        backgroundImg.setFitWidth(background.getWidth());
         PlayerShip playerShip = new PlayerShip();
-        Scene scene = new Scene(platform, Platform.PANE_WIDTH, Platform.PANE_HEIGHT);
+        EnemyShip enemyShip = new EnemyShip();
 
-        // Detecting Key
-        scene.setOnKeyPressed(event -> {
-            switch (event.getCode()) {
-                case LEFT:
-                    moveLeft = true;
-                    break;
-                case RIGHT:
-                    moveRight = true;
-                    break;
-                case SPACE:
-                    Bullet playerBullet = new Bullet(playerShip.getX()/2, playerShip.getY());
-                    bullets.add(playerBullet);
-                    platform.getChildren().add(playerBullet.getBulletImagePreview());
-                    break;
-            }
-        });
-
-        // Detect when keys are released
-        scene.setOnKeyReleased(event -> {
-            switch (event.getCode()) {
-                case LEFT:
-                    moveLeft = false;
-                    break;
-                case RIGHT:
-                    moveRight = false;
-                    break;
-            }
-        });
+        Scene scene = new Scene(platform, PANE_WIDTH, PANE_HEIGHT);
+        platform.getChildren().addAll(backgroundImg, playerShip,enemyShip);
 
         stage.setScene(scene);
         stage.setTitle("OP Space Invader");
@@ -66,6 +46,7 @@ public class Launcher extends Application {
 
                 cleanupOutOfBoundsBullets();
             }
+
             private void handlePlayerBulletActions() {
                 bullets.forEach(Bullet::moveUp);
             }

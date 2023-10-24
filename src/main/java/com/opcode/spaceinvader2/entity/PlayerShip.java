@@ -14,6 +14,7 @@ public class PlayerShip extends Pane {
     private static final int MOVE_STEP = 20;  // Adjust the movement step
     private static final int MIN_X = 0;
     private static final int MAX_X = 450;
+
     private ImageView shipImageView;
 
 
@@ -50,6 +51,7 @@ public class PlayerShip extends Pane {
         }
     }
 
+
     public double getX() {
         return getTranslateX();
     }
@@ -70,10 +72,11 @@ public class PlayerShip extends Pane {
         System.out.println(getTranslateX());
     }
 
+
     public void shoot() {
         Bullet bullet = new Bullet(getTranslateX() / 2 , getTranslateY());
-        bullet.moveUp();
         getChildren().add(bullet);
+        bullet.moveUp();
     }
 
 
