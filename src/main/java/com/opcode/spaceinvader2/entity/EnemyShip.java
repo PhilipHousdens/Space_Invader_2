@@ -5,6 +5,7 @@ import javafx.animation.SequentialTransition;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.shape.Rectangle;
 
 import java.util.Objects;
 import java.util.Random;
@@ -16,6 +17,7 @@ public class EnemyShip extends Pane {
     private final double gameWidth;
     private double verticalSpeed = 40;
     private ImageView shipImageView;
+    private Rectangle hitbox;
 
     public EnemyShip(double initialX, double initialY, double gameWidth) {
         this.gameWidth = gameWidth;
@@ -28,6 +30,7 @@ public class EnemyShip extends Pane {
         // Set initial position
         setTranslateX(initialX);
         setTranslateY(initialY);
+        hitbox = new Rectangle(initialX, initialY, shipImage.getWidth(), shipImage.getHeight());
 
     }
 
@@ -55,5 +58,13 @@ public class EnemyShip extends Pane {
         }
 
         getShipImageView().setX(newX);
+
+        hitbox.setX(newX);
+        hitbox.setY(getShipImageView().getY());
     }
+
+    public Rectangle getHitbox() {
+        return hitbox;
+    }
+
 }
