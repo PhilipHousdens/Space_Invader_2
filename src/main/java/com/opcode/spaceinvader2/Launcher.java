@@ -21,10 +21,9 @@ public class Launcher extends Application {
     public static final int PANE_HEIGHT = 730;
     private Image background;
 
-    private List<Bullet> bullets = new ArrayList<>();
-
     @Override
     public void start(Stage stage) throws IOException {
+
         Pane platform = new Pane();
         background = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
         ImageView backgroundImg = new ImageView(background);
@@ -33,11 +32,13 @@ public class Launcher extends Application {
         PlayerShip playerShip = new PlayerShip();
         EnemyShip enemyShip = new EnemyShip();
 
+
         Scene scene = new Scene(platform, PANE_WIDTH, PANE_HEIGHT);
         platform.getChildren().addAll(backgroundImg, playerShip,enemyShip);
 
         stage.setScene(scene);
         stage.setTitle("OP Space Invader");
+
         new AnimationTimer() {
             @Override
             public void handle(long now) {
@@ -48,11 +49,11 @@ public class Launcher extends Application {
             }
 
             private void handlePlayerBulletActions() {
-                bullets.forEach(Bullet::moveUp);
+                playerShip.getBullets().forEach(Bullet::moveUp);
             }
 
             private void cleanupOutOfBoundsBullets() {
-                bullets.removeIf(bullet -> {
+                playerShip.getBullets().removeIf(bullet -> {
                     if (bullet.getBulletImagePreview().getY() <= 0) {
                         platform.getChildren().remove(bullet.getBulletImagePreview());
                         return true;

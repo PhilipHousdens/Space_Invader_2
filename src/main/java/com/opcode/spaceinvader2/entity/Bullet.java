@@ -10,7 +10,7 @@ import javafx.util.Duration;
 import java.util.Objects;
 
 public class Bullet extends Pane {
-    private static final Duration BULLET_DURATION = Duration.seconds(2);
+    private static final Duration BULLET_DURATION = Duration.seconds(1);
     private ImageView bulletImagePreview;
     private TranslateTransition transition;
 
