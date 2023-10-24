@@ -19,7 +19,14 @@ import java.util.Objects;
 public class Launcher extends Application {
     public static final int PANE_WIDTH = 530;
     public static final int PANE_HEIGHT = 730;
+
+    // Lists
+    private List<Bullet> bullets = new ArrayList<>();
     private Image background;
+
+    //Boolean
+    private boolean moveLeft = false;
+    private boolean moveRight = false;
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -39,31 +46,46 @@ public class Launcher extends Application {
         stage.setScene(scene);
         stage.setTitle("OP Space Invader");
 
+        //Detect User Key
+        scene.setOnKeyPressed(event -> {
+            switch (event.getCode()) {
+                case LEFT:
+                    moveLeft = true;
+                    break;
+                case RIGHT:
+                    moveRight = true;
+                    break;
+            }
+        });
+
+        //Detect Released
+        scene.setOnKeyReleased(event -> {
+            switch (event.getCode()) {
+                case LEFT:
+                    moveLeft = false;
+                    break;
+                case RIGHT:
+                    moveRight = false;
+                    break;
+            }
+        });
+
         new AnimationTimer() {
             @Override
             public void handle(long now) {
-                // Bullet Movement and Cleanup
-                handlePlayerBulletActions();
-
-                cleanupOutOfBoundsBullets();
+                // Player Movement
+                handlePlayerMovement();
             }
 
-            private void handlePlayerBulletActions() {
-                playerShip.getBullets().forEach(Bullet::moveUp);
+            // Player Movement
+            private void handlePlayerMovement() {
+                if (moveLeft) {
+                    playerShip.moveLeft();
+                }
+                if (moveRight) {
+                    playerShip.moveRight();
+                }
             }
-
-            private void cleanupOutOfBoundsBullets() {
-                playerShip.getBullets().removeIf(bullet -> {
-                    if (bullet.getBulletImagePreview().getY() <= 0) {
-                        platform.getChildren().remove(bullet.getBulletImagePreview());
-                        return true;
-                    }
-                    return false;
-                });
-            }
-
-
-
 
         }.start();
         stage.show();
