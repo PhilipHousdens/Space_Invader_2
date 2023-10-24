@@ -22,9 +22,12 @@ public class Launcher extends Application {
 
     // Lists
     private List<Bullet> bullets = new ArrayList<>();
+    private List<EnemyShip> enemyShips = new ArrayList<>();
+
+    // Image
     private Image background;
 
-    //Boolean
+    // Boolean
     private boolean moveLeft = false;
     private boolean moveRight = false;
 
@@ -37,16 +40,14 @@ public class Launcher extends Application {
         backgroundImg.setFitHeight(background.getHeight());
         backgroundImg.setFitWidth(background.getWidth());
         PlayerShip playerShip = new PlayerShip();
-        EnemyShip enemyShip = new EnemyShip();
-
 
         Scene scene = new Scene(platform, PANE_WIDTH, PANE_HEIGHT);
-        platform.getChildren().addAll(backgroundImg, playerShip,enemyShip);
+        platform.getChildren().addAll(backgroundImg, playerShip);
 
         stage.setScene(scene);
         stage.setTitle("OP Space Invader");
 
-        //Detect User Key
+        // Detect User Key
         scene.setOnKeyPressed(event -> {
             switch (event.getCode()) {
                 case LEFT:
@@ -56,13 +57,13 @@ public class Launcher extends Application {
                     moveRight = true;
                     break;
                 case SPACE:
-                    Bullet bullet = new Bullet(playerShip.getX() + playerShip.getShipImageView().getFitWidth()/ 2 + 10, playerShip.getY());
+                    Bullet bullet = new Bullet(playerShip.getX() + playerShip.getShipImageView().getFitWidth() / 2 + 10, playerShip.getY());
                     bullets.add(bullet);
                     platform.getChildren().add(bullet.getBulletImagePreview());
             }
         });
 
-        //Detect Released
+        // Detect Released
         scene.setOnKeyReleased(event -> {
             switch (event.getCode()) {
                 case LEFT:
@@ -74,6 +75,13 @@ public class Launcher extends Application {
             }
         });
 
+        // Add Common enemy ships
+        for (int i = 0; i < 5; i++) { // example, spawn 10 enemies
+            EnemyShip enemy = new EnemyShip(randomXPosition(), randomYPosition(), PANE_WIDTH);
+            enemyShips.add(enemy);
+            platform.getChildren().add(enemy.getShipImageView());
+        }
+
         new AnimationTimer() {
             @Override
             public void handle(long now) {
@@ -82,6 +90,9 @@ public class Launcher extends Application {
 
                 // Handle Player Bullet Action
                 handlePlayerBulletAction();
+
+                // EnemyShip Movement
+                handleEnemyAction();
             }
 
             // Player Movement
@@ -99,8 +110,23 @@ public class Launcher extends Application {
                 bullets.forEach(Bullet::moveUp);
             }
 
+            // EnemyShip Movement
+            private void handleEnemyAction() {
+                enemyShips.forEach(enemyShip -> {
+                    enemyShip.move();
+                });
+            }
+
         }.start();
         stage.show();
+    }
+
+    private double randomXPosition() {
+        return Math.random() * (PANE_WIDTH);  // adjust as needed
+    }
+
+    private double randomYPosition() {
+        return Math.random() * (PANE_HEIGHT / 2);  // only on the top half of the screen
     }
 
     public static void main(String[] args) {

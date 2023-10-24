@@ -2,19 +2,23 @@ package com.opcode.spaceinvader2.entity;
 
 import com.opcode.spaceinvader2.Launcher;
 import javafx.animation.SequentialTransition;
-import javafx.animation.TranslateTransition;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import javafx.util.Duration;
 
 import java.util.Objects;
+import java.util.Random;
 
 public class EnemyShip extends Pane {
+    static final Random rand = new Random();
+    private int direction = rand.nextInt(2) == 0 ? -1 : 1;  // -1 for left, 1 for right
+    private double moveDistance = 0.2  + rand.nextDouble() * 1.8;  // Random distance between 1 and 6
+    private final double gameWidth;
+    private double verticalSpeed = 40;
     private ImageView shipImageView;
-    private SequentialTransition transition;
 
-    public EnemyShip() {
+    public EnemyShip(double initialX, double initialY, double gameWidth) {
+        this.gameWidth = gameWidth;
         // Load the image for the player's ship
         Image shipImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/Nave.png")).toExternalForm());
         shipImageView = new ImageView(shipImage);
@@ -22,26 +26,34 @@ public class EnemyShip extends Pane {
         getChildren().add(shipImageView);
 
         // Set initial position
-        setTranslateX(100);
-        setTranslateY(100);
+        setTranslateX(initialX);
+        setTranslateY(initialY);
 
-        // Set up movement animations
-        setupMovementAnimations();
     }
-    private void setupMovementAnimations() {
-        // Movement to the right
-        TranslateTransition moveRight = new TranslateTransition(Duration.seconds(2), this);
-        moveRight.setFromX(0);
-        moveRight.setToX(450);
 
-        // Movement to the left (return journey)
-        TranslateTransition moveLeft = new TranslateTransition(Duration.seconds(2), this);
-        moveLeft.setFromX(450);
-        moveLeft.setToX(0);
+    public ImageView getShipImageView() {
+        return shipImageView;
+    }
 
-        // Sequentially play the animations
-        transition = new SequentialTransition(moveRight, moveLeft);
-        transition.setCycleCount(TranslateTransition.INDEFINITE);
-        transition.play();
+    public double getX() {
+        return getShipImageView().getX();
+    }
+
+    public double getY() {
+        return getShipImageView().getY();
+    }
+
+    public void move() {
+        double newX = getX() + direction * moveDistance;
+
+        // Check boundaries and change direction if reached the edges
+        if (newX < 0 || newX > gameWidth - getShipImageView().getBoundsInLocal().getWidth()) {
+            direction = -direction;
+            newX = getX() + direction * moveDistance;
+            double newY = getShipImageView().getY() + verticalSpeed;
+            getShipImageView().setY(newY);
+        }
+
+        getShipImageView().setX(newX);
     }
 }
