@@ -31,6 +31,10 @@ public class Launcher extends Application {
     private boolean moveLeft = false;
     private boolean moveRight = false;
 
+    // Hit
+    private List<Bullet> bulletsToRemove = new ArrayList<>();
+    private List<EnemyShip> enemyShipsToRemove = new ArrayList<>();
+
     @Override
     public void start(Stage stage) throws IOException {
 
@@ -60,6 +64,7 @@ public class Launcher extends Application {
                     Bullet bullet = new Bullet(playerShip.getX() + playerShip.getShipImageView().getFitWidth() / 2 + 10, playerShip.getY());
                     bullets.add(bullet);
                     platform.getChildren().add(bullet.getBulletImagePreview());
+                    break;
             }
         });
 
@@ -93,6 +98,9 @@ public class Launcher extends Application {
 
                 // EnemyShip Movement
                 handleEnemyAction();
+
+                // Combat mode
+                handleCollisions();
             }
 
             // Player Movement
@@ -108,6 +116,29 @@ public class Launcher extends Application {
             // Player Bullet Action
             private void handlePlayerBulletAction() {
                 bullets.forEach(Bullet::moveUp);
+            }
+
+            private void handleCollisions() {
+                bullets.forEach(bullet -> {
+                    enemyShips.forEach(enemy -> {
+                        if (bullet.getHitbox().getBoundsInParent().intersects(
+                                enemy.getHitbox().getBoundsInParent())) {
+
+                            platform.getChildren().remove(bullet.getBulletImagePreview());
+                            platform.getChildren().remove(bullet.getHitbox()); // Remove the hitbox
+
+                            platform.getChildren().remove(enemy.getShipImageView());
+                            platform.getChildren().remove(enemy.getHitbox());  // Remove the hitbox
+
+                            bulletsToRemove.add(bullet);
+                            enemyShipsToRemove.add(enemy);
+                        }
+                    });
+                });
+                bullets.removeAll(bulletsToRemove);
+                enemyShips.removeAll(enemyShipsToRemove);
+                bulletsToRemove.clear();
+                enemyShipsToRemove.clear();
             }
 
             // EnemyShip Movement

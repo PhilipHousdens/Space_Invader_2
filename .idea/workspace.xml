@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Success Fully shoot the laser">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/entity/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/entity/Bullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/entity/EnemyShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/entity/EnemyShip.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +44,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
