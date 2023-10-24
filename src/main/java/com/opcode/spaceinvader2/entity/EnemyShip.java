@@ -30,7 +30,7 @@ public class EnemyShip extends Pane {
         // Set initial position
         setTranslateX(initialX);
         setTranslateY(initialY);
-        hitbox = new Rectangle(initialX, initialY, shipImage.getWidth(), shipImage.getHeight());
+        hitbox = new Rectangle(initialX, initialY, shipImage.getWidth()/2, shipImage.getHeight()/2);
 
     }
 

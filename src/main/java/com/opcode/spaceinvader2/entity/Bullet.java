@@ -21,7 +21,7 @@ public class Bullet extends Pane {
         bulletImagePreview = new ImageView(bulletImage);
         bulletImagePreview.setX(initialX);
         bulletImagePreview.setY(initialY);
-        hitbox = new Rectangle(initialX, initialY, bulletImage.getWidth(), bulletImage.getHeight());
+        hitbox = new Rectangle(initialX, initialY, bulletImage.getWidth()/2, bulletImage.getHeight()/2);
     }
 
     public void moveUp() {
