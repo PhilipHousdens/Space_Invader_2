@@ -28,4 +28,8 @@ public class Bullet extends Pane {
     public double getY() {
         return bulletImagePreview.getY();
     }
+
+    public ImageView getBulletImagePreview() {
+        return bulletImagePreview;
+    }
 }

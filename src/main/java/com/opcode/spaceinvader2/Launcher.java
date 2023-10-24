@@ -55,6 +55,10 @@ public class Launcher extends Application {
                 case RIGHT:
                     moveRight = true;
                     break;
+                case SPACE:
+                    Bullet bullet = new Bullet(playerShip.getX() + playerShip.getShipImageView().getFitWidth()/ 2 + 10, playerShip.getY());
+                    bullets.add(bullet);
+                    platform.getChildren().add(bullet.getBulletImagePreview());
             }
         });
 
@@ -75,6 +79,9 @@ public class Launcher extends Application {
             public void handle(long now) {
                 // Player Movement
                 handlePlayerMovement();
+
+                // Handle Player Bullet Action
+                handlePlayerBulletAction();
             }
 
             // Player Movement
@@ -85,6 +92,11 @@ public class Launcher extends Application {
                 if (moveRight) {
                     playerShip.moveRight();
                 }
+            }
+
+            // Player Bullet Action
+            private void handlePlayerBulletAction() {
+                bullets.forEach(Bullet::moveUp);
             }
 
         }.start();

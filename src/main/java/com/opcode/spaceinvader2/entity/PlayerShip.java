@@ -53,4 +53,8 @@ public class PlayerShip extends Pane {
         setTranslateX(Math.min(newX, MAX_X));
         System.out.println(getTranslateX());
     }
+
+    public ImageView getShipImageView() {
+        return shipImageView;
+    }
 }

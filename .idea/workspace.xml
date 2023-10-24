@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Able to move at shoot at the same time">
+    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Moving the PlayerShip and Bullet logic to Launcher">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/entity/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/entity/Bullet.java" afterDir="false" />
@@ -82,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698130150358</updated>
-      <workItem from="1698130151440" duration="18524000" />
+      <workItem from="1698130151440" duration="19253000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1698130735862</created>
@@ -154,11 +154,29 @@
       <option name="project" value="LOCAL" />
       <updated>1698146824548</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Moving the PlayerShip and Bullet logic to Launcher">
+      <created>1698152737486</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698152737486</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
@@ -171,6 +189,7 @@
     <MESSAGE value="Creating the new code format using AnimationTimer() in Launcher" />
     <MESSAGE value="Deleting the Platform.java" />
     <MESSAGE value="Able to move at shoot at the same time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Able to move at shoot at the same time" />
+    <MESSAGE value="Moving the PlayerShip and Bullet logic to Launcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moving the PlayerShip and Bullet logic to Launcher" />
   </component>
 </project>
