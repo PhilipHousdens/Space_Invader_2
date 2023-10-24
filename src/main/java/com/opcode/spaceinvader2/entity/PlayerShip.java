@@ -3,6 +3,8 @@ package com.opcode.spaceinvader2.entity;
 import com.opcode.spaceinvader2.Launcher;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
 
 import java.io.IOException;
@@ -20,5 +22,28 @@ public class PlayerShip extends Pane {
         // Set initial position
         setTranslateX(400);
         setTranslateY(500);
+
+        // Set up keyboard input handling
+        setOnKeyPressed(event -> handleKeyPress(event.getCode()));
+    }
+
+    public void handleKeyPress(KeyCode code) {
+        //Adjust the player ship's position
+        switch (code) {
+            case LEFT:
+                moveLeft();
+                break;
+            case RIGHT:
+                moveRight();
+                break;
+        }
+    }
+
+    private void moveLeft() {
+        setTranslateX(getTranslateX() - 10); //
+    }
+
+    private void moveRight() {
+        setTranslateX(getTranslateX() + 10);
     }
 }
