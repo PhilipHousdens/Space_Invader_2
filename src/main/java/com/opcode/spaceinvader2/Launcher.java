@@ -15,9 +15,6 @@ public class Launcher extends Application {
         PlayerShip playerShip = new PlayerShip();
         Scene scene = new Scene(platform, Platform.PANE_WIDTH, Platform.PANE_HEIGHT);
 
-        // Handle the key press
-        scene.setOnKeyPressed(event -> playerShip.handleKeyPress(event.getCode()));
-
         stage.setScene(scene);
         stage.setTitle("OP Space Invader");
         stage.show();

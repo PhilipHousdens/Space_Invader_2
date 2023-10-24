@@ -11,7 +11,11 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class PlayerShip extends Pane {
+    private static final int MOVE_STEP = 20;  // Adjust the movement step
+    private static final int MIN_X = 0;
+    private static final int MAX_X = 450;
     private ImageView shipImageView;
+
 
     public PlayerShip() throws RuntimeException{
         // Load the image for the player's ship
@@ -20,30 +24,58 @@ public class PlayerShip extends Pane {
         getChildren().add(shipImageView);
 
         // Set initial position
-        setTranslateX(400);
-        setTranslateY(500);
+        setTranslateX(245);
+        setTranslateY(600);
 
         // Set up keyboard input handling
-        setOnKeyPressed(event -> handleKeyPress(event.getCode()));
+        setOnKeyPressed(this::handleKeyPress);
+
+        // Request focus for the player ship
+        this.setFocusTraversable(true);
+        this.requestFocus();
     }
 
-    public void handleKeyPress(KeyCode code) {
-        //Adjust the player ship's position
-        switch (code) {
+    private void handleKeyPress(KeyEvent event) {
+        // Adjust the player ship's position
+        switch (event.getCode()) {
             case LEFT:
                 moveLeft();
                 break;
             case RIGHT:
                 moveRight();
                 break;
+            case SPACE:
+                shoot();
+                break;
         }
     }
 
     private void moveLeft() {
-        setTranslateX(getTranslateX() - 10); //
+        double newX = getTranslateX() - MOVE_STEP;
+        setTranslateX(Math.max(newX, MIN_X));
+        System.out.println(getTranslateX());
     }
 
     private void moveRight() {
-        setTranslateX(getTranslateX() + 10);
+        double newX = getTranslateX() + MOVE_STEP;
+        setTranslateX(Math.min(newX, MAX_X));
+        System.out.println(getTranslateX());
+    }
+
+    private void shoot() {
+        System.out.println("Before: " + getTranslateX());
+        Bullet bullet = new Bullet(getTranslateX() / 2 , getTranslateY());
+        System.out.println(getTranslateX());
+        getChildren().add(bullet);
+        bullet.move();
+    }
+
+
+
+    // Inner class representing a bullet
+    private class Bullet extends com.opcode.spaceinvader2.entity.Bullet {
+        public Bullet(double startX, double startY) {
+            super(startX, startY);
+        }
     }
 }

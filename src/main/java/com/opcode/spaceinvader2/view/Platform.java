@@ -29,5 +29,6 @@ public class Platform extends Pane {
         EnemyShip enemyShip = new EnemyShip();
 
         getChildren().addAll(backgroundImg,playerShip, enemyShip);
+
     }
 }

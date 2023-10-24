@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Setting up for player ship movement">
+    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Setting up for enemy ship movement">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/entity/Bullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/image/beams.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/entity/EnemyShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/entity/EnemyShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/entity/PlayerShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/entity/PlayerShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/view/Platform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/view/Platform.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +40,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Philip Housden/IdeaProjects/SpaceInvader2/src/main/resources/com/opcode/spaceinvader2/image",
+    "last_opened_file_path": "C:/Users/Philip Housden/IdeaProjects/Project2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698130150358</updated>
-      <workItem from="1698130151440" duration="3232000" />
+      <workItem from="1698130151440" duration="8397000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1698130735862</created>
@@ -117,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698133038523</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Setting up for enemy ship movement">
+      <created>1698133500173</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698133500173</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +140,7 @@
     <MESSAGE value="Adding PlayerShip to the scene" />
     <MESSAGE value="adding EnemyShip in the Scene(Platform.java)" />
     <MESSAGE value="Setting up for player ship movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up for player ship movement" />
+    <MESSAGE value="Setting up for enemy ship movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setting up for enemy ship movement" />
   </component>
 </project>
