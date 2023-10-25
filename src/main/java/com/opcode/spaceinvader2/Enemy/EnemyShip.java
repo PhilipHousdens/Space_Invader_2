@@ -1,7 +1,6 @@
-package com.opcode.spaceinvader2.entity;
+package com.opcode.spaceinvader2.Enemy;
 
 import com.opcode.spaceinvader2.Launcher;
-import javafx.animation.SequentialTransition;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -63,8 +62,17 @@ public class EnemyShip extends Pane {
         hitbox.setY(getShipImageView().getY());
     }
 
-    public Rectangle getHitbox() {
+    public Rectangle getHitBox() {
         return hitbox;
+    }
+
+    public EnemyBullet shoot() {
+        EnemyBullet enemyBullet = new EnemyBullet(getX() + getShipImageView().getFitWidth() / 2 + 10, getY() + shipImageView.getFitHeight());
+        return enemyBullet;
+    }
+
+    public boolean decideToShoot() {
+        return rand.nextInt(1000) < 5;
     }
 
 }
