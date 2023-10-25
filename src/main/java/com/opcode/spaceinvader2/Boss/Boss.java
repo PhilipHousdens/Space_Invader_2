@@ -17,7 +17,7 @@ public class Boss extends Pane {
     static final Random rand = new Random();
     private int direction = rand.nextInt(2) == 0 ? -1 : 1;  // -1 for left, 1 for right
     private double gameWidth;
-    private double speed = 1;  // Adjust this value based on how fast you want the boss to move
+    private double speed = 3;  // Adjust this value based on how fast you want the boss to move
     private double moveDistance = speed * direction;
     private double verticalSpeed = 0; // Adjust as needed
     private ImageView shipImageView;
@@ -32,7 +32,7 @@ public class Boss extends Pane {
         getChildren().addAll(shipImageView);
         // Set initial position
         setTranslateX(245);
-        setTranslateY(200);
+        setTranslateY(250);
         System.out.println("Initial Ship Position X: " + getX() + " Y: " + getY());
 
         // Center the hitbox to the shipImageView
@@ -78,9 +78,9 @@ public class Boss extends Pane {
         return hitbox;
     }
 
-    public EnemyBullet shoot() {
-        EnemyBullet enemyBullet = new EnemyBullet(getX() + getShipImageView().getFitWidth() / 2 + 10, getY() + shipImageView.getFitHeight());
-        return enemyBullet;
+    public BossBullet shoot() {
+        BossBullet bossBullet = new BossBullet(getX() + getShipImageView().getFitWidth() / 2 + 10, getY() + shipImageView.getFitHeight());
+        return bossBullet;
     }
 
     public boolean decideToShoot() {

@@ -1,6 +1,7 @@
 package com.opcode.spaceinvader2;
 
 import com.opcode.spaceinvader2.Boss.Boss;
+import com.opcode.spaceinvader2.Boss.BossBullet;
 import com.opcode.spaceinvader2.Enemy.EnemyBullet;
 import com.opcode.spaceinvader2.Enemy.EnemyTeir2;
 import com.opcode.spaceinvader2.Model.Explosion;
@@ -33,7 +34,7 @@ public class Launcher extends Application {
     private List<EnemyShip> enemyShips = new ArrayList<>();
     private List<EnemyTeir2> uncommonEnemyShips = new ArrayList<>();
     private List<EnemyBullet> enemyBullets = new ArrayList<>();
-    private List<Boss> bossBullets = new ArrayList<>();
+    private List<BossBullet> bossBullets = new ArrayList<>();
     private List<ImageView> heartLives = new ArrayList<>();
     // Hit
     private List<PlayerBullet> PlayerbulletsToRemove = new ArrayList<>();
@@ -43,6 +44,7 @@ public class Launcher extends Application {
     private List<EnemyTeir2> uncommonEnemyToRemove = new ArrayList<>();
     private List<EnemyBullet> enemyTeir2sToShoot = new ArrayList<EnemyBullet>();
     private List<EnemyBullet> enemyBulletsToShoot = new ArrayList<>();
+    private List<BossBullet> bossBulletsToShoot = new ArrayList<>();
 
     // Player action
     private int score = 0;
@@ -75,7 +77,7 @@ public class Launcher extends Application {
 
     private void updateHearts() {
         // Remove one heart ImageView
-        if (!heartLives.isEmpty()) {
+        if (playerLives < heartLives.size()) {
             ImageView heartToRemove = heartLives.remove(heartLives.size() - 1);
             heartToRemove.setImage(null);
         }
@@ -178,10 +180,13 @@ public class Launcher extends Application {
                     boss.move();
 
                     if (boss.decideToShoot()) {
-                        EnemyBullet enemyBullet = boss.shoot();
-                        platform.getChildren().add(enemyBullet.getBulletImagePreview());
-                        enemyBullets.add(enemyBullet);
+                        BossBullet bossBullet = boss.shoot();
+                        platform.getChildren().add(bossBullet.getBulletImagePreview());
+                        bossBulletsToShoot.add(bossBullet);
                     }
+
+                    bossBullets.addAll(bossBulletsToShoot);
+                    bossBullets.forEach(BossBullet::moveDown);
                 }
             }
 
@@ -216,7 +221,6 @@ public class Launcher extends Application {
                         platform.getChildren().add(enemyBullet.getBulletImagePreview());
                     }
                 });
-
                 enemyBullets.addAll(enemyBulletsToShoot );
                 enemyBullets.forEach(EnemyBullet::moveDown);
             }
@@ -263,9 +267,6 @@ public class Launcher extends Application {
 
                             }
                         });
-                        enemyShips.removeAll(enemyShipsToRemove);
-                        PlayerbulletsToRemove.clear();
-                        enemyShipsToRemove.clear();
 
                         uncommonEnemyShips.forEach(enemy -> {
                             if (playerBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
@@ -289,36 +290,39 @@ public class Launcher extends Application {
                                 uncommonEnemyToRemove.add(enemy);
                             }
                         });
-
-                        // Inside handleCollisions method where player is hit by enemy bullet:
-                        for (EnemyBullet enemyBullet : enemyBullets) {
-                            if (checkBulletPlayerCollision(enemyBullet, playerShip)) {
-                                enemyBulletsToRemove.add(enemyBullet);
+                        // Enemy Bullet Hit Player Ship
+                        enemyBullets.forEach(enemyBullet -> {
+                            if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
+                                // Remove enemy bullet
                                 platform.getChildren().remove(enemyBullet.getBulletImagePreview());
-
-                                // Decrement player's life count and update the displayed lives.
-                                playerLives--;
-                                updateHearts();
+                                platform.getChildren().remove(enemyBullet.getHitbox());
                             }
+                        });
+                        if (uncommonEnemyShips.isEmpty() && enemyShips.isEmpty() && !spawnBoss) {
+                            bossEntry();
                         }
-                    });
-                    // Enemy Bullet Hit Player Ship
-                    enemyBullets.forEach(enemyBullet -> {
-                        if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
-                            // Remove enemy bullet
-                            platform.getChildren().remove(enemyBullet.getBulletImagePreview());
-                            platform.getChildren().remove(enemyBullet.getHitbox());
 
+                    });
+                    // Inside handleCollisions method where player is hit by enemy bullet:
+                    for (EnemyBullet enemyBullet : enemyBullets) {
+                        if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
+                            enemyBulletsToRemove.add(enemyBullet);
+                            platform.getChildren().remove(enemyBullet.getBulletImagePreview());
+
+                            // Decrement player's life count
                             playerLives--;
+
+                            // Update the displayed lives
                             updateHearts();
                         }
-                    });
-                    if (uncommonEnemyShips.isEmpty() && enemyShips.isEmpty() && !spawnBoss) {
-                        bossEntry();
                     }
+
                     // Scoring
                     scoreText.setText("Score: " + score);
 
+                    enemyShips.removeAll(enemyShipsToRemove);
+                    PlayerbulletsToRemove.clear();
+                    enemyShipsToRemove.clear();
                     playerBullets.removeAll(PlayerbulletsToRemove);
                     uncommonEnemyShips.removeAll(uncommonEnemyToRemove);
                     PlayerbulletsToRemove.clear();
