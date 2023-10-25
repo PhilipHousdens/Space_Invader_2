@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Attempting to delete live by one">
+    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Finished EnemyShip">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Boss/Boss.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Enemy/EnemyTeir2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/image/EnemyShip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Model/AnimationSprite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/image/Boss.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Enemy/EnemyBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Enemy/EnemyBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Enemy/EnemyShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Enemy/EnemyShip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698130150358</updated>
       <workItem from="1698130151440" duration="22468000" />
-      <workItem from="1698201280138" duration="22832000" />
+      <workItem from="1698201280138" duration="26124000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1698130735862</created>
@@ -230,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698220815020</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Finished EnemyShip">
+      <created>1698227342716</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1698227342716</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +271,8 @@
     <MESSAGE value="Adding score" />
     <MESSAGE value="Attemping to delete live" />
     <MESSAGE value="Attempting to delete live by one" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempting to delete live by one" />
+    <MESSAGE value="Finished EnemyShip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished EnemyShip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

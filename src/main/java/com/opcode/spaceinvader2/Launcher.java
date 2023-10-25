@@ -1,5 +1,6 @@
 package com.opcode.spaceinvader2;
 
+import com.opcode.spaceinvader2.Boss.Boss;
 import com.opcode.spaceinvader2.Enemy.EnemyBullet;
 import com.opcode.spaceinvader2.Enemy.EnemyTeir2;
 import com.opcode.spaceinvader2.Player.PlayerBullet;
@@ -55,6 +56,7 @@ public class Launcher extends Application {
     private boolean moveRight = false;
 
     //Animation Sprite
+    private Boss boss; // Add a reference to the Boss
 
 
     // Functions
@@ -92,6 +94,8 @@ public class Launcher extends Application {
         backgroundImg.setFitHeight(background.getHeight());
         backgroundImg.setFitWidth(background.getWidth());
         PlayerShip playerShip = new PlayerShip();
+        boss = new Boss(PANE_WIDTH / 2, 50, PANE_WIDTH); // Adjust initial position as needed
+        platform.getChildren().add(boss);
 
         Scene scene = new Scene(platform, PANE_WIDTH, PANE_HEIGHT);
         platform.getChildren().addAll(backgroundImg, playerShip);
@@ -171,6 +175,9 @@ public class Launcher extends Application {
 
                 // Enemy Collisions
                 handleCollisions();
+
+                // Boss Movement and Action
+                handleBossAction();
             }
 
             // Player Movement
@@ -216,6 +223,30 @@ public class Launcher extends Application {
                 });
                 enemyBullets.addAll(enemyTeir2sToShoot);
                 enemyBullets.forEach(EnemyBullet::moveDown);
+            }
+
+            // Boss Movement and Action
+            private void handleBossAction() {
+                boss.move();
+
+                if (boss.decideToShoot()) {
+                    EnemyBullet enemyBullet = boss.shoot();
+                    enemyBulletsToShoot.add(enemyBullet);
+                    platform.getChildren().add(enemyBullet.getBulletImagePreview());
+                }
+
+                enemyBullets.addAll(enemyBulletsToShoot);
+                enemyBullets.forEach(EnemyBullet::moveDown);
+
+                // Boss Collisions (adjust as needed)
+                enemyBullets.forEach(enemyBullet -> {
+                    if (enemyBullet.getHitbox().getBoundsInParent().intersects(boss.getHitBox().getBoundsInParent())) {
+                        platform.getChildren().remove(boss);
+
+                        platform.getChildren().remove(enemyBullet.getBulletImagePreview());
+                        platform.getChildren().remove(enemyBullet.getHitbox());
+                    }
+                });
             }
 
 
