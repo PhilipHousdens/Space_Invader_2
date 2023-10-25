@@ -10,6 +10,9 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,6 +21,8 @@ import java.util.List;
 import java.util.Objects;
 
 public class Launcher extends Application {
+    // UI Element
+    private Text scoreText;
     public static final int PANE_WIDTH = 530;
     public static final int PANE_HEIGHT = 730;
 
@@ -29,6 +34,9 @@ public class Launcher extends Application {
     private List<PlayerBullet> PlayerbulletsToRemove = new ArrayList<>();
     private List<EnemyShip> enemyShipsToRemove = new ArrayList<>();
     private List<EnemyBullet> enemyBulletsToShoot = new ArrayList<>();
+
+    // Player action
+    private int score = 0;
 
 
     // Image
@@ -85,6 +93,12 @@ public class Launcher extends Application {
                     break;
             }
         });
+
+        // Score Text
+        scoreText = new javafx.scene.text.Text(445, 30, "Score: 0");
+        scoreText.setFill(Color.WHITE);
+        scoreText.setFont(new Font(20));
+        platform.getChildren().add(scoreText);
 
         // Add Common enemy ships
         for (int i = 0; i < 4; i++) { // example, spawn 10 enemies
@@ -152,6 +166,7 @@ public class Launcher extends Application {
 
                             platform.getChildren().remove(enemy.getShipImageView());
                             platform.getChildren().remove(enemy.getHitBox());  // Remove the hitbox
+                            score += 1;
 
                             PlayerbulletsToRemove.add(playerBullet);
                             enemyShipsToRemove.add(enemy);
@@ -172,11 +187,11 @@ public class Launcher extends Application {
                         // Remove player ship and its hitbox
                         platform.getChildren().remove(playerShip.getShipImageView());
                         platform.getChildren().remove(playerShip.getHitbox());
+                        score += 1;
                     }
                 });
+                scoreText.setText("Score: " + score);
             }
-
-
 
 
         }.start();

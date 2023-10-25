@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Successfully implement the player hit box">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Able to move the random Position that generate enemy">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698130150358</updated>
       <workItem from="1698130151440" duration="22468000" />
-      <workItem from="1698201280138" duration="9118000" />
+      <workItem from="1698201280138" duration="9811000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1698130735862</created>
@@ -197,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698208054231</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Able to move the random Position that generate enemy">
+      <created>1698210502106</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698210502106</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +235,8 @@
     <MESSAGE value="Success Fully shoot the laser" />
     <MESSAGE value="Moving File and Shoot the bullet from the enemy" />
     <MESSAGE value="Successfully implement the player hit box" />
-    <option name="LAST_COMMIT_MESSAGE" value="Successfully implement the player hit box" />
+    <MESSAGE value="Able to move the random Position that generate enemy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Able to move the random Position that generate enemy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
