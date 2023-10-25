@@ -62,7 +62,7 @@ public class EnemyShip extends Pane {
         hitbox.setY(getShipImageView().getY());
     }
 
-    public Rectangle getHitbox() {
+    public Rectangle getHitBox() {
         return hitbox;
     }
 

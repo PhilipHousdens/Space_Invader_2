@@ -105,8 +105,7 @@ public class Launcher extends Application {
                 // EnemyShip Movement
                 handleEnemyAction();
 
-
-                // Combat mode
+                // Enemy Collisions
                 handleCollisions();
             }
 
@@ -124,6 +123,7 @@ public class Launcher extends Application {
             private void handlePlayerBulletAction() {
                 playerBullets.forEach(PlayerBullet::moveUp);
             }
+
 
             // EnemyShip Movement
             private void handleEnemyAction() {
@@ -143,14 +143,13 @@ public class Launcher extends Application {
             private void handleCollisions() {
                 playerBullets.forEach(playerBullet -> {
                     enemyShips.forEach(enemy -> {
-                        if (playerBullet.getHitbox().getBoundsInParent().intersects(
-                                enemy.getHitbox().getBoundsInParent())) {
+                        if (playerBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
 
                             platform.getChildren().remove(playerBullet.getBulletImagePreview());
                             platform.getChildren().remove(playerBullet.getHitbox()); // Remove the hitbox
 
                             platform.getChildren().remove(enemy.getShipImageView());
-                            platform.getChildren().remove(enemy.getHitbox());  // Remove the hitbox
+                            platform.getChildren().remove(enemy.getHitBox());  // Remove the hitbox
 
                             PlayerbulletsToRemove.add(playerBullet);
                             enemyShipsToRemove.add(enemy);
@@ -161,7 +160,20 @@ public class Launcher extends Application {
                 enemyShips.removeAll(enemyShipsToRemove);
                 PlayerbulletsToRemove.clear();
                 enemyShipsToRemove.clear();
+
+                enemyBullets.forEach(enemyBullet -> {
+                    if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
+                        // Remove enemy bullet
+                        platform.getChildren().remove(enemyBullet.getBulletImagePreview());
+                        platform.getChildren().remove(enemyBullet.getHitbox());
+
+                        // Remove player ship and its hitbox
+                        platform.getChildren().remove(playerShip.getShipImageView());
+                        platform.getChildren().remove(playerShip.getHitbox());
+                    }
+                });
             }
+
 
 
 

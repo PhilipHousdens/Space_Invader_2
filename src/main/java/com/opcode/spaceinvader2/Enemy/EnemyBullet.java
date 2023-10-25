@@ -25,7 +25,7 @@ public class EnemyBullet extends Pane {
 
     public void moveDown() {
         bulletImagePreview.setY(bulletImagePreview.getY() + (BULLET_DURATION));
-        hitbox.setY(hitbox.getY() - (BULLET_DURATION));
+        hitbox.setY(hitbox.getY() + (BULLET_DURATION));
     }
 
     public double getY() {
