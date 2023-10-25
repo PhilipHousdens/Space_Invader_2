@@ -84,6 +84,6 @@ public class Boss extends Pane {
     }
 
     public boolean decideToShoot() {
-        return rand.nextInt(1000) < 5;
+        return rand.nextInt(100) < 5;
     }
 }
