@@ -3,6 +3,7 @@ package com.opcode.spaceinvader2;
 import com.opcode.spaceinvader2.Boss.Boss;
 import com.opcode.spaceinvader2.Enemy.EnemyBullet;
 import com.opcode.spaceinvader2.Enemy.EnemyTeir2;
+import com.opcode.spaceinvader2.Model.Explosion;
 import com.opcode.spaceinvader2.Player.PlayerBullet;
 import com.opcode.spaceinvader2.Enemy.EnemyShip;
 import com.opcode.spaceinvader2.Player.PlayerShip;
@@ -17,9 +18,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class Launcher extends Application {
     // UI Element
@@ -256,6 +255,13 @@ public class Launcher extends Application {
                     enemyShips.forEach(enemy -> {
                         if (playerBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
 
+                            Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
+                            platform.getChildren().add(explosion.getExplosionImageView());
+
+                            javafx.animation.PauseTransition delay = new javafx.animation.PauseTransition(javafx.util.Duration.seconds(0.5));
+                            delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
+                            delay.play();
+
                             platform.getChildren().remove(playerBullet.getBulletImagePreview());
                             platform.getChildren().remove(playerBullet.getHitbox()); // Remove the hitbox
 
@@ -265,6 +271,7 @@ public class Launcher extends Application {
 
                             PlayerbulletsToRemove.add(playerBullet);
                             enemyShipsToRemove.add(enemy);
+
                         }
                     });
                     enemyShips.removeAll(enemyShipsToRemove);
@@ -273,6 +280,13 @@ public class Launcher extends Application {
 
                     uncommonEnemyShips.forEach(enemy -> {
                         if (playerBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
+
+                            Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
+                            platform.getChildren().add(explosion.getExplosionImageView());
+
+                            javafx.animation.PauseTransition delay = new javafx.animation.PauseTransition(javafx.util.Duration.seconds(0.5));
+                            delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
+                            delay.play();
 
                             platform.getChildren().remove(playerBullet.getBulletImagePreview());
                             platform.getChildren().remove(playerBullet.getHitbox()); // Remove the hitbox
@@ -305,6 +319,7 @@ public class Launcher extends Application {
                 });
                 // Scoring
                 scoreText.setText("Score: " + score);
+
             }
 
 
