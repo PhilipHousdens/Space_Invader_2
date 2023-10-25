@@ -33,6 +33,8 @@ public class Launcher extends Application {
     private List<ImageView> heartLives = new ArrayList<>();
     // Hit
     private List<PlayerBullet> PlayerbulletsToRemove = new ArrayList<>();
+    private List<ImageView> heartsToRemove = new ArrayList<>();
+
     private List<EnemyShip> enemyShipsToRemove = new ArrayList<>();
     private List<EnemyBullet> enemyBulletsToShoot = new ArrayList<>();
 
@@ -63,16 +65,17 @@ public class Launcher extends Application {
         }
     }
 
-    private void updatePlayerLivesDisplay() {
-        if (playerLives < heartLives.size()) {
-            int indexToRemove = heartLives.size() - 1;
-            ImageView lostHeart = heartLives.remove(indexToRemove);
-            lostHeart.setImage(null);  // Or you can use a broken heart image if you have one
+    private void updateHearts(Pane platform) {
+        // Remove one heart ImageView
+        if (!heartLives.isEmpty()) {
+            ImageView heartToRemove = heartLives.remove(heartLives.size() - 1);
+            heartsToRemove.add(heartToRemove);
         }
+
+        // Remove hearts outside of iteration
+        platform.getChildren().removeAll(heartsToRemove);
+        heartsToRemove.clear();
     }
-
-
-
 
 
 
@@ -219,7 +222,7 @@ public class Launcher extends Application {
                         platform.getChildren().remove(enemyBullet.getHitbox());
 
                         playerLives--;
-                        updatePlayerLivesDisplay();
+                        updateHearts(platform);
                     }
                 });
                 // Scoring

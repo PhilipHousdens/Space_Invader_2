@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Adding score">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/image/Heart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Attemping to delete live">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698130150358</updated>
       <workItem from="1698130151440" duration="22468000" />
-      <workItem from="1698201280138" duration="18714000" />
+      <workItem from="1698201280138" duration="19174000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1698130735862</created>
@@ -212,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698211246170</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Attemping to delete live">
+      <created>1698220364909</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1698220364909</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +251,8 @@
     <MESSAGE value="Successfully implement the player hit box" />
     <MESSAGE value="Able to move the random Position that generate enemy" />
     <MESSAGE value="Adding score" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding score" />
+    <MESSAGE value="Attemping to delete live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attemping to delete live" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
