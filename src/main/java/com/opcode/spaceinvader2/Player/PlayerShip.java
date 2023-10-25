@@ -1,18 +1,10 @@
-package com.opcode.spaceinvader2.entity;
+package com.opcode.spaceinvader2.Player;
 
 import com.opcode.spaceinvader2.Launcher;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
-import javafx.util.Duration;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public class PlayerShip extends Pane {

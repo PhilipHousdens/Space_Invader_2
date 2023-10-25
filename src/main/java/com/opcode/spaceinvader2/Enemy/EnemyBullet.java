@@ -1,21 +1,20 @@
-package com.opcode.spaceinvader2.entity;
+package com.opcode.spaceinvader2.Enemy;
 
 import com.opcode.spaceinvader2.Launcher;
-import javafx.animation.TranslateTransition;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
-import javafx.util.Duration;
 
 import java.util.Objects;
 
-public class Bullet extends Pane {
-    private static final double BULLET_DURATION = 5.0;
+
+public class EnemyBullet extends Pane {
+    private static final double BULLET_DURATION = 0.25;
     private ImageView bulletImagePreview;
     private Rectangle hitbox;
 
-    public Bullet(double initialX, double initialY) {
+    public EnemyBullet(double initialX, double initialY) {
         //Load the image for the bullet
         Image bulletImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/beams.png")).toExternalForm());
         bulletImagePreview = new ImageView(bulletImage);
@@ -24,8 +23,8 @@ public class Bullet extends Pane {
         hitbox = new Rectangle(initialX, initialY, bulletImage.getWidth(), bulletImage.getHeight());
     }
 
-    public void moveUp() {
-        bulletImagePreview.setY(bulletImagePreview.getY() - (BULLET_DURATION));
+    public void moveDown() {
+        bulletImagePreview.setY(bulletImagePreview.getY() + (BULLET_DURATION));
         hitbox.setY(hitbox.getY() - (BULLET_DURATION));
     }
 
@@ -37,9 +36,9 @@ public class Bullet extends Pane {
         return bulletImagePreview;
     }
 
+
+
     public Rectangle getHitbox() {
         return hitbox;
     }
-
-
 }

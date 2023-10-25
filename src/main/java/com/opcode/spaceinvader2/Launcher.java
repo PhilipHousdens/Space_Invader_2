@@ -1,8 +1,9 @@
 package com.opcode.spaceinvader2;
 
-import com.opcode.spaceinvader2.entity.Bullet;
-import com.opcode.spaceinvader2.entity.EnemyShip;
-import com.opcode.spaceinvader2.entity.PlayerShip;
+import com.opcode.spaceinvader2.Enemy.EnemyBullet;
+import com.opcode.spaceinvader2.Player.PlayerBullet;
+import com.opcode.spaceinvader2.Enemy.EnemyShip;
+import com.opcode.spaceinvader2.Player.PlayerShip;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -21,8 +22,14 @@ public class Launcher extends Application {
     public static final int PANE_HEIGHT = 730;
 
     // Lists
-    private List<Bullet> bullets = new ArrayList<>();
+    private List<PlayerBullet> playerBullets = new ArrayList<>();
     private List<EnemyShip> enemyShips = new ArrayList<>();
+    private List<EnemyBullet> enemyBullets = new ArrayList<>();
+    // Hit
+    private List<PlayerBullet> PlayerbulletsToRemove = new ArrayList<>();
+    private List<EnemyShip> enemyShipsToRemove = new ArrayList<>();
+    private List<EnemyBullet> enemyBulletsToShoot = new ArrayList<>();
+
 
     // Image
     private Image background;
@@ -31,9 +38,8 @@ public class Launcher extends Application {
     private boolean moveLeft = false;
     private boolean moveRight = false;
 
-    // Hit
-    private List<Bullet> bulletsToRemove = new ArrayList<>();
-    private List<EnemyShip> enemyShipsToRemove = new ArrayList<>();
+
+
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -61,9 +67,9 @@ public class Launcher extends Application {
                     moveRight = true;
                     break;
                 case SPACE:
-                    Bullet bullet = new Bullet(playerShip.getX() + playerShip.getShipImageView().getFitWidth() / 2 + 10, playerShip.getY());
-                    bullets.add(bullet);
-                    platform.getChildren().add(bullet.getBulletImagePreview());
+                    PlayerBullet playerBullet = new PlayerBullet(playerShip.getX() + playerShip.getShipImageView().getFitWidth() / 2 + 10, playerShip.getY());
+                    playerBullets.add(playerBullet);
+                    platform.getChildren().add(playerBullet.getBulletImagePreview());
                     break;
             }
         });
@@ -99,6 +105,7 @@ public class Launcher extends Application {
                 // EnemyShip Movement
                 handleEnemyAction();
 
+
                 // Combat mode
                 handleCollisions();
             }
@@ -115,38 +122,48 @@ public class Launcher extends Application {
 
             // Player Bullet Action
             private void handlePlayerBulletAction() {
-                bullets.forEach(Bullet::moveUp);
-            }
-
-            private void handleCollisions() {
-                bullets.forEach(bullet -> {
-                    enemyShips.forEach(enemy -> {
-                        if (bullet.getHitbox().getBoundsInParent().intersects(
-                                enemy.getHitbox().getBoundsInParent())) {
-
-                            platform.getChildren().remove(bullet.getBulletImagePreview());
-                            platform.getChildren().remove(bullet.getHitbox()); // Remove the hitbox
-
-                            platform.getChildren().remove(enemy.getShipImageView());
-                            platform.getChildren().remove(enemy.getHitbox());  // Remove the hitbox
-
-                            bulletsToRemove.add(bullet);
-                            enemyShipsToRemove.add(enemy);
-                        }
-                    });
-                });
-                bullets.removeAll(bulletsToRemove);
-                enemyShips.removeAll(enemyShipsToRemove);
-                bulletsToRemove.clear();
-                enemyShipsToRemove.clear();
+                playerBullets.forEach(PlayerBullet::moveUp);
             }
 
             // EnemyShip Movement
             private void handleEnemyAction() {
                 enemyShips.forEach(enemyShip -> {
                     enemyShip.move();
+                    if (enemyShip.decideToShoot()) {
+                        EnemyBullet enemyBullet = enemyShip.shoot();
+                        enemyBulletsToShoot.add(enemyBullet);
+                        platform.getChildren().add(enemyBullet.getBulletImagePreview());
+                    }
                 });
+
+                enemyBullets.addAll(enemyBulletsToShoot );
+                enemyBullets.forEach(EnemyBullet::moveDown);
             }
+
+            private void handleCollisions() {
+                playerBullets.forEach(playerBullet -> {
+                    enemyShips.forEach(enemy -> {
+                        if (playerBullet.getHitbox().getBoundsInParent().intersects(
+                                enemy.getHitbox().getBoundsInParent())) {
+
+                            platform.getChildren().remove(playerBullet.getBulletImagePreview());
+                            platform.getChildren().remove(playerBullet.getHitbox()); // Remove the hitbox
+
+                            platform.getChildren().remove(enemy.getShipImageView());
+                            platform.getChildren().remove(enemy.getHitbox());  // Remove the hitbox
+
+                            PlayerbulletsToRemove.add(playerBullet);
+                            enemyShipsToRemove.add(enemy);
+                        }
+                    });
+                });
+                playerBullets.removeAll(PlayerbulletsToRemove);
+                enemyShips.removeAll(enemyShipsToRemove);
+                PlayerbulletsToRemove.clear();
+                enemyShipsToRemove.clear();
+            }
+
+
 
         }.start();
         stage.show();
@@ -157,7 +174,7 @@ public class Launcher extends Application {
     }
 
     private double randomYPosition() {
-        return Math.random() * (PANE_HEIGHT / 2);  // only on the top half of the screen
+        return Math.random() * (PANE_HEIGHT / 4);  // only on the top half of the screen
     }
 
     public static void main(String[] args) {
