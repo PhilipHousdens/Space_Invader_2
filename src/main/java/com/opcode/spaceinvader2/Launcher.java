@@ -12,6 +12,7 @@ import javafx.animation.AnimationTimer;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -65,6 +66,42 @@ public class Launcher extends Application {
     private long lastHitTime = 0;
     private int bulletHitsPlayerCounter = 0;
 
+    @Override
+    public void start(Stage stage) {
+        Pane startPane = new Pane();
+
+        // Load and set the background image
+        Image backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
+        ImageView backgroundImageView = new ImageView(backgroundImage);
+        startPane.getChildren().add(backgroundImageView);  // Add background image to pane
+
+        Scene startScene = new Scene(startPane, PANE_WIDTH, PANE_HEIGHT);
+
+        Button startButton = new Button("Start Game");
+        startButton.setLayoutX(PANE_WIDTH / 2 - 35);  // center the button horizontally
+        startButton.setLayoutY(PANE_HEIGHT / 2 - 95); // center vertically
+
+        Button exitButton = new Button("Exit Game");
+        exitButton.setLayoutX(PANE_WIDTH / 2 - 32);  // center the button horizontally
+        exitButton.setLayoutY(PANE_HEIGHT / 2 - 55);
+
+
+        startButton.setOnAction(e -> {
+            startGame(stage); // initiate the game when button is clicked
+        });
+
+        exitButton.setOnAction(e -> {
+            stage.close(); // close the primary stage (window) to exit the program
+        });
+
+
+        startPane.getChildren().addAll(startButton, exitButton);
+        stage.setScene(startScene);
+        stage.setTitle("OP Space Invader");
+        stage.show();
+    }
+
+
 
     // Functions
     private void initializeHeartLife(Pane platform) {
@@ -85,11 +122,7 @@ public class Launcher extends Application {
         }
     }
 
-
-
-
-    @Override
-    public void start(Stage stage) {
+    public void startGame(Stage stage) {
 
         Pane platform = new Pane();
         background = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
