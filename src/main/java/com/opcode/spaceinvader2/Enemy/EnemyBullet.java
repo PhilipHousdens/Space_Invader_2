@@ -4,6 +4,7 @@ import com.opcode.spaceinvader2.Launcher;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 import java.util.Objects;
@@ -20,7 +21,7 @@ public class EnemyBullet extends Pane {
         bulletImagePreview = new ImageView(bulletImage);
         bulletImagePreview.setX(initialX);
         bulletImagePreview.setY(initialY);
-        hitbox = new Rectangle(initialX, initialY, bulletImage.getWidth(), bulletImage.getHeight()/2);
+        hitbox = new Rectangle(initialX, initialY, bulletImage.getWidth(), bulletImage.getHeight());
     }
 
     public void moveDown() {
@@ -34,6 +35,10 @@ public class EnemyBullet extends Pane {
 
     public ImageView getBulletImagePreview() {
         return bulletImagePreview;
+    }
+
+    public void stop(){
+        getChildren().removeAll(bulletImagePreview, hitbox);
     }
 
 

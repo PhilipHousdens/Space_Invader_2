@@ -39,5 +39,9 @@ public class PlayerBullet extends Pane {
         return hitbox;
     }
 
+    public void stop() {
+        getChildren().removeAll(bulletImagePreview, hitbox);
+    }
+
 
 }

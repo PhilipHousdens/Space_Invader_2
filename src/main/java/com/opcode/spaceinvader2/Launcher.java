@@ -38,7 +38,6 @@ public class Launcher extends Application {
     private List<ImageView> heartLives = new ArrayList<>();
     // Hit
     private List<PlayerBullet> PlayerbulletsToRemove = new ArrayList<>();
-    private List<ImageView> heartsToRemove = new ArrayList<>();
 
     private List<EnemyShip> enemyShipsToRemove = new ArrayList<>();
     private List<EnemyTeir2> uncommonEnemyToRemove = new ArrayList<>();
@@ -58,10 +57,13 @@ public class Launcher extends Application {
     // Boolean
     private boolean moveLeft = false;
     private boolean moveRight = false;
-
     //Animation Sprite
     private Boss boss; // Add a reference to the Boss
     private boolean spawnBoss = false;
+    // Cooldown variables
+    private static final long COOLDOWN_DURATION = 250; // 2 seconds in milliseconds
+    private long lastHitTime = 0;
+    private int bulletHitsPlayerCounter = 0;
 
 
     // Functions
@@ -101,6 +103,8 @@ public class Launcher extends Application {
 
         stage.setScene(scene);
         stage.setTitle("OP Space Invader");
+
+
 
         // Detect User Key
         scene.setOnKeyPressed(event -> {
@@ -242,7 +246,6 @@ public class Launcher extends Application {
 
 
                 private void handleCollisions () {
-                    List<EnemyBullet> enemyBulletsToRemove = new ArrayList<>();
                     // Player Bullet Hit Enemy
                     playerBullets.forEach(playerBullet -> {
                         enemyShips.forEach(enemy -> {
@@ -251,7 +254,7 @@ public class Launcher extends Application {
                                 Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
                                 platform.getChildren().add(explosion.getExplosionImageView());
 
-                                javafx.animation.PauseTransition delay = new javafx.animation.PauseTransition(javafx.util.Duration.seconds(0.5));
+                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
                                 delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
                                 delay.play();
 
@@ -260,6 +263,8 @@ public class Launcher extends Application {
 
                                 platform.getChildren().remove(enemy.getShipImageView());
                                 platform.getChildren().remove(enemy.getHitBox());  // Remove the hitbox
+                                playerBullet.stop();
+
                                 score += 1;
 
                                 PlayerbulletsToRemove.add(playerBullet);
@@ -274,7 +279,7 @@ public class Launcher extends Application {
                                 Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
                                 platform.getChildren().add(explosion.getExplosionImageView());
 
-                                javafx.animation.PauseTransition delay = new javafx.animation.PauseTransition(javafx.util.Duration.seconds(0.5));
+                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
                                 delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
                                 delay.play();
 
@@ -283,6 +288,7 @@ public class Launcher extends Application {
 
                                 platform.getChildren().remove(enemy.getShipImageView());
                                 platform.getChildren().remove(enemy.getHitBox());  // Remove the hitbox
+                                playerBullet.stop();
 
                                 score += 2;
 
@@ -306,14 +312,29 @@ public class Launcher extends Application {
                     // Inside handleCollisions method where player is hit by enemy bullet:
                     for (EnemyBullet enemyBullet : enemyBullets) {
                         if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
-                            enemyBulletsToRemove.add(enemyBullet);
-                            platform.getChildren().remove(enemyBullet.getBulletImagePreview());
+                            long currentTime = System.currentTimeMillis();
+                            if (currentTime - lastHitTime >= COOLDOWN_DURATION) {
+                                bulletHitsPlayerCounter++; // Increment the counter
+                                System.out.println("Bullet hits player: " + bulletHitsPlayerCounter);
 
-                            // Decrement player's life count
-                            playerLives--;
+                                platform.getChildren().removeAll(enemyBullet.getBulletImagePreview());
 
-                            // Update the displayed lives
-                            updateHearts();
+                                // Decrement Player's Life
+                                playerLives--;
+
+                                // Update the displayed lives
+                                updateHearts();
+
+                                lastHitTime = currentTime;
+
+                                System.out.println("Losing a Life");
+                                break;
+                            }
+                        }
+                        if (playerLives <= 0) {
+                            this.stop();
+                            System.out.println("Game Over");
+                            return;
                         }
                     }
 
@@ -325,9 +346,9 @@ public class Launcher extends Application {
                     enemyShipsToRemove.clear();
                     playerBullets.removeAll(PlayerbulletsToRemove);
                     uncommonEnemyShips.removeAll(uncommonEnemyToRemove);
-                    PlayerbulletsToRemove.clear();
-                    uncommonEnemyToRemove.clear();
-                    enemyBulletsToRemove.removeAll(enemyBulletsToRemove);
+                    uncommonEnemyToRemove.clear(); // Clear uncommonEnemyToRemove only once
+
+
 
                 }
         }.start();
