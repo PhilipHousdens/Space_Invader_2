@@ -6,6 +6,7 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
 import java.util.Objects;
@@ -15,14 +16,17 @@ public class AnimationSprite extends ImageView {
     private static final int FRAME_WIDTH = 64;
     private static final int FRAME_HEIGHT = 64;
 
+    Launcher launcher;
+
     private Image spriteSheet;
     private int currentFrame = 0;
     private int direction = 1; // 1 for right, -1 for left
     private double moveDistance = 5.0;
 
     public AnimationSprite(String imagePath) {
-        spriteSheet = new Image(Objects.requireNonNull(Launcher.class.getResource(imagePath)).toString());
-        setViewport(generateFrameRectangle(currentFrame));
+        Image spriteImage = new Image(Objects.requireNonNull(getClass().getResource(imagePath)).toExternalForm());
+        ImageView spriteImageView = new ImageView(spriteImage);
+
 
         // Set up animation
         Timeline timeline = new Timeline(
