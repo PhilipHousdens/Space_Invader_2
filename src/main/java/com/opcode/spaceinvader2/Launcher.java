@@ -30,6 +30,7 @@ public class Launcher extends Application {
     private List<PlayerBullet> playerBullets = new ArrayList<>();
     private List<EnemyShip> enemyShips = new ArrayList<>();
     private List<EnemyBullet> enemyBullets = new ArrayList<>();
+    private List<ImageView> heartLives = new ArrayList<>();
     // Hit
     private List<PlayerBullet> PlayerbulletsToRemove = new ArrayList<>();
     private List<EnemyShip> enemyShipsToRemove = new ArrayList<>();
@@ -37,20 +38,47 @@ public class Launcher extends Application {
 
     // Player action
     private int score = 0;
+    private int playerLives = 3;
 
 
     // Image
     private Image background;
+    private Image heartImg = new Image(Objects.requireNonNull((Launcher.class.getResource("/com/opcode/spaceinvader2/image/Heart.png"))).toExternalForm());
 
     // Boolean
     private boolean moveLeft = false;
     private boolean moveRight = false;
 
+    //Animation Sprite
+
+
+    // Functions
+    private void initializeHeartLife(Pane platform) {
+        for (int i = 0; i < playerLives; i++) {
+            ImageView heart = new ImageView(heartImg);
+            heart.setX(10 + (i * (heartImg.getWidth() + 5)));
+            heart.setY(10);
+            heartLives.add(heart);
+            platform.getChildren().add(heart);
+        }
+    }
+
+    private void updatePlayerLivesDisplay() {
+        if (playerLives < heartLives.size()) {
+            int indexToRemove = heartLives.size() - 1;
+            ImageView lostHeart = heartLives.remove(indexToRemove);
+            lostHeart.setImage(null);  // Or you can use a broken heart image if you have one
+        }
+    }
+
+
+
+
 
 
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) {
 
         Pane platform = new Pane();
         background = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
@@ -93,6 +121,9 @@ public class Launcher extends Application {
                     break;
             }
         });
+
+        //Set Live
+        initializeHeartLife(platform);
 
         // Score Text
         scoreText = new javafx.scene.text.Text(445, 30, "Score: 0");
@@ -156,7 +187,9 @@ public class Launcher extends Application {
                 enemyBullets.forEach(EnemyBullet::moveDown);
             }
 
+
             private void handleCollisions() {
+                // Player Bullet Hit Enemy
                 playerBullets.forEach(playerBullet -> {
                     enemyShips.forEach(enemy -> {
                         if (playerBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
@@ -178,18 +211,18 @@ public class Launcher extends Application {
                 PlayerbulletsToRemove.clear();
                 enemyShipsToRemove.clear();
 
+                // Enemy Bullet Hit Player Ship
                 enemyBullets.forEach(enemyBullet -> {
                     if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
                         // Remove enemy bullet
                         platform.getChildren().remove(enemyBullet.getBulletImagePreview());
                         platform.getChildren().remove(enemyBullet.getHitbox());
 
-                        // Remove player ship and its hitbox
-                        platform.getChildren().remove(playerShip.getShipImageView());
-                        platform.getChildren().remove(playerShip.getHitbox());
-                        score += 1;
+                        playerLives--;
+                        updatePlayerLivesDisplay();
                     }
                 });
+                // Scoring
                 scoreText.setText("Score: " + score);
             }
 
