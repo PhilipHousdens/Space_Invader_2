@@ -87,10 +87,12 @@ public class Launcher extends Application {
         });
 
         // Add Common enemy ships
-        for (int i = 0; i < 5; i++) { // example, spawn 10 enemies
+        for (int i = 0; i < 4; i++) { // example, spawn 10 enemies
             EnemyShip enemy = new EnemyShip(randomXPosition(), randomYPosition(), PANE_WIDTH);
+            System.out.println("X: " + this.randomXPosition() +" Y: " + this.randomYPosition());
             enemyShips.add(enemy);
             platform.getChildren().add(enemy.getShipImageView());
+            enemy.getShipImageView().setY(randomYPosition());
         }
 
         new AnimationTimer() {
@@ -182,11 +184,11 @@ public class Launcher extends Application {
     }
 
     private double randomXPosition() {
-        return Math.random() * (PANE_WIDTH);  // adjust as needed
+        return Math.random() * (PANE_WIDTH + 60);  // adjust as needed
     }
 
     private double randomYPosition() {
-        return Math.random() * (PANE_HEIGHT / 4);  // only on the top half of the screen
+        return Math.random() * (PANE_HEIGHT / 2 - 200) + 20;  // Y position between 100 and PANE_HEIGHT/2 - 100
     }
 
     public static void main(String[] args) {
