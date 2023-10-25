@@ -1,6 +1,7 @@
 package com.opcode.spaceinvader2;
 
 import com.opcode.spaceinvader2.Enemy.EnemyBullet;
+import com.opcode.spaceinvader2.Enemy.EnemyTeir2;
 import com.opcode.spaceinvader2.Player.PlayerBullet;
 import com.opcode.spaceinvader2.Enemy.EnemyShip;
 import com.opcode.spaceinvader2.Player.PlayerShip;
@@ -15,7 +16,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -29,6 +29,7 @@ public class Launcher extends Application {
     // Lists
     private List<PlayerBullet> playerBullets = new ArrayList<>();
     private List<EnemyShip> enemyShips = new ArrayList<>();
+    private List<EnemyTeir2> uncommonEnemyShips = new ArrayList<>();
     private List<EnemyBullet> enemyBullets = new ArrayList<>();
     private List<ImageView> heartLives = new ArrayList<>();
     // Hit
@@ -36,6 +37,8 @@ public class Launcher extends Application {
     private List<ImageView> heartsToRemove = new ArrayList<>();
 
     private List<EnemyShip> enemyShipsToRemove = new ArrayList<>();
+    private List<EnemyTeir2> uncommonEnemyToRemove = new ArrayList<>();
+    private List<EnemyBullet> enemyTeir2sToShoot = new ArrayList<EnemyBullet>();
     private List<EnemyBullet> enemyBulletsToShoot = new ArrayList<>();
 
     // Player action
@@ -135,12 +138,20 @@ public class Launcher extends Application {
         platform.getChildren().add(scoreText);
 
         // Add Common enemy ships
-        for (int i = 0; i < 4; i++) { // example, spawn 10 enemies
+        for (int i = 0; i < 2; i++) { // example, spawn 10 enemies
             EnemyShip enemy = new EnemyShip(randomXPosition(), randomYPosition(), PANE_WIDTH);
             System.out.println("X: " + this.randomXPosition() +" Y: " + this.randomYPosition());
             enemyShips.add(enemy);
             platform.getChildren().add(enemy.getShipImageView());
             enemy.getShipImageView().setY(randomYPosition());
+        }
+
+        // Add Uncommon enemy Ships
+        for (int i = 0; i < 2; i++) {
+            EnemyTeir2 enemyTeir2 = new EnemyTeir2(randomXPosition(), randomYPosition(), PANE_WIDTH);
+            uncommonEnemyShips.add(enemyTeir2);
+            platform.getChildren().add(enemyTeir2.getShipImageView());
+            enemyTeir2.getShipImageView().setY(randomYPosition() - 20);
         }
 
         new AnimationTimer() {
@@ -154,6 +165,9 @@ public class Launcher extends Application {
 
                 // EnemyShip Movement
                 handleEnemyAction();
+
+                // Uncommon Enemy Movement
+                handleEnemyTier2Action();
 
                 // Enemy Collisions
                 handleCollisions();
@@ -190,6 +204,20 @@ public class Launcher extends Application {
                 enemyBullets.forEach(EnemyBullet::moveDown);
             }
 
+            // Enemy Teir 2 Movement
+            private void handleEnemyTier2Action() {
+                uncommonEnemyShips.forEach(enemyTeir2 -> {
+                    enemyTeir2.move();
+                    if (enemyTeir2.decideToShoot()) {
+                        EnemyBullet enemyBullet = enemyTeir2.shoot();
+                        enemyTeir2sToShoot.add(enemyBullet);
+                        platform.getChildren().add(enemyBullet.getBulletImagePreview());
+                    }
+                });
+                enemyBullets.addAll(enemyTeir2sToShoot);
+                enemyBullets.forEach(EnemyBullet::moveDown);
+            }
+
 
             private void handleCollisions() {
                 // Player Bullet Hit Enemy
@@ -208,11 +236,30 @@ public class Launcher extends Application {
                             enemyShipsToRemove.add(enemy);
                         }
                     });
+                    enemyShips.removeAll(enemyShipsToRemove);
+                    PlayerbulletsToRemove.clear();
+                    enemyShipsToRemove.clear();
+
+                    uncommonEnemyShips.forEach(enemy -> {
+                        if (playerBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
+
+                            platform.getChildren().remove(playerBullet.getBulletImagePreview());
+                            platform.getChildren().remove(playerBullet.getHitbox()); // Remove the hitbox
+
+                            platform.getChildren().remove(enemy.getShipImageView());
+                            platform.getChildren().remove(enemy.getHitBox());  // Remove the hitbox
+
+                            score += 2;
+
+                            PlayerbulletsToRemove.add(playerBullet);
+                            uncommonEnemyToRemove.add(enemy);
+                        }
+                    });
                 });
                 playerBullets.removeAll(PlayerbulletsToRemove);
-                enemyShips.removeAll(enemyShipsToRemove);
+                uncommonEnemyShips.removeAll(uncommonEnemyToRemove);
                 PlayerbulletsToRemove.clear();
-                enemyShipsToRemove.clear();
+                uncommonEnemyToRemove.clear();
 
                 // Enemy Bullet Hit Player Ship
                 enemyBullets.forEach(enemyBullet -> {
@@ -239,7 +286,7 @@ public class Launcher extends Application {
     }
 
     private double randomYPosition() {
-        return Math.random() * (PANE_HEIGHT / 2 - 200) + 20;  // Y position between 100 and PANE_HEIGHT/2 - 100
+        return Math.random() * (PANE_HEIGHT / 2 - 200) + 70;  // Y position between 100 and PANE_HEIGHT/2 - 100
     }
 
     public static void main(String[] args) {
