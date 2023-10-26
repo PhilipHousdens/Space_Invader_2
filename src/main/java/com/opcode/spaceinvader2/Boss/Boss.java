@@ -2,6 +2,7 @@ package com.opcode.spaceinvader2.Boss;
 
 
 import com.opcode.spaceinvader2.Launcher;
+import com.opcode.spaceinvader2.Model.AnimatedSprite;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -18,7 +19,7 @@ public class Boss extends Pane {
     private double speed = 3;  // Adjust this value based on how fast you want the boss to move
     private double moveDistance = speed * direction;
     private double verticalSpeed = 0; // Adjust as needed
-    private ImageView shipImageView;
+    private AnimatedSprite shipImageView;
     private Rectangle hitbox;
     private double initialX;
     private double initialY;
@@ -29,7 +30,7 @@ public class Boss extends Pane {
         this.initialY = initialY;
         // Load the image for the player's ship
         Image shipImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/Boss.png")).toExternalForm());
-        shipImageView = new ImageView(shipImage);
+        shipImageView = new AnimatedSprite(shipImage, 4, 4,2,0,0, 87, 110);
         getChildren().addAll(shipImageView);
 
         shipImageView.setX(initialX);
@@ -78,6 +79,10 @@ public class Boss extends Pane {
     public BossBullet shoot() {
         BossBullet bossBullet = new BossBullet(getX() + getShipImageView().getFitWidth() / 2 + 10, getY() + shipImageView.getFitHeight());
         return bossBullet;
+    }
+
+    public void tick() {
+        shipImageView.tick();
     }
 
     public boolean decideToShoot() {

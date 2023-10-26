@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Attempting Victory">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/Pics/intro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/Pics/youWIn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2023_AD__20_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2023_AD__20_17__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2023_AD__21_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2023_AD__21_20__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__15_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__15_59__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__17_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__17_46__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__21_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__21_48__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__01_30__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__01_30__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__02_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__02_38__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__15_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__15_05__Changes_.xml" afterDir="false" />
+    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Successfully Making the intro and Victory scene">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Model/AnimatedSprite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/Pics/PlayerShip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/Pics/flameball-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/Pics/mage-bullet-13x13.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Boss/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Boss/Boss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Boss/BossBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Boss/BossBullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Model/AnimationSprite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Player/PlayerShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Player/PlayerShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/Pics/Boss.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/Pics/Boss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/Pics/DurrrSpaceShip.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,22 +60,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Philip Housden/IdeaProjects/Project2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Philip Housden/IdeaProjects/chapter4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Philip Housden\IdeaProjects\SpaceInvader2\src\main\resources\com\opcode\spaceinvader2\image" />
@@ -286,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698298851203</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Successfully Making the intro and Victory scene">
+      <created>1698317799939</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1698317799939</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +334,8 @@
     <MESSAGE value="Adding BossBullet" />
     <MESSAGE value="Set Boss ImageView Y-axis to 60" />
     <MESSAGE value="Boss Hit Player Ship" />
-    <option name="LAST_COMMIT_MESSAGE" value="Boss Hit Player Ship" />
+    <MESSAGE value="Successfully Making the intro and Victory scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Successfully Making the intro and Victory scene" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

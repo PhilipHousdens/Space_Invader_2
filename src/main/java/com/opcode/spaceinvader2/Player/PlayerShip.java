@@ -1,6 +1,7 @@
 package com.opcode.spaceinvader2.Player;
 
 import com.opcode.spaceinvader2.Launcher;
+import com.opcode.spaceinvader2.Model.AnimatedSprite;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -12,14 +13,16 @@ public class PlayerShip extends Pane {
     private static final int MOVE_STEP = 10;
     private static final int MIN_X = 0;
     private static final int MAX_X = 450;
-    private ImageView shipImageView;
+    private AnimatedSprite shipImageView;
     private Rectangle hitbox;
 
     public PlayerShip() throws RuntimeException {
         // Load the image for the player's ship
-        Image shipImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/DurrrSpaceShip.png")).toExternalForm());
-        shipImageView = new ImageView(shipImage);
-        getChildren().add(shipImageView);
+        Image shipImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/PlayerShip.png")).toExternalForm());
+        shipImageView = new AnimatedSprite(shipImage,4, 4, 1, 0,0, 62,84);
+        shipImageView.setSpeed(1);
+        shipImageView.setTicksPerUpdate(2);
+        getChildren().add(this.shipImageView);
 
         // Set initial position
         setTranslateX(245);
@@ -62,6 +65,9 @@ public class PlayerShip extends Pane {
         hitbox.setX(getTranslateX() + 35);
         hitbox.setY(getTranslateY() + 20);
 
+    }
+    public void tick() {
+        shipImageView.tick();
     }
 
     public ImageView getShipImageView() {

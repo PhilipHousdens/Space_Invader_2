@@ -66,7 +66,7 @@ public class Launcher extends Application {
     //Animation Sprite
     private boolean spawnBoss = false;
     // Cooldown variables
-    private static final long COOLDOWN_DURATION = 250; // 2 seconds in milliseconds
+    private static final long COOLDOWN_DURATION = 250;
     private long lastHitTime = 0;
     private int bulletHitsPlayerCounter = 0;
 
@@ -309,6 +309,13 @@ public class Launcher extends Application {
                 if (spawnBoss) {
                     handleBossAction();
                 }
+
+                // Update player ship animation
+                playerShip.tick();
+
+                // Update Boss Animation
+                bossShip.tick();
+
             }
 
             // Player Movement
