@@ -10,7 +10,7 @@ import java.util.Objects;
 
 
 public class EnemyBullet extends Pane {
-    private static final double BULLET_DURATION = 0.25;
+    private static final double BULLET_DURATION = 0.025;
     private ImageView bulletImagePreview;
     private Rectangle hitbox;
 
@@ -39,8 +39,6 @@ public class EnemyBullet extends Pane {
     public void stop(){
         getChildren().removeAll(bulletImagePreview, hitbox);
     }
-
-
 
     public Rectangle getHitbox() {
         return hitbox;

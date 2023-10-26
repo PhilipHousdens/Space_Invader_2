@@ -9,9 +9,10 @@ import javafx.scene.shape.Rectangle;
 import java.util.Objects;
 
 public class PlayerBullet extends Pane {
-    private static final double BULLET_DURATION = 10.0;
+    private static final double BULLET_DURATION = 5.0;
     private ImageView bulletImagePreview;
     private Rectangle hitbox;
+    private boolean isActive = true;
 
     public PlayerBullet(double initialX, double initialY) {
         //Load the image for the bullet
@@ -23,8 +24,8 @@ public class PlayerBullet extends Pane {
     }
 
     public void moveUp() {
-        bulletImagePreview.setY(bulletImagePreview.getY() - (BULLET_DURATION));
-        hitbox.setY(hitbox.getY() - (BULLET_DURATION));
+            bulletImagePreview.setY(bulletImagePreview.getY() - (BULLET_DURATION));
+            hitbox.setY(hitbox.getY() - (BULLET_DURATION));
     }
 
     public double getY() {
