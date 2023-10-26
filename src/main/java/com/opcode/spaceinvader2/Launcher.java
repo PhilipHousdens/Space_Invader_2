@@ -199,30 +199,42 @@ public class Launcher extends Application {
         ImageView backgroundImageView = new ImageView(backgroundImage);
         GameOver.getChildren().add(backgroundImageView);  // Add background image to pane
 
-        Scene GameOverScene = new Scene(GameOver, 300, 400);
+        Scene GameOverScene = new Scene(GameOver, PANE_WIDTH, PANE_HEIGHT);
 
-        Text GameOverText = new Text("GameOver!");
-        GameOverText.setFill(Color.WHITE);
-        GameOverText.setFont(new Font(20));
-        GameOverText.setLayoutX(125);
-        GameOverText.setLayoutY(180);  // Adjust the layout position
+        Image gameOVer = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/GameOver.png")).toExternalForm());
+        ImageView gameOverImage = new ImageView(gameOVer);
+        gameOverImage.setLayoutX(10);
+        gameOverImage.setLayoutY(30);
 
-        Text scoreTextGameOver = new Text("Score: " + score);
-        scoreTextGameOver.setFill(Color.WHITE);
-        scoreTextGameOver.setFont(new Font(20));
-        scoreTextGameOver.setLayoutX(125);
-        scoreTextGameOver.setLayoutY(220);  // Adjust the layout position
 
-        PauseTransition pauseStart = new PauseTransition(Duration.seconds(2));
+        Text scoreText = new Text("Score: " + score);
+        scoreText.setFill(Color.WHITE);
+        scoreText.setFont(new Font(50));
+        scoreText.setLayoutX(180);
+        scoreText.setLayoutY(480);  // Adjust the layout position
+
+        Button reStart = new Button("ReStart");
+        reStart.setTextFill(Color.WHITE);
+        reStart.setStyle("-fx-background-color: #AF2492; -fx-background-radius: 25;");
+        reStart.setFont(new Font(20));
+        reStart.setPrefSize(180,60);
+        reStart.setLayoutX(180);
+        reStart.setLayoutY(580);
+
+        reStart.setOnAction(e -> {
+            restartGame(stage);
+        });
+
+        PauseTransition pauseStart = new PauseTransition(Duration.seconds(0.5));
         pauseStart.setOnFinished(event -> start.close());
         pauseStart.play();
 
 
-        PauseTransition pausePop = new PauseTransition(Duration.seconds(2));
+        PauseTransition pausePop = new PauseTransition(Duration.seconds(0.5));
         pausePop.setOnFinished(event -> stage.show());
         pausePop.play();
 
-        GameOver.getChildren().addAll(GameOverText, scoreTextGameOver);
+        GameOver.getChildren().addAll(gameOverImage, scoreText, reStart);
 
         stage.setScene(GameOverScene);
     }

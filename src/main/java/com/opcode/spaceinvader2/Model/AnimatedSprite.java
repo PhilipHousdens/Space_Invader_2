@@ -6,6 +6,7 @@ import javafx.scene.image.ImageView;
 
 public class AnimatedSprite extends ImageView {
     private int count, columns, rows, offsetX, offsetY, width, height, curIndex, curColumnIndex, curRowIndex;
+    private boolean loop = true;
 
     private int speed = 1;
     private int tickCounter = 0;
@@ -30,7 +31,10 @@ public class AnimatedSprite extends ImageView {
         if (tickCounter % ticksPerUpdate == 0) {
             curColumnIndex = curIndex % columns;
             curRowIndex = curIndex / columns;
-            curIndex = (curIndex + 1) % (columns * rows * speed);
+
+            if (loop || curIndex < (columns * rows - 1)) {
+                curIndex = (curIndex + 1) % (columns * rows * speed);
+            }
             interpolate();
         }
         tickCounter++;
@@ -38,6 +42,10 @@ public class AnimatedSprite extends ImageView {
 
     public void setSpeed(int speed) {
         this.speed = speed;
+    }
+
+    public void setLoop(boolean loop) {
+        this.loop = loop;
     }
 
     public void setTicksPerUpdate(int ticksPerUpdate) {

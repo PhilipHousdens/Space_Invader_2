@@ -11,7 +11,7 @@ import java.util.Objects;
 
 public class BossBullet extends Pane {
 
-    private static final double BULLET_DURATION = 1;
+    private static final double BULLET_DURATION = 0.5;
     private AnimatedSprite bulletImagePreview;
     private Rectangle hitbox;
 
@@ -40,10 +40,6 @@ public class BossBullet extends Pane {
 
     public void stop() {
         getChildren().remove(bulletImagePreview);
-    }
-
-    public void tick() {
-        bulletImagePreview.tick();
     }
 
     public Rectangle getHitbox() {
