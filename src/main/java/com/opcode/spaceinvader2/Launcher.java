@@ -2,6 +2,7 @@ package com.opcode.spaceinvader2;
 
 import com.opcode.spaceinvader2.Boss.Boss;
 import com.opcode.spaceinvader2.Boss.BossBullet;
+import com.opcode.spaceinvader2.Boss.LifeBar;
 import com.opcode.spaceinvader2.Enemy.EnemyBullet;
 import com.opcode.spaceinvader2.Enemy.EnemyTeir2;
 import com.opcode.spaceinvader2.Model.Explosion;
@@ -13,10 +14,13 @@ import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -26,6 +30,7 @@ import javafx.util.Duration;
 import java.util.*;
 
 public class Launcher extends Application {
+    LifeBar lifeBar = new LifeBar();
     // UI Element
     private Text scoreText;
     public static final int PANE_WIDTH = 530;
@@ -58,6 +63,8 @@ public class Launcher extends Application {
     private Image backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/bg_02_v.png")).toExternalForm());
     private Image heartImg = new Image(Objects.requireNonNull((Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/Heart.png"))).toExternalForm());
 
+
+
     // Boolean
     private boolean moveLeft = false;
     private boolean moveRight = false;
@@ -69,6 +76,12 @@ public class Launcher extends Application {
     private static final long COOLDOWN_DURATION = 250;
     private long lastHitTime = 0;
     private int bulletHitsPlayerCounter = 0;
+
+    // Boss Life Bar
+    private static final int INITIAL_LIFE = 100;
+    private int currentLife = INITIAL_LIFE;
+
+
 
     Stage currentStage;
 
@@ -240,6 +253,7 @@ public class Launcher extends Application {
     }
 
     // Functions
+
     private void initializeHeartLife(Pane platform) {
         for (int i = 0; i < playerLives; i++) {
             ImageView heart = new ImageView(heartImg);
@@ -481,6 +495,7 @@ public class Launcher extends Application {
                             PauseTransition spawnDelay = new PauseTransition(Duration.seconds(1));
                             spawnDelay.setOnFinished(event -> {
                                 if (!platform.getChildren().contains(bossShip.getShipImageView())) {
+                                    lifeBar.initializeLifeBar(platform, 225, 10);
                                     platform.getChildren().add(bossShip.getShipImageView());
                                 }
                                 bossShip.getBossHitBox().setX(bossShip.getShipImageView().getX());
@@ -537,7 +552,7 @@ public class Launcher extends Application {
                                     delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
                                     delay.play();
 
-                                    bossLives--;
+                                    lifeBar.updateLifeBar(-20);
 
                                     System.out.println("boss lose life");
 
@@ -563,7 +578,7 @@ public class Launcher extends Application {
 
                             }
                         }
-                        if (bossLives <=0) {
+                        if (lifeBar.getCurrentLife() <= 0) {
                             this.stop();
                             score += 5;
                             victory();

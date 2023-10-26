@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Successfully Making the intro and Victory scene">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/Pics/GameOver.png" afterDir="false" />
+    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Creating GameOver, Animated Player Bullet and Enemy Bullet.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Boss/LifeBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Boss/BossBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Boss/BossBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Enemy/EnemyBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Enemy/EnemyBullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Model/AnimatedSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Model/AnimatedSprite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Player/PlayerBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Player/PlayerBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/Pics/beams.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/Pics/beams.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698317799939</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Creating GameOver, Animated Player Bullet and Enemy Bullet.">
+      <created>1698338151507</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1698338151507</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +333,8 @@
     <MESSAGE value="Set Boss ImageView Y-axis to 60" />
     <MESSAGE value="Boss Hit Player Ship" />
     <MESSAGE value="Successfully Making the intro and Victory scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Successfully Making the intro and Victory scene" />
+    <MESSAGE value="Creating GameOver, Animated Player Bullet and Enemy Bullet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating GameOver, Animated Player Bullet and Enemy Bullet." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
