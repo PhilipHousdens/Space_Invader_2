@@ -15,7 +15,7 @@ public class PlayerBullet extends Pane {
 
     public PlayerBullet(double initialX, double initialY) {
         //Load the image for the bullet
-        Image bulletImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/beams.png")).toExternalForm());
+        Image bulletImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/beams.png")).toExternalForm());
         bulletImagePreview = new ImageView(bulletImage);
         bulletImagePreview.setX(initialX);
         bulletImagePreview.setY(initialY);

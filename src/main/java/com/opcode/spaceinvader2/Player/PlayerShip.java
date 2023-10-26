@@ -4,7 +4,6 @@ import com.opcode.spaceinvader2.Launcher;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 import java.util.Objects;
@@ -18,7 +17,7 @@ public class PlayerShip extends Pane {
 
     public PlayerShip() throws RuntimeException {
         // Load the image for the player's ship
-        Image shipImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/DurrrSpaceShip.png")).toExternalForm());
+        Image shipImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/DurrrSpaceShip.png")).toExternalForm());
         shipImageView = new ImageView(shipImage);
         getChildren().add(shipImageView);
 

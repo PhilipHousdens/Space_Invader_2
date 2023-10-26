@@ -10,7 +10,7 @@ public class Explosion {
     private ImageView explosionImageView;
 
     public Explosion(double x, double y) {
-        Image explosionImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/Explose.png")).toExternalForm() ); // Replace with the path to your explosion image
+        Image explosionImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/Explose.png")).toExternalForm() ); // Replace with the path to your explosion image
         explosionImageView = new ImageView(explosionImage);
         explosionImageView.setX(x);
         explosionImageView.setY(y);

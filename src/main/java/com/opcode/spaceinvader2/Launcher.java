@@ -54,8 +54,8 @@ public class Launcher extends Application {
 
 
     // Image
-    private Image backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
-    private Image heartImg = new Image(Objects.requireNonNull((Launcher.class.getResource("/com/opcode/spaceinvader2/image/Heart.png"))).toExternalForm());
+    private Image backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/bg_02_v.png")).toExternalForm());
+    private Image heartImg = new Image(Objects.requireNonNull((Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/Heart.png"))).toExternalForm());
 
     // Boolean
     private boolean moveLeft = false;
@@ -156,7 +156,7 @@ public class Launcher extends Application {
     public void startGame(Stage stage) {
 
         Pane platform = new Pane();
-        backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
+        backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/bg_02_v.png")).toExternalForm());
         ImageView backgroundImg = new ImageView(backgroundImage);
         backgroundImg.setFitHeight(backgroundImage.getHeight());
         backgroundImg.setFitWidth(backgroundImage.getWidth());

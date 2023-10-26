@@ -4,7 +4,6 @@ import com.opcode.spaceinvader2.Launcher;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 import java.util.Objects;
@@ -17,7 +16,7 @@ public class EnemyBullet extends Pane {
 
     public EnemyBullet(double initialX, double initialY) {
         //Load the image for the bullet
-        Image bulletImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/beams.png")).toExternalForm());
+        Image bulletImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/beams.png")).toExternalForm());
         bulletImagePreview = new ImageView(bulletImage);
         bulletImagePreview.setX(initialX);
         bulletImagePreview.setY(initialY);
