@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_26_10_2023_AD,_02_38_[Changes]" date="1698262704395" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD,_02_38_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 26/10/2023 AD, 02:38 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/com/opcode/spaceinvader2/image/EnemyShip.png" />
+    <option name="AFTER_PATH" value="src/main/resources/com/opcode/spaceinvader2/image/EnemyShip.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD,_02_38_[Changes]/EnemyShip.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/com/opcode/spaceinvader2/image/Nave.png" />
+    <option name="AFTER_PATH" value="src/main/resources/com/opcode/spaceinvader2/image/Nave.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD,_02_38_[Changes]/Nave.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/com/opcode/spaceinvader2/image/DurrrSpaceShip.png" />
+    <option name="AFTER_PATH" value="src/main/resources/com/opcode/spaceinvader2/image/DurrrSpaceShip.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD,_02_38_[Changes]/DurrrSpaceShip.png" />
+  </binary>
+</changelist>

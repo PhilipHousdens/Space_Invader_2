@@ -21,7 +21,7 @@ public class EnemyShip extends Pane {
     public EnemyShip(double initialX, double initialY, double gameWidth) {
         this.gameWidth = gameWidth;
         // Load the image for the player's ship
-        Image shipImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/Nave.png")).toExternalForm());
+        Image shipImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/Nave.png")).toExternalForm());
         shipImageView = new ImageView(shipImage);
 
         getChildren().add(shipImageView);
