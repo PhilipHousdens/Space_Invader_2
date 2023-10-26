@@ -36,6 +36,10 @@ public class BossBullet extends Pane {
         return bulletImagePreview;
     }
 
+    public void stop() {
+        getChildren().remove(bulletImagePreview);
+    }
+
 
 
     public Rectangle getHitbox() {

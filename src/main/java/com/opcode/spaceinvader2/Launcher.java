@@ -33,13 +33,15 @@ public class Launcher extends Application {
     // Lists
     private List<PlayerBullet> playerBullets = new ArrayList<>();
     private List<EnemyShip> enemyShips = new ArrayList<>();
+    private List<Boss> bosses = new ArrayList<>();
     private List<EnemyTeir2> uncommonEnemyShips = new ArrayList<>();
     private List<EnemyBullet> enemyBullets = new ArrayList<>();
     private List<BossBullet> bossBullets = new ArrayList<>();
     private List<ImageView> heartLives = new ArrayList<>();
     // Hit
     private List<PlayerBullet> PlayerbulletsToRemove = new ArrayList<>();
-
+    private List<BossBullet> bossBulletsToRemove = new ArrayList<>();
+    private List<Boss> bossesToRemove = new ArrayList<>();
     private List<EnemyShip> enemyShipsToRemove = new ArrayList<>();
     private List<EnemyTeir2> uncommonEnemyToRemove = new ArrayList<>();
     private List<EnemyBullet> enemyTeir2sToShoot = new ArrayList<EnemyBullet>();
@@ -52,14 +54,15 @@ public class Launcher extends Application {
 
 
     // Image
-    private Image background;
+    private Image backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
     private Image heartImg = new Image(Objects.requireNonNull((Launcher.class.getResource("/com/opcode/spaceinvader2/image/Heart.png"))).toExternalForm());
 
     // Boolean
     private boolean moveLeft = false;
     private boolean moveRight = false;
+
+    private boolean bossDied = false;
     //Animation Sprite
-    private Boss boss; // Add a reference to the Boss
     private boolean spawnBoss = false;
     // Cooldown variables
     private static final long COOLDOWN_DURATION = 250; // 2 seconds in milliseconds
@@ -71,7 +74,6 @@ public class Launcher extends Application {
         Pane startPane = new Pane();
 
         // Load and set the background image
-        Image backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
         startPane.getChildren().add(backgroundImageView);  // Add background image to pane
 
@@ -101,6 +103,35 @@ public class Launcher extends Application {
         stage.show();
     }
 
+    private void victory() {
+        Pane victoryPane = new Pane();
+        Stage stage = new Stage();
+
+        // Load and set the background image
+        ImageView backgroundImageView = new ImageView(backgroundImage);
+        victoryPane.getChildren().add(backgroundImageView);  // Add background image to pane
+
+        Scene victoryScene = new Scene(victoryPane, 300, 400);
+
+        Text victoryText = new Text("Victory!");
+        victoryText.setFill(Color.WHITE);
+        victoryText.setFont(new Font(20));
+        victoryText.setLayoutX(125);
+        victoryText.setLayoutY(180);  // Adjust the layout position
+
+        Text scoreTextVictory = new Text("Score: " + score);
+        scoreTextVictory.setFill(Color.WHITE);
+        scoreTextVictory.setFont(new Font(20));
+        scoreTextVictory.setLayoutX(125);
+        scoreTextVictory.setLayoutY(220);  // Adjust the layout position
+
+        victoryPane.getChildren().addAll(victoryText, scoreTextVictory);
+
+        stage.setScene(victoryScene);
+        stage.show();
+    }
+
+
 
 
     // Functions
@@ -125,11 +156,12 @@ public class Launcher extends Application {
     public void startGame(Stage stage) {
 
         Pane platform = new Pane();
-        background = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
-        ImageView backgroundImg = new ImageView(background);
-        backgroundImg.setFitHeight(background.getHeight());
-        backgroundImg.setFitWidth(background.getWidth());
+        backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/bg_02_v.png")).toExternalForm());
+        ImageView backgroundImg = new ImageView(backgroundImage);
+        backgroundImg.setFitHeight(backgroundImage.getHeight());
+        backgroundImg.setFitWidth(backgroundImage.getWidth());
         PlayerShip playerShip = new PlayerShip();
+
 
         Scene scene = new Scene(platform, PANE_WIDTH, PANE_HEIGHT);
         platform.getChildren().addAll(backgroundImg, playerShip);
@@ -137,7 +169,7 @@ public class Launcher extends Application {
         stage.setScene(scene);
         stage.setTitle("OP Space Invader");
 
-
+        Boss bossShip = new Boss(PANE_WIDTH, 200, 60);
 
         // Detect User Key
         scene.setOnKeyPressed(event -> {
@@ -214,16 +246,7 @@ public class Launcher extends Application {
 
                 // Boss Movement and Action
                 if (spawnBoss) {
-                    boss.move();
-
-                    if (boss.decideToShoot()) {
-                        BossBullet bossBullet = boss.shoot();
-                        platform.getChildren().add(bossBullet.getBulletImagePreview());
-                        bossBulletsToShoot.add(bossBullet);
-                    }
-
-                    bossBullets.addAll(bossBulletsToShoot);
-                    bossBullets.forEach(BossBullet::moveDown);
+                    handleBossAction();
                 }
             }
 
@@ -240,12 +263,6 @@ public class Launcher extends Application {
             // Player Bullet Action
             private void handlePlayerBulletAction() {
                 playerBullets.forEach(PlayerBullet::moveUp);
-            }
-
-            private void bossEntry() {
-                boss = new Boss(PANE_WIDTH, 200, 60);
-                platform.getChildren().add(boss.getShipImageView());
-                spawnBoss = true;
             }
 
             // EnemyShip Movement
@@ -274,6 +291,18 @@ public class Launcher extends Application {
                 });
                 enemyBullets.addAll(enemyTeir2sToShoot);
                 enemyBullets.forEach(EnemyBullet::moveDown);
+            }
+
+            // Boss Action
+            private void handleBossAction() {
+                bossShip.move();
+                if (bossShip.decideToShoot()) {
+                    BossBullet bossBullet = bossShip.shoot();
+                    bossBulletsToShoot.add(bossBullet);
+                    platform.getChildren().add(bossBullet.getBulletImagePreview());
+                }
+                bossBullets.addAll(bossBulletsToShoot);
+                bossBullets.forEach(BossBullet::moveDown);
             }
 
 
@@ -338,9 +367,12 @@ public class Launcher extends Application {
                             }
                         });
                         if (uncommonEnemyShips.isEmpty() && enemyShips.isEmpty() && !spawnBoss) {
-                            bossEntry();
+                            platform.getChildren().add(bossShip.getShipImageView());
+                            bossShip.getBossHitBox().setX(bossShip.getShipImageView().getX());
+                            bossShip.getBossHitBox().setY(bossShip.getShipImageView().getY());
+                            platform.getChildren().add(bossShip.getBossHitBox());
+                            spawnBoss = true;
                         }
-
                     });
                     // Inside handleCollisions method where player is hit by enemy bullet:
                     for (EnemyBullet enemyBullet : enemyBullets) {
@@ -370,6 +402,48 @@ public class Launcher extends Application {
                             return;
                         }
                     }
+
+                    // Inside handleCollisions method where playerBullet hits bossShip:
+                    if (spawnBoss) {
+                        for (PlayerBullet playerBullet : playerBullets) {
+                            // Check if playerBullet hits bossShip
+                            if (playerBullet.getHitbox().getBoundsInParent().intersects(bossShip.getBossHitBox().getBoundsInParent())) {
+                                // Handle collision logic
+                                Explosion explosion = new Explosion(bossShip.getShipImageView().getX(), bossShip.getShipImageView().getY());
+                                platform.getChildren().add(explosion.getExplosionImageView());
+
+                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
+                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
+                                delay.play();
+
+                                // Remove bossShip and playerBullet
+                                platform.getChildren().remove(bossShip.getShipImageView());
+                                platform.getChildren().remove(bossShip.getBossHitBox());
+                                platform.getChildren().remove(playerBullet.getBulletImagePreview());
+                                platform.getChildren().remove(playerBullet.getHitbox());
+
+                                score += 5;
+
+                                // Remove all bossBullets
+                                platform.getChildren().removeAll(bossBullets);
+                                bossBullets.clear();
+
+                                // Add bossShip and bossBulletsToRemove to their respective lists for removal
+                                bossesToRemove.add(bossShip);
+                                bossBulletsToRemove.addAll(bossBullets);
+
+                                // Clear playerBulletsToRemove
+                                PlayerbulletsToRemove.clear();
+
+                                bossDied = true;
+                            }
+                        }
+                        if (bossDied) {
+                            this.stop();
+                            victory();
+                            return;
+                        }
+                    }
                     // Inside handleCollisions method where Boss is hit by
                     for (BossBullet bossBullet : bossBullets) {
                         if (bossBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
@@ -383,7 +457,7 @@ public class Launcher extends Application {
                                 // Decrement Player's life
                                 playerLives--;
 
-                                // Udate the displayed Lives
+                                // Update the displayed Lives
                                 updateHearts();
 
                                 lastHitTime = currentTime;
@@ -394,10 +468,17 @@ public class Launcher extends Application {
                         }
                         if (playerLives <= 0) {
                             this.stop();
-                            System.out.println("Game Over");
+                            PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
+                            delay.setOnFinished(event -> {
+                                System.out.println("Game Over");
+                            });
+                            delay.play();
                             return;
                         }
                     }
+                    // Remove boss bullets that have hit the player
+                    bossBullets.removeAll(bossBulletsToRemove);
+                    bossBulletsToRemove.clear();
 
                     // Scoring
                     scoreText.setText("Score: " + score);
@@ -408,6 +489,8 @@ public class Launcher extends Application {
                     playerBullets.removeAll(PlayerbulletsToRemove);
                     uncommonEnemyShips.removeAll(uncommonEnemyToRemove);
                     uncommonEnemyToRemove.clear(); // Clear uncommonEnemyToRemove only once
+                    bossBullets.removeAll(bossBulletsToShoot);
+                    bossBullets.clear();
 
 
 
