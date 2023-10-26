@@ -3,10 +3,17 @@ package com.opcode.spaceinvader2.Boss;
 
 import com.opcode.spaceinvader2.Enemy.EnemyBullet;
 import com.opcode.spaceinvader2.Launcher;
+import com.opcode.spaceinvader2.Model.AnimationSprite;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
+import javafx.util.Duration;
 
 import java.net.URL;
 import java.util.Objects;
@@ -22,25 +29,24 @@ public class Boss extends Pane {
     private double verticalSpeed = 0; // Adjust as needed
     private ImageView shipImageView;
     private Rectangle hitbox;
+    private double initialX;
+    private double initialY;
 
-    public Boss(double gameWidth) {
+    public Boss(double gameWidth, double initialX, double initialY) {
         this.gameWidth = gameWidth;
+        this.initialX = initialX;
+        this.initialY = initialY;
         // Load the image for the player's ship
         Image shipImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/Boss.png")).toExternalForm());
         shipImageView = new ImageView(shipImage);
-
         getChildren().addAll(shipImageView);
-        // Set initial position
-        setTranslateX(245);
-        setTranslateY(250);
-        System.out.println("Initial Ship Position X: " + getX() + " Y: " + getY());
 
-        // Center the hitbox to the shipImageView
-        double hitboxX = getTranslateX();
-        double hitboxY = getTranslateY();
-        System.out.println("Initial Hitbox Position X: " + hitboxX + " Y: " + hitboxY);
+        shipImageView.setX(initialX);
+        shipImageView.setY(initialY);
 
-        hitbox = new Rectangle(hitboxX, hitboxY, shipImageView.getFitWidth(), shipImageView.getFitHeight()/ 2);
+        System.out.println("Initial Ship Position X: " + initialX + " Y: " + initialY);
+
+        hitbox = new Rectangle(initialX, initialY, shipImageView.getFitWidth(), shipImageView.getFitHeight());
 
 
     }

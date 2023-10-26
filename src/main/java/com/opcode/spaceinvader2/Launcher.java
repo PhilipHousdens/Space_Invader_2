@@ -243,7 +243,7 @@ public class Launcher extends Application {
             }
 
             private void bossEntry() {
-                boss = new Boss(PANE_WIDTH);
+                boss = new Boss(PANE_WIDTH, 200, 60);
                 platform.getChildren().add(boss.getShipImageView());
                 spawnBoss = true;
             }
@@ -370,6 +370,7 @@ public class Launcher extends Application {
                             return;
                         }
                     }
+                    // Inside handleCollisions method where Boss is hit by
 
                     // Scoring
                     scoreText.setText("Score: " + score);

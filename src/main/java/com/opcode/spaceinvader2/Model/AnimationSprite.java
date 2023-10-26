@@ -1,52 +1,69 @@
 package com.opcode.spaceinvader2.Model;
 
-import com.opcode.spaceinvader2.Launcher;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
-import java.util.Objects;
+public class AnimationSprite {
 
-public class AnimationSprite extends ImageView {
-    private static final int NUM_FRAMES = 4;
-    private static final int FRAME_WIDTH = 64;
-    private static final int FRAME_HEIGHT = 64;
+    private final ImageView imageView;
+    private final Timeline timeline;
+    private final int numFrames;
+    private final int columns;
+    private final int offsetX;
+    private final int offsetY;
+    private final int width;
+    private final int height;
+    private final Image spriteSheet;
 
-    Launcher launcher;
+    public AnimationSprite(
+            ImageView imageView,
+            Duration duration,
+            int numFrames,
+            int columns,
+            int offsetX,
+            int offsetY,
+            int width,
+            int height,
+            Image spriteSheet
+    ) {
+        this.imageView = imageView;
+        this.numFrames = numFrames;
+        this.columns = columns;
+        this.offsetX = offsetX;
+        this.offsetY = offsetY;
+        this.width = width;
+        this.height = height;
+        this.spriteSheet = spriteSheet;
 
-    private Image spriteSheet;
-    private int currentFrame = 0;
-    private int direction = 1; // 1 for right, -1 for left
-    private double moveDistance = 5.0;
-
-    public AnimationSprite(String imagePath) {
-        Image spriteImage = new Image(Objects.requireNonNull(getClass().getResource(imagePath)).toExternalForm());
-        ImageView spriteImageView = new ImageView(spriteImage);
-
-
-        // Set up animation
-        Timeline timeline = new Timeline(
-                new KeyFrame(Duration.millis(100), event -> animateFrame())
+        this.timeline = new Timeline(
+                new KeyFrame(
+                        duration,
+                        event -> updateFrame()
+                )
         );
+    }
+
+    public void play() {
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
     }
 
-    private void animateFrame() {
-        currentFrame = (currentFrame + 1) % NUM_FRAMES;
-        setViewport(generateFrameRectangle(currentFrame));
+    public void stop() {
+        timeline.stop();
     }
 
-    public void move() {
-        setTranslateX(getTranslateX() + direction * moveDistance);
-    }
+    private void updateFrame() {
+        int currentFrame = (int) ((imageView.getViewport().getMinX() + offsetX) / width);
+        currentFrame = (currentFrame + 1) % numFrames;
 
-    private javafx.geometry.Rectangle2D generateFrameRectangle(int frameIndex) {
-        double x = frameIndex * FRAME_WIDTH;
-        return new javafx.geometry.Rectangle2D(x, 0, FRAME_WIDTH, FRAME_HEIGHT);
+        int x = (currentFrame % columns) * width + offsetX;
+        int y = (currentFrame / columns) * height + offsetY;
+
+        imageView.setViewport(new Rectangle2D(x, y, width, height));
     }
 }
