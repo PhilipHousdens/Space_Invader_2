@@ -15,6 +15,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Background;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -69,6 +70,8 @@ public class Launcher extends Application {
     private long lastHitTime = 0;
     private int bulletHitsPlayerCounter = 0;
 
+    Stage currentStage;
+
     @Override
     public void start(Stage stage) {
         Pane startPane = new Pane();
@@ -79,13 +82,27 @@ public class Launcher extends Application {
 
         Scene startScene = new Scene(startPane, PANE_WIDTH, PANE_HEIGHT);
 
-        Button startButton = new Button("Start Game");
-        startButton.setLayoutX(PANE_WIDTH / 2 - 35);  // center the button horizontally
-        startButton.setLayoutY(PANE_HEIGHT / 2 - 95); // center vertically
+        Image introImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/intro.png")).toExternalForm());
+        ImageView introImageView = new ImageView(introImage);
+        introImageView.setLayoutX(0);
+        introImageView.setLayoutY(70);
 
-        Button exitButton = new Button("Exit Game");
-        exitButton.setLayoutX(PANE_WIDTH / 2 - 32);  // center the button horizontally
-        exitButton.setLayoutY(PANE_HEIGHT / 2 - 55);
+        Button startButton = new Button("START");
+        startButton.setLayoutX(175);
+        startButton.setLayoutY(424);
+        startButton.setPrefSize(180, 60);
+        startButton.setFont(new Font(20));
+        startButton.setTextFill(Color.WHITE);
+        startButton.setStyle("-fx-background-color: #AF2492; -fx-background-radius: 25;");
+
+        Button exitButton = new Button("EXIT");
+        exitButton.setLayoutX(175);
+        exitButton.setLayoutY(510);
+        exitButton.setPrefSize(180, 60);
+        exitButton.setFont(new Font(20));
+        exitButton.setTextFill(Color.WHITE);
+        exitButton.setStyle("-fx-background-color: #AF2492; -fx-background-radius: 25;");
+
 
 
         startButton.setOnAction(e -> {
@@ -97,13 +114,15 @@ public class Launcher extends Application {
         });
 
 
-        startPane.getChildren().addAll(startButton, exitButton);
+        startPane.getChildren().addAll(introImageView ,startButton, exitButton);
         stage.setScene(startScene);
         stage.setTitle("OP Space Invader");
         stage.show();
     }
 
     private void victory() {
+        currentStage.close();
+
         Pane victoryPane = new Pane();
         Stage stage = new Stage();
 
@@ -111,25 +130,66 @@ public class Launcher extends Application {
         ImageView backgroundImageView = new ImageView(backgroundImage);
         victoryPane.getChildren().add(backgroundImageView);  // Add background image to pane
 
-        Scene victoryScene = new Scene(victoryPane, 300, 400);
+        Scene victoryScene = new Scene(victoryPane, PANE_WIDTH, PANE_HEIGHT);
 
-        Text victoryText = new Text("Victory!");
-        victoryText.setFill(Color.WHITE);
-        victoryText.setFont(new Font(20));
-        victoryText.setLayoutX(125);
-        victoryText.setLayoutY(180);  // Adjust the layout position
+        Image youWin = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/youWIn.png")).toExternalForm());
+        ImageView youWinImageView = new ImageView(youWin);
+        youWinImageView.setLayoutX(10);
+        youWinImageView.setLayoutY(30);
 
         Text scoreTextVictory = new Text("Score: " + score);
         scoreTextVictory.setFill(Color.WHITE);
-        scoreTextVictory.setFont(new Font(20));
-        scoreTextVictory.setLayoutX(125);
-        scoreTextVictory.setLayoutY(220);  // Adjust the layout position
+        scoreTextVictory.setFont(new Font(50));
+        scoreTextVictory.setLayoutX(180);
+        scoreTextVictory.setLayoutY(480);  // Adjust the layout position
 
-        victoryPane.getChildren().addAll(victoryText, scoreTextVictory);
+        Button reStart = new Button("ReStart");
+        reStart.setTextFill(Color.WHITE);
+        reStart.setStyle("-fx-background-color: #AF2492; -fx-background-radius: 25;");
+        reStart.setFont(new Font(20));
+        reStart.setPrefSize(180,60);
+        reStart.setLayoutX(180);
+        reStart.setLayoutY(580);
+
+        reStart.setOnAction(e -> {
+            restartGame(stage);
+        });
+
+        victoryPane.getChildren().addAll(scoreTextVictory, youWinImageView, reStart);
 
         stage.setScene(victoryScene);
         stage.show();
     }
+
+    private void restartGame(Stage stage) {
+        // Reset all game variables and lists
+        score = 0;
+        playerLives = 3;
+        moveLeft = false;
+        moveRight = false;
+        bossDied = false;
+        spawnBoss = false;
+        lastHitTime = 0;
+        bulletHitsPlayerCounter = 0;
+
+        // Clear all lists
+        playerBullets.clear();
+        enemyShips.clear();
+        bosses.clear();
+        uncommonEnemyShips.clear();
+        enemyBullets.clear();
+        bossBullets.clear();
+        heartLives.clear();
+
+        // Clear the platform
+        Pane platform = new Pane();
+        platform.getChildren().clear();
+
+        // Initialize the game again
+        startGame(stage);
+    }
+
+
 
 
 
@@ -154,6 +214,7 @@ public class Launcher extends Application {
     }
 
     public void startGame(Stage stage) {
+        currentStage = stage;
 
         Pane platform = new Pane();
         backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/bg_02_v.png")).toExternalForm());
