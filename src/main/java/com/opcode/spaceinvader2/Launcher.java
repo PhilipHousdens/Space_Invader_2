@@ -371,6 +371,33 @@ public class Launcher extends Application {
                         }
                     }
                     // Inside handleCollisions method where Boss is hit by
+                    for (BossBullet bossBullet : bossBullets) {
+                        if (bossBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
+                            long currentTime = System.currentTimeMillis();
+                            if (currentTime - lastHitTime >= COOLDOWN_DURATION) {
+                                bulletHitsPlayerCounter++;
+                                System.out.println("Bullet Hits Player: " + bulletHitsPlayerCounter);
+
+                                platform.getChildren().removeAll(bossBullet.getBulletImagePreview());
+
+                                // Decrement Player's life
+                                playerLives--;
+
+                                // Udate the displayed Lives
+                                updateHearts();
+
+                                lastHitTime = currentTime;
+
+                                System.out.println("Losing a life");
+                                break;
+                            }
+                        }
+                        if (playerLives <= 0) {
+                            this.stop();
+                            System.out.println("Game Over");
+                            return;
+                        }
+                    }
 
                     // Scoring
                     scoreText.setText("Score: " + score);
