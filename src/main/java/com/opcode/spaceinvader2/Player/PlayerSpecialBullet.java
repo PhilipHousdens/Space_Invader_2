@@ -13,7 +13,7 @@ public class PlayerSpecialBullet {
     public PlayerSpecialBullet(double initialX, double initialY) {
         //Load the image for the bullet
         Image bulletImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/SpeacialBullet.png")).toExternalForm());
-        bulletImagePreview = new AnimatedSprite(bulletImage, 1, 1, 3, 0, 0, 57, 328);
+        bulletImagePreview = new AnimatedSprite(bulletImage, 4, 4, 1, 0, 0, 58, 82);
 
         bulletImagePreview.setX(initialX);
         bulletImagePreview.setY(initialY);

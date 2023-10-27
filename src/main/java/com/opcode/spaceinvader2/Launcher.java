@@ -306,7 +306,7 @@ public class Launcher extends Application {
                     break;
                 case R:
                     RisPress = true;
-                    PlayerSpecialBullet playerSpeacialBullet = new PlayerSpecialBullet(playerShip.getX() + playerShip.getShipImageView().getFitWidth()/2 + 10, playerShip.getY());
+                    PlayerSpecialBullet playerSpeacialBullet = new PlayerSpecialBullet(playerShip.getX() + playerShip.getShipImageView().getFitWidth()/2, playerShip.getY() - 20);
                     playerSpeacialBullets.add(playerSpeacialBullet);
                     platform.getChildren().add(playerSpeacialBullet.getBulletImagePreview());
                     break;
