@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Fixed SpeacialBullet Hit Enemy and boss bug">
+    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Fixing Explosion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698418594380</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Fixing Explosion">
+      <created>1698419629288</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1698419629288</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +345,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Setting up for player ship movement" />
     <MESSAGE value="Setting up for enemy ship movement" />
     <MESSAGE value="Successfully shoot out the bullet" />
     <MESSAGE value="Creating the new code format using AnimationTimer() in Launcher" />
@@ -362,7 +369,8 @@
     <MESSAGE value="Fixed Normal Player Bullet Bugs" />
     <MESSAGE value="Fixed SpeacialBullet AnimationSprite Bug and Adjust the Layout" />
     <MESSAGE value="Fixed SpeacialBullet Hit Enemy and boss bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed SpeacialBullet Hit Enemy and boss bug" />
+    <MESSAGE value="Fixing Explosion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing Explosion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

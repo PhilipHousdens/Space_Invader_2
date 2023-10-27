@@ -157,52 +157,23 @@ public class Launcher extends Application {
         scoreTextVictory.setLayoutX(180);
         scoreTextVictory.setLayoutY(480);  // Adjust the layout position
 
-        Button reStart = new Button("ReStart");
-        reStart.setTextFill(Color.WHITE);
-        reStart.setStyle("-fx-background-color: #AF2492; -fx-background-radius: 25;");
-        reStart.setFont(new Font(20));
-        reStart.setPrefSize(180,60);
-        reStart.setLayoutX(180);
-        reStart.setLayoutY(580);
+        Button exit = new Button("EXIT");
+        exit.setTextFill(Color.WHITE);
+        exit.setStyle("-fx-background-color: #AF2492; -fx-background-radius: 25;");
+        exit.setFont(new Font(20));
+        exit.setPrefSize(180,60);
+        exit.setLayoutX(180);
+        exit.setLayoutY(580);
 
-        reStart.setOnAction(e -> {
-            restartGame(stage);
+        exit.setOnAction(e -> {
+            stage.close();
         });
 
-        victoryPane.getChildren().addAll(scoreTextVictory, youWinImageView);
+        victoryPane.getChildren().addAll(scoreTextVictory, youWinImageView, exit);
 
         stage.setScene(victoryScene);
         stage.show();
     }
-
-    private void restartGame(Stage stage) {
-        // Reset all game variables and lists
-        score = 0;
-        playerLives = 3;
-        moveLeft = false;
-        moveRight = false;
-        bossDied = false;
-        spawnBoss = false;
-        lastHitTime = 0;
-        bulletHitsPlayerCounter = 0;
-
-        // Clear all lists
-        playerBullets.clear();
-        enemyShips.clear();
-        bosses.clear();
-        uncommonEnemyShips.clear();
-        enemyBullets.clear();
-        bossBullets.clear();
-        heartLives.clear();
-
-        // Clear the platform
-        Pane platform = new Pane();
-        platform.getChildren().clear();
-
-        // Initialize the game again
-        startGame(stage);
-    }
-
     private void GameOver(Stage start) {
         Pane GameOver = new Pane();
         Stage stage = new Stage();
@@ -225,16 +196,16 @@ public class Launcher extends Application {
         scoreText.setLayoutX(180);
         scoreText.setLayoutY(480);  // Adjust the layout position
 
-        Button reStart = new Button("ReStart");
-        reStart.setTextFill(Color.WHITE);
-        reStart.setStyle("-fx-background-color: #AF2492; -fx-background-radius: 25;");
-        reStart.setFont(new Font(20));
-        reStart.setPrefSize(180,60);
-        reStart.setLayoutX(180);
-        reStart.setLayoutY(580);
+        Button exit = new Button("EXIT");
+        exit.setTextFill(Color.WHITE);
+        exit.setStyle("-fx-background-color: #AF2492; -fx-background-radius: 25;");
+        exit.setFont(new Font(20));
+        exit.setPrefSize(180,60);
+        exit.setLayoutX(180);
+        exit.setLayoutY(580);
 
-        reStart.setOnAction(e -> {
-            restartGame(stage);
+        exit.setOnAction(e -> {
+            stage.close();
         });
 
         PauseTransition pauseStart = new PauseTransition(Duration.seconds(0.5));
@@ -246,7 +217,7 @@ public class Launcher extends Application {
         pausePop.setOnFinished(event -> stage.show());
         pausePop.play();
 
-        GameOver.getChildren().addAll(gameOverImage, scoreText, reStart);
+        GameOver.getChildren().addAll(gameOverImage, scoreText, exit);
 
         stage.setScene(GameOverScene);
     }
