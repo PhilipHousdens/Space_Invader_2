@@ -73,6 +73,21 @@
             <version>0.4.0</version>
         </dependency>
         <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>3.0.0-alpha1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>3.0.0-alpha1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>3.0.0-alpha1</version>
+        </dependency>
+        <dependency>
             <groupId>eu.hansolo</groupId>
             <artifactId>tilesfx</artifactId>
             <version>17.1.17</version>

@@ -9,6 +9,7 @@ module com.opcode.spaceinvader2 {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
+    requires org.apache.logging.log4j;
 
     opens com.opcode.spaceinvader2 to javafx.fxml;
     exports com.opcode.spaceinvader2;

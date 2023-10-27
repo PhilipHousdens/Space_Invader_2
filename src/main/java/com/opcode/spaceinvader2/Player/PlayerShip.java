@@ -27,12 +27,12 @@ public class PlayerShip extends Pane {
         // Set initial position
         setTranslateX(245);
         setTranslateY(600);
-        System.out.println("Initial Ship Position X: " + getX() + " Y: " + getY());
+
+        Launcher.logger.info("SHIP SPAWN POSITION =  X: {}, {}", getX(), getY());
 
         // Center the hitbox to the shipImageView
         double hitboxX = getTranslateX();
         double hitboxY = getTranslateY();
-        System.out.println("Initial Hitbox Position X: " + hitboxX + " Y: " + hitboxY);
 
         hitbox = new Rectangle(hitboxX, hitboxY, shipImageView.getFitWidth(), shipImageView.getFitHeight());
     }
