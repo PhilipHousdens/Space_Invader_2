@@ -1,0 +1,278 @@
+Index: src/main/java/com/opcode/spaceinvader2/Model/AnimationSprite.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.opcode.spaceinvader2.Model;\r\n\r\nimport com.opcode.spaceinvader2.Launcher;\r\nimport javafx.animation.Animation;\r\nimport javafx.animation.KeyFrame;\r\nimport javafx.animation.Timeline;\r\nimport javafx.scene.image.Image;\r\nimport javafx.scene.image.ImageView;\r\nimport javafx.scene.layout.Pane;\r\nimport javafx.util.Duration;\r\n\r\nimport java.util.Objects;\r\n\r\npublic class AnimationSprite extends ImageView {\r\n    private static final int NUM_FRAMES = 4;\r\n    private static final int FRAME_WIDTH = 64;\r\n    private static final int FRAME_HEIGHT = 64;\r\n\r\n    Launcher launcher;\r\n\r\n    private Image spriteSheet;\r\n    private int currentFrame = 0;\r\n    private int direction = 1; // 1 for right, -1 for left\r\n    private double moveDistance = 5.0;\r\n\r\n    public AnimationSprite(String imagePath) {\r\n        Image spriteImage = new Image(Objects.requireNonNull(getClass().getResource(imagePath)).toExternalForm());\r\n        ImageView spriteImageView = new ImageView(spriteImage);\r\n\r\n\r\n        // Set up animation\r\n        Timeline timeline = new Timeline(\r\n                new KeyFrame(Duration.millis(100), event -> animateFrame())\r\n        );\r\n        timeline.setCycleCount(Animation.INDEFINITE);\r\n        timeline.play();\r\n    }\r\n\r\n    private void animateFrame() {\r\n        currentFrame = (currentFrame + 1) % NUM_FRAMES;\r\n        setViewport(generateFrameRectangle(currentFrame));\r\n    }\r\n\r\n    public void move() {\r\n        setTranslateX(getTranslateX() + direction * moveDistance);\r\n    }\r\n\r\n    private javafx.geometry.Rectangle2D generateFrameRectangle(int frameIndex) {\r\n        double x = frameIndex * FRAME_WIDTH;\r\n        return new javafx.geometry.Rectangle2D(x, 0, FRAME_WIDTH, FRAME_HEIGHT);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/opcode/spaceinvader2/Model/AnimationSprite.java b/src/main/java/com/opcode/spaceinvader2/Model/AnimationSprite.java
+--- a/src/main/java/com/opcode/spaceinvader2/Model/AnimationSprite.java	(revision 4d572b7a1681c4bffb7fa8b211a1b1315d18715a)
++++ b/src/main/java/com/opcode/spaceinvader2/Model/AnimationSprite.java	(date 1698257705027)
+@@ -1,52 +1,69 @@
+ package com.opcode.spaceinvader2.Model;
+ 
+-import com.opcode.spaceinvader2.Launcher;
+ import javafx.animation.Animation;
+ import javafx.animation.KeyFrame;
+ import javafx.animation.Timeline;
++import javafx.geometry.Rectangle2D;
+ import javafx.scene.image.Image;
+ import javafx.scene.image.ImageView;
+-import javafx.scene.layout.Pane;
+ import javafx.util.Duration;
+ 
+-import java.util.Objects;
+-
+-public class AnimationSprite extends ImageView {
+-    private static final int NUM_FRAMES = 4;
+-    private static final int FRAME_WIDTH = 64;
+-    private static final int FRAME_HEIGHT = 64;
+-
+-    Launcher launcher;
+-
+-    private Image spriteSheet;
+-    private int currentFrame = 0;
+-    private int direction = 1; // 1 for right, -1 for left
+-    private double moveDistance = 5.0;
++public class AnimationSprite {
+ 
+-    public AnimationSprite(String imagePath) {
+-        Image spriteImage = new Image(Objects.requireNonNull(getClass().getResource(imagePath)).toExternalForm());
+-        ImageView spriteImageView = new ImageView(spriteImage);
++    private final ImageView imageView;
++    private final Timeline timeline;
++    private final int numFrames;
++    private final int columns;
++    private final int offsetX;
++    private final int offsetY;
++    private final int width;
++    private final int height;
++    private final Image spriteSheet;
+ 
++    public AnimationSprite(
++            ImageView imageView,
++            Duration duration,
++            int numFrames,
++            int columns,
++            int offsetX,
++            int offsetY,
++            int width,
++            int height,
++            Image spriteSheet
++    ) {
++        this.imageView = imageView;
++        this.numFrames = numFrames;
++        this.columns = columns;
++        this.offsetX = offsetX;
++        this.offsetY = offsetY;
++        this.width = width;
++        this.height = height;
++        this.spriteSheet = spriteSheet;
+ 
+-        // Set up animation
+-        Timeline timeline = new Timeline(
+-                new KeyFrame(Duration.millis(100), event -> animateFrame())
++        this.timeline = new Timeline(
++                new KeyFrame(
++                        duration,
++                        event -> updateFrame()
++                )
+         );
++    }
++
++    public void play() {
+         timeline.setCycleCount(Animation.INDEFINITE);
+         timeline.play();
+     }
+ 
+-    private void animateFrame() {
+-        currentFrame = (currentFrame + 1) % NUM_FRAMES;
+-        setViewport(generateFrameRectangle(currentFrame));
++    public void stop() {
++        timeline.stop();
+     }
+ 
+-    public void move() {
+-        setTranslateX(getTranslateX() + direction * moveDistance);
+-    }
++    private void updateFrame() {
++        int currentFrame = (int) ((imageView.getViewport().getMinX() + offsetX) / width);
++        currentFrame = (currentFrame + 1) % numFrames;
+ 
+-    private javafx.geometry.Rectangle2D generateFrameRectangle(int frameIndex) {
+-        double x = frameIndex * FRAME_WIDTH;
+-        return new javafx.geometry.Rectangle2D(x, 0, FRAME_WIDTH, FRAME_HEIGHT);
++        int x = (currentFrame % columns) * width + offsetX;
++        int y = (currentFrame / columns) * height + offsetY;
++
++        imageView.setViewport(new Rectangle2D(x, y, width, height));
+     }
+ }
+Index: src/main/java/com/opcode/spaceinvader2/Launcher.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.opcode.spaceinvader2;\r\n\r\nimport com.opcode.spaceinvader2.Boss.Boss;\r\nimport com.opcode.spaceinvader2.Boss.BossBullet;\r\nimport com.opcode.spaceinvader2.Enemy.EnemyBullet;\r\nimport com.opcode.spaceinvader2.Enemy.EnemyTeir2;\r\nimport com.opcode.spaceinvader2.Model.Explosion;\r\nimport com.opcode.spaceinvader2.Player.PlayerBullet;\r\nimport com.opcode.spaceinvader2.Enemy.EnemyShip;\r\nimport com.opcode.spaceinvader2.Player.PlayerShip;\r\nimport javafx.animation.AnimationTimer;\r\nimport javafx.animation.PauseTransition;\r\nimport javafx.application.Application;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.image.Image;\r\nimport javafx.scene.image.ImageView;\r\nimport javafx.scene.layout.Pane;\r\nimport javafx.scene.paint.Color;\r\nimport javafx.scene.text.Font;\r\nimport javafx.scene.text.Text;\r\nimport javafx.stage.Stage;\r\nimport javafx.util.Duration;\r\n\r\nimport java.util.*;\r\n\r\npublic class Launcher extends Application {\r\n    // UI Element\r\n    private Text scoreText;\r\n    public static final int PANE_WIDTH = 530;\r\n    public static final int PANE_HEIGHT = 730;\r\n\r\n    // Lists\r\n    private List<PlayerBullet> playerBullets = new ArrayList<>();\r\n    private List<EnemyShip> enemyShips = new ArrayList<>();\r\n    private List<EnemyTeir2> uncommonEnemyShips = new ArrayList<>();\r\n    private List<EnemyBullet> enemyBullets = new ArrayList<>();\r\n    private List<BossBullet> bossBullets = new ArrayList<>();\r\n    private List<ImageView> heartLives = new ArrayList<>();\r\n    // Hit\r\n    private List<PlayerBullet> PlayerbulletsToRemove = new ArrayList<>();\r\n\r\n    private List<EnemyShip> enemyShipsToRemove = new ArrayList<>();\r\n    private List<EnemyTeir2> uncommonEnemyToRemove = new ArrayList<>();\r\n    private List<EnemyBullet> enemyTeir2sToShoot = new ArrayList<EnemyBullet>();\r\n    private List<EnemyBullet> enemyBulletsToShoot = new ArrayList<>();\r\n    private List<BossBullet> bossBulletsToShoot = new ArrayList<>();\r\n\r\n    // Player action\r\n    private int score = 0;\r\n    private int playerLives = 3;\r\n\r\n\r\n    // Image\r\n    private Image background;\r\n    private Image heartImg = new Image(Objects.requireNonNull((Launcher.class.getResource(\"/com/opcode/spaceinvader2/image/Heart.png\"))).toExternalForm());\r\n\r\n    // Boolean\r\n    private boolean moveLeft = false;\r\n    private boolean moveRight = false;\r\n    //Animation Sprite\r\n    private Boss boss; // Add a reference to the Boss\r\n    private boolean spawnBoss = false;\r\n    // Cooldown variables\r\n    private static final long COOLDOWN_DURATION = 250; // 2 seconds in milliseconds\r\n    private long lastHitTime = 0;\r\n    private int bulletHitsPlayerCounter = 0;\r\n\r\n\r\n    // Functions\r\n    private void initializeHeartLife(Pane platform) {\r\n        for (int i = 0; i < playerLives; i++) {\r\n            ImageView heart = new ImageView(heartImg);\r\n            heart.setX(10 + (i * (heartImg.getWidth() + 5)));\r\n            heart.setY(10);\r\n            heartLives.add(heart);\r\n            platform.getChildren().add(heart);\r\n        }\r\n    }\r\n\r\n    private void updateHearts() {\r\n        // Remove one heart ImageView\r\n        if (playerLives < heartLives.size()) {\r\n            ImageView heartToRemove = heartLives.remove(heartLives.size() - 1);\r\n            heartToRemove.setImage(null);\r\n        }\r\n    }\r\n\r\n\r\n\r\n\r\n    @Override\r\n    public void start(Stage stage) {\r\n\r\n        Pane platform = new Pane();\r\n        background = new Image(Objects.requireNonNull(Launcher.class.getResource(\"/com/opcode/spaceinvader2/image/bg_02_v.png\")).toExternalForm());\r\n        ImageView backgroundImg = new ImageView(background);\r\n        backgroundImg.setFitHeight(background.getHeight());\r\n        backgroundImg.setFitWidth(background.getWidth());\r\n        PlayerShip playerShip = new PlayerShip();\r\n\r\n        Scene scene = new Scene(platform, PANE_WIDTH, PANE_HEIGHT);\r\n        platform.getChildren().addAll(backgroundImg, playerShip);\r\n\r\n        stage.setScene(scene);\r\n        stage.setTitle(\"OP Space Invader\");\r\n\r\n\r\n\r\n        // Detect User Key\r\n        scene.setOnKeyPressed(event -> {\r\n            switch (event.getCode()) {\r\n                case LEFT:\r\n                    moveLeft = true;\r\n                    break;\r\n                case RIGHT:\r\n                    moveRight = true;\r\n                    break;\r\n                case SPACE:\r\n                    PlayerBullet playerBullet = new PlayerBullet(playerShip.getX() + playerShip.getShipImageView().getFitWidth() / 2 + 10, playerShip.getY());\r\n                    playerBullets.add(playerBullet);\r\n                    platform.getChildren().add(playerBullet.getBulletImagePreview());\r\n                    break;\r\n            }\r\n        });\r\n\r\n        // Detect Released\r\n        scene.setOnKeyReleased(event -> {\r\n            switch (event.getCode()) {\r\n                case LEFT:\r\n                    moveLeft = false;\r\n                    break;\r\n                case RIGHT:\r\n                    moveRight = false;\r\n                    break;\r\n            }\r\n        });\r\n\r\n        //Set Live\r\n        initializeHeartLife(platform);\r\n\r\n        // Score Text\r\n        scoreText = new javafx.scene.text.Text(445, 30, \"Score: 0\");\r\n        scoreText.setFill(Color.WHITE);\r\n        scoreText.setFont(new Font(20));\r\n        platform.getChildren().add(scoreText);\r\n\r\n        // Add Common enemy ships\r\n        for (int i = 0; i < 2; i++) { // example, spawn 10 enemies\r\n            EnemyShip enemy = new EnemyShip(randomXPosition(), randomYPosition(), PANE_WIDTH);\r\n            System.out.println(\"X: \" + this.randomXPosition() +\" Y: \" + this.randomYPosition());\r\n            enemyShips.add(enemy);\r\n            platform.getChildren().add(enemy.getShipImageView());\r\n            enemy.getShipImageView().setY(randomYPosition());\r\n        }\r\n\r\n        // Add Uncommon enemy Ships\r\n        for (int i = 0; i < 2; i++) {\r\n            EnemyTeir2 enemyTeir2 = new EnemyTeir2(randomXPosition(), randomYPosition(), PANE_WIDTH);\r\n            uncommonEnemyShips.add(enemyTeir2);\r\n            platform.getChildren().add(enemyTeir2.getShipImageView());\r\n            enemyTeir2.getShipImageView().setY(randomYPosition() - 20);\r\n        }\r\n\r\n        new AnimationTimer() {\r\n            @Override\r\n            public void handle(long now) {\r\n                // Player Movement\r\n                handlePlayerMovement();\r\n\r\n                // Handle Player Bullet Action\r\n                handlePlayerBulletAction();\r\n\r\n                // EnemyShip Movement\r\n                handleEnemyAction();\r\n\r\n                // Uncommon Enemy Movement\r\n                handleEnemyTier2Action();\r\n\r\n                // Enemy Collisions\r\n                handleCollisions();\r\n\r\n                // Boss Movement and Action\r\n                if (spawnBoss) {\r\n                    boss.move();\r\n\r\n                    if (boss.decideToShoot()) {\r\n                        BossBullet bossBullet = boss.shoot();\r\n                        platform.getChildren().add(bossBullet.getBulletImagePreview());\r\n                        bossBulletsToShoot.add(bossBullet);\r\n                    }\r\n\r\n                    bossBullets.addAll(bossBulletsToShoot);\r\n                    bossBullets.forEach(BossBullet::moveDown);\r\n                }\r\n            }\r\n\r\n            // Player Movement\r\n            private void handlePlayerMovement() {\r\n                if (moveLeft) {\r\n                    playerShip.moveLeft();\r\n                }\r\n                if (moveRight) {\r\n                    playerShip.moveRight();\r\n                }\r\n            }\r\n\r\n            // Player Bullet Action\r\n            private void handlePlayerBulletAction() {\r\n                playerBullets.forEach(PlayerBullet::moveUp);\r\n            }\r\n\r\n            private void bossEntry() {\r\n                boss = new Boss(PANE_WIDTH);\r\n                platform.getChildren().add(boss.getShipImageView());\r\n                spawnBoss = true;\r\n            }\r\n\r\n            // EnemyShip Movement\r\n            private void handleEnemyAction() {\r\n                enemyShips.forEach(enemyShip -> {\r\n                    enemyShip.move();\r\n                    if (enemyShip.decideToShoot()) {\r\n                        EnemyBullet enemyBullet = enemyShip.shoot();\r\n                        enemyBulletsToShoot.add(enemyBullet);\r\n                        platform.getChildren().add(enemyBullet.getBulletImagePreview());\r\n                    }\r\n                });\r\n                enemyBullets.addAll(enemyBulletsToShoot );\r\n                enemyBullets.forEach(EnemyBullet::moveDown);\r\n            }\r\n\r\n            // Enemy Teir 2 Movement\r\n            private void handleEnemyTier2Action() {\r\n                uncommonEnemyShips.forEach(enemyTeir2 -> {\r\n                    enemyTeir2.move();\r\n                    if (enemyTeir2.decideToShoot()) {\r\n                        EnemyBullet enemyBullet = enemyTeir2.shoot();\r\n                        enemyTeir2sToShoot.add(enemyBullet);\r\n                        platform.getChildren().add(enemyBullet.getBulletImagePreview());\r\n                    }\r\n                });\r\n                enemyBullets.addAll(enemyTeir2sToShoot);\r\n                enemyBullets.forEach(EnemyBullet::moveDown);\r\n            }\r\n\r\n\r\n\r\n                private void handleCollisions () {\r\n                    // Player Bullet Hit Enemy\r\n                    playerBullets.forEach(playerBullet -> {\r\n                        enemyShips.forEach(enemy -> {\r\n                            if (playerBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {\r\n\r\n                                Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());\r\n                                platform.getChildren().add(explosion.getExplosionImageView());\r\n\r\n                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));\r\n                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));\r\n                                delay.play();\r\n\r\n                                platform.getChildren().remove(playerBullet.getBulletImagePreview());\r\n                                platform.getChildren().remove(playerBullet.getHitbox()); // Remove the hitbox\r\n\r\n                                platform.getChildren().remove(enemy.getShipImageView());\r\n                                platform.getChildren().remove(enemy.getHitBox());  // Remove the hitbox\r\n                                playerBullet.stop();\r\n\r\n                                score += 1;\r\n\r\n                                PlayerbulletsToRemove.add(playerBullet);\r\n                                enemyShipsToRemove.add(enemy);\r\n\r\n                            }\r\n                        });\r\n\r\n                        uncommonEnemyShips.forEach(enemy -> {\r\n                            if (playerBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {\r\n\r\n                                Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());\r\n                                platform.getChildren().add(explosion.getExplosionImageView());\r\n\r\n                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));\r\n                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));\r\n                                delay.play();\r\n\r\n                                platform.getChildren().remove(playerBullet.getBulletImagePreview());\r\n                                platform.getChildren().remove(playerBullet.getHitbox()); // Remove the hitbox\r\n\r\n                                platform.getChildren().remove(enemy.getShipImageView());\r\n                                platform.getChildren().remove(enemy.getHitBox());  // Remove the hitbox\r\n                                playerBullet.stop();\r\n\r\n                                score += 2;\r\n\r\n                                PlayerbulletsToRemove.add(playerBullet);\r\n                                uncommonEnemyToRemove.add(enemy);\r\n                            }\r\n                        });\r\n                        // Enemy Bullet Hit Player Ship\r\n                        enemyBullets.forEach(enemyBullet -> {\r\n                            if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {\r\n                                // Remove enemy bullet\r\n                                platform.getChildren().remove(enemyBullet.getBulletImagePreview());\r\n                                platform.getChildren().remove(enemyBullet.getHitbox());\r\n                            }\r\n                        });\r\n                        if (uncommonEnemyShips.isEmpty() && enemyShips.isEmpty() && !spawnBoss) {\r\n                            bossEntry();\r\n                        }\r\n\r\n                    });\r\n                    // Inside handleCollisions method where player is hit by enemy bullet:\r\n                    for (EnemyBullet enemyBullet : enemyBullets) {\r\n                        if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {\r\n                            long currentTime = System.currentTimeMillis();\r\n                            if (currentTime - lastHitTime >= COOLDOWN_DURATION) {\r\n                                bulletHitsPlayerCounter++; // Increment the counter\r\n                                System.out.println(\"Bullet hits player: \" + bulletHitsPlayerCounter);\r\n\r\n                                platform.getChildren().removeAll(enemyBullet.getBulletImagePreview());\r\n\r\n                                // Decrement Player's Life\r\n                                playerLives--;\r\n\r\n                                // Update the displayed lives\r\n                                updateHearts();\r\n\r\n                                lastHitTime = currentTime;\r\n\r\n                                System.out.println(\"Losing a Life\");\r\n                                break;\r\n                            }\r\n                        }\r\n                        if (playerLives <= 0) {\r\n                            this.stop();\r\n                            System.out.println(\"Game Over\");\r\n                            return;\r\n                        }\r\n                    }\r\n\r\n                    // Scoring\r\n                    scoreText.setText(\"Score: \" + score);\r\n\r\n                    enemyShips.removeAll(enemyShipsToRemove);\r\n                    PlayerbulletsToRemove.clear();\r\n                    enemyShipsToRemove.clear();\r\n                    playerBullets.removeAll(PlayerbulletsToRemove);\r\n                    uncommonEnemyShips.removeAll(uncommonEnemyToRemove);\r\n                    uncommonEnemyToRemove.clear(); // Clear uncommonEnemyToRemove only once\r\n\r\n\r\n\r\n                }\r\n        }.start();\r\n        stage.show();\r\n    }\r\n\r\n    private double randomXPosition() {\r\n        return Math.random() * (PANE_WIDTH + 60);  // adjust as needed\r\n    }\r\n\r\n    private double randomYPosition() {\r\n        return Math.random() * (PANE_HEIGHT / 2 - 200) + 70;  // Y position between 100 and PANE_HEIGHT/2 - 100\r\n    }\r\n\r\n    private boolean checkBulletPlayerCollision(EnemyBullet enemyBullet, PlayerShip playerShip) {\r\n        return enemyBullet.getBulletImagePreview().getBoundsInParent().intersects(playerShip.getShipImageView().getBoundsInParent());\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        launch();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/opcode/spaceinvader2/Launcher.java b/src/main/java/com/opcode/spaceinvader2/Launcher.java
+--- a/src/main/java/com/opcode/spaceinvader2/Launcher.java	(revision 4d572b7a1681c4bffb7fa8b211a1b1315d18715a)
++++ b/src/main/java/com/opcode/spaceinvader2/Launcher.java	(date 1698258493527)
+@@ -211,7 +211,7 @@
+ 
+             private void bossEntry() {
+                 boss = new Boss(PANE_WIDTH);
+-                platform.getChildren().add(boss.getShipImageView());
++                platform.getChildren().add(boss.animateSprite());
+                 spawnBoss = true;
+             }
+ 
+@@ -337,6 +337,7 @@
+                             return;
+                         }
+                     }
++                    // Inside handleCollisions method where Boss is hit by
+ 
+                     // Scoring
+                     scoreText.setText("Score: " + score);
+Index: src/main/java/com/opcode/spaceinvader2/Boss/Boss.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.opcode.spaceinvader2.Boss;\r\n\r\n\r\nimport com.opcode.spaceinvader2.Enemy.EnemyBullet;\r\nimport com.opcode.spaceinvader2.Launcher;\r\nimport javafx.scene.image.Image;\r\nimport javafx.scene.image.ImageView;\r\nimport javafx.scene.layout.Pane;\r\nimport javafx.scene.shape.Rectangle;\r\n\r\nimport java.net.URL;\r\nimport java.util.Objects;\r\nimport java.util.Random;\r\n\r\n\r\npublic class Boss extends Pane {\r\n    static final Random rand = new Random();\r\n    private int direction = rand.nextInt(2) == 0 ? -1 : 1;  // -1 for left, 1 for right\r\n    private double gameWidth;\r\n    private double speed = 3;  // Adjust this value based on how fast you want the boss to move\r\n    private double moveDistance = speed * direction;\r\n    private double verticalSpeed = 0; // Adjust as needed\r\n    private ImageView shipImageView;\r\n    private Rectangle hitbox;\r\n\r\n    public Boss(double gameWidth) {\r\n        this.gameWidth = gameWidth;\r\n        // Load the image for the player's ship\r\n        Image shipImage = new Image(Objects.requireNonNull(Launcher.class.getResource(\"/com/opcode/spaceinvader2/image/Boss.png\")).toExternalForm());\r\n        shipImageView = new ImageView(shipImage);\r\n\r\n        getChildren().addAll(shipImageView);\r\n        // Set initial position\r\n        setTranslateX(245);\r\n        setTranslateY(250);\r\n        System.out.println(\"Initial Ship Position X: \" + getX() + \" Y: \" + getY());\r\n\r\n        // Center the hitbox to the shipImageView\r\n        double hitboxX = getTranslateX();\r\n        double hitboxY = getTranslateY();\r\n        System.out.println(\"Initial Hitbox Position X: \" + hitboxX + \" Y: \" + hitboxY);\r\n\r\n        hitbox = new Rectangle(hitboxX, hitboxY, shipImageView.getFitWidth(), shipImageView.getFitHeight()/ 2);\r\n\r\n\r\n    }\r\n\r\n    public ImageView getShipImageView() {\r\n        return shipImageView;\r\n    }\r\n\r\n    public double getX() {\r\n        return getShipImageView().getX();\r\n    }\r\n\r\n    public double getY() {\r\n        return getShipImageView().getY();\r\n    }\r\n\r\n    public void move() {\r\n        double newX = getX() + direction * moveDistance;\r\n\r\n        // Check boundaries and change direction if reached the edges\r\n        if (newX < 0 || newX > gameWidth - getShipImageView().getBoundsInLocal().getWidth()) {\r\n            direction = -direction;\r\n            newX = getX() + direction * moveDistance;\r\n            double newY = getShipImageView().getY() + verticalSpeed;\r\n            getShipImageView().setY(newY);\r\n        }\r\n\r\n        getShipImageView().setX(newX);\r\n\r\n        hitbox.setX(newX);\r\n        hitbox.setY(getShipImageView().getY());\r\n    }\r\n\r\n    public Rectangle getBossHitBox() {\r\n        return hitbox;\r\n    }\r\n\r\n    public BossBullet shoot() {\r\n        BossBullet bossBullet = new BossBullet(getX() + getShipImageView().getFitWidth() / 2 + 10, getY() + shipImageView.getFitHeight());\r\n        return bossBullet;\r\n    }\r\n\r\n    public boolean decideToShoot() {\r\n        return rand.nextInt(100) < 5;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/opcode/spaceinvader2/Boss/Boss.java b/src/main/java/com/opcode/spaceinvader2/Boss/Boss.java
+--- a/src/main/java/com/opcode/spaceinvader2/Boss/Boss.java	(revision 4d572b7a1681c4bffb7fa8b211a1b1315d18715a)
++++ b/src/main/java/com/opcode/spaceinvader2/Boss/Boss.java	(date 1698258602935)
+@@ -3,10 +3,13 @@
+ 
+ import com.opcode.spaceinvader2.Enemy.EnemyBullet;
+ import com.opcode.spaceinvader2.Launcher;
++import com.opcode.spaceinvader2.Model.AnimationSprite;
++import javafx.geometry.Rectangle2D;
+ import javafx.scene.image.Image;
+ import javafx.scene.image.ImageView;
+ import javafx.scene.layout.Pane;
+ import javafx.scene.shape.Rectangle;
++import javafx.util.Duration;
+ 
+ import java.net.URL;
+ import java.util.Objects;
+@@ -14,6 +17,14 @@
+ 
+ 
+ public class Boss extends Pane {
++    // Sprite Sheet
++    private static final int COLUMNS = 3;
++    private static final int COUNT = 3;
++    private static final int OFFSET_X = 0;
++    private static final int OFFSET_Y = 0;
++    private static final int WIDTH = 64;
++    private static final int HEIGHT = 64;
++    private int currentFrame = 0;
+     static final Random rand = new Random();
+     private int direction = rand.nextInt(2) == 0 ? -1 : 1;  // -1 for left, 1 for right
+     private double gameWidth;
+@@ -25,24 +36,32 @@
+ 
+     public Boss(double gameWidth) {
+         this.gameWidth = gameWidth;
+-        // Load the image for the player's ship
+-        Image shipImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/Boss.png")).toExternalForm());
+-        shipImageView = new ImageView(shipImage);
++        // Load the sprite sheet
++        Image spriteSheet = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/image/Boss.png")).toExternalForm());
++        shipImageView = new ImageView(spriteSheet);
+ 
+-        getChildren().addAll(shipImageView);
+         // Set initial position
+         setTranslateX(245);
+         setTranslateY(250);
+-        System.out.println("Initial Ship Position X: " + getX() + " Y: " + getY());
++
++        // Set initial clip
++        shipImageView.setViewport(new Rectangle2D(OFFSET_X, OFFSET_Y, WIDTH, HEIGHT));
+ 
+         // Center the hitbox to the shipImageView
+         double hitboxX = getTranslateX();
+         double hitboxY = getTranslateY();
+-        System.out.println("Initial Hitbox Position X: " + hitboxX + " Y: " + hitboxY);
++        hitbox = new Rectangle(hitboxX, hitboxY, WIDTH, HEIGHT / 2);
+ 
+-        hitbox = new Rectangle(hitboxX, hitboxY, shipImageView.getFitWidth(), shipImageView.getFitHeight()/ 2);
++        getChildren().addAll(shipImageView);
+ 
+ 
++    }
++
++    public ImageView animateSprite() {
++        currentFrame = (currentFrame + 1) % COUNT;
++        double offsetX = currentFrame * WIDTH + OFFSET_X;
++        shipImageView.setViewport(new Rectangle2D(offsetX, OFFSET_Y, WIDTH, HEIGHT));
++        return this.shipImageView;
+     }
+ 
+     public ImageView getShipImageView() {
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"20540a3a-44a6-448c-bea0-6617aa5ba573\" name=\"Changes\" comment=\"Adding BossBullet\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Enemy/EnemyBullet.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Enemy/EnemyBullet.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Player/PlayerBullet.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Player/PlayerBullet.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;history&quot;: [\r\n    {\r\n      &quot;state&quot;: &quot;MERGED&quot;\r\n    }\r\n  ],\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;MERGED&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"8aad600f-37bc-450a-8139-7bea28ee5b2a\" />\r\n        <option name=\"url\" value=\"https://github.com/PhilipHousdens/Space_Invader_2.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2XCPaDZSwB9dWRnJrYcFXN5OzyJ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Philip Housden/IdeaProjects/SpaceInvader2/src/main/resources/com/opcode/spaceinvader2/image&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Philip Housden\\IdeaProjects\\SpaceInvader2\\src\\main\\resources\\com\\opcode\\spaceinvader2\\image\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Philip Housden\\IdeaProjects\\SpaceInvader2\\src\\main\\resources\\com\\opcode\\spaceinvader2\\image\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Launcher\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.opcode.spaceinvader2.Launcher\" />\r\n      <module name=\"SpaceInvader2\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.opcode.spaceinvader2.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Launcher\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"20540a3a-44a6-448c-bea0-6617aa5ba573\" name=\"Changes\" comment=\"\" />\r\n      <created>1698130150358</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1698130150358</updated>\r\n      <workItem from=\"1698130151440\" duration=\"22468000\" />\r\n      <workItem from=\"1698201280138\" duration=\"26124000\" />\r\n      <workItem from=\"1698253792413\" duration=\"1478000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"initial commit\">\r\n      <created>1698130735862</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698130735862</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Adding Background Image to the Platform(Scene)\">\r\n      <created>1698131298493</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698131298493</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Adding PlayerShip to the scene\">\r\n      <created>1698131942286</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698131942286</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"adding EnemyShip in the Scene(Platform.java)\">\r\n      <created>1698132336112</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698132336112</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Setting up for player ship movement\">\r\n      <created>1698133038523</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698133038523</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Setting up for enemy ship movement\">\r\n      <created>1698133500173</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698133500173</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Successfully shoot out the bullet\">\r\n      <created>1698139757444</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698139757444</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Creating the new code format using AnimationTimer() in Launcher\">\r\n      <created>1698142446491</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698142446491</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Deleting the Platform.java\">\r\n      <created>1698145600078</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698145600078</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Able to move at shoot at the same time\">\r\n      <created>1698146824548</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698146824548</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Moving the PlayerShip and Bullet logic to Launcher\">\r\n      <created>1698152737486</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698152737486</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Success Fully shoot the laser\">\r\n      <created>1698153657226</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698153657226</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Moving File and Shoot the bullet from the enemy\">\r\n      <created>1698203331377</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698203331377</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Successfully implement the player hit box\">\r\n      <created>1698208054231</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698208054231</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Able to move the random Position that generate enemy\">\r\n      <created>1698210502106</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698210502106</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Adding score\">\r\n      <created>1698211246170</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698211246170</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Attemping to delete live\">\r\n      <created>1698220364909</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698220364909</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Attempting to delete live by one\">\r\n      <created>1698220815020</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698220815020</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Finished EnemyShip\">\r\n      <created>1698227342716</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698227342716</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"Creating Boss Objects\">\r\n      <created>1698243965872</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698243965872</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"Adding BossBullet\">\r\n      <created>1698247341204</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698247341204</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"Adding BossBullet\">\r\n      <created>1698247497250</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1698247497250</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"23\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"initial commit\" />\r\n    <MESSAGE value=\"Adding Background Image to the Platform(Scene)\" />\r\n    <MESSAGE value=\"Adding PlayerShip to the scene\" />\r\n    <MESSAGE value=\"adding EnemyShip in the Scene(Platform.java)\" />\r\n    <MESSAGE value=\"Setting up for player ship movement\" />\r\n    <MESSAGE value=\"Setting up for enemy ship movement\" />\r\n    <MESSAGE value=\"Successfully shoot out the bullet\" />\r\n    <MESSAGE value=\"Creating the new code format using AnimationTimer() in Launcher\" />\r\n    <MESSAGE value=\"Deleting the Platform.java\" />\r\n    <MESSAGE value=\"Able to move at shoot at the same time\" />\r\n    <MESSAGE value=\"Moving the PlayerShip and Bullet logic to Launcher\" />\r\n    <MESSAGE value=\"Success Fully shoot the laser\" />\r\n    <MESSAGE value=\"Moving File and Shoot the bullet from the enemy\" />\r\n    <MESSAGE value=\"Successfully implement the player hit box\" />\r\n    <MESSAGE value=\"Able to move the random Position that generate enemy\" />\r\n    <MESSAGE value=\"Adding score\" />\r\n    <MESSAGE value=\"Attemping to delete live\" />\r\n    <MESSAGE value=\"Attempting to delete live by one\" />\r\n    <MESSAGE value=\"Finished EnemyShip\" />\r\n    <MESSAGE value=\"Creating Boss Objects\" />\r\n    <MESSAGE value=\"Adding BossBullet\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Adding BossBullet\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.NullPointerException\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"6\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 4d572b7a1681c4bffb7fa8b211a1b1315d18715a)
++++ b/.idea/workspace.xml	(date 1698258493583)
+@@ -4,11 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Adding BossBullet">
++    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Successfully Decreasing Lives">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Enemy/EnemyBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Enemy/EnemyBullet.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Boss/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Boss/Boss.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Player/PlayerBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Player/PlayerBullet.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Model/AnimationSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Model/AnimationSprite.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/image/Boss.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/image/Boss.png" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -105,7 +106,8 @@
+       <updated>1698130150358</updated>
+       <workItem from="1698130151440" duration="22468000" />
+       <workItem from="1698201280138" duration="26124000" />
+-      <workItem from="1698253792413" duration="1478000" />
++      <workItem from="1698253792413" duration="1836000" />
++      <workItem from="1698255732068" duration="2752000" />
+     </task>
+     <task id="LOCAL-00001" summary="initial commit">
+       <created>1698130735862</created>
+@@ -261,7 +263,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1698247497250</updated>
+     </task>
+-    <option name="localTasksCounter" value="23" />
++    <task id="LOCAL-00023" summary="Successfully Decreasing Lives">
++      <created>1698255498395</created>
++      <option name="number" value="00023" />
++      <option name="presentableId" value="LOCAL-00023" />
++      <option name="project" value="LOCAL" />
++      <updated>1698255498395</updated>
++    </task>
++    <option name="localTasksCounter" value="24" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -300,7 +309,8 @@
+     <MESSAGE value="Finished EnemyShip" />
+     <MESSAGE value="Creating Boss Objects" />
+     <MESSAGE value="Adding BossBullet" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Adding BossBullet" />
++    <MESSAGE value="Successfully Decreasing Lives" />
++    <option name="LAST_COMMIT_MESSAGE" value="Successfully Decreasing Lives" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
