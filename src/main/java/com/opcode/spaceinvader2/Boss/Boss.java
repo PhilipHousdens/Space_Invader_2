@@ -36,7 +36,7 @@ public class Boss extends Pane {
         shipImageView.setX(initialX);
         shipImageView.setY(initialY);
 
-        System.out.println("Initial Ship Position X: " + initialX + " Y: " + initialY);
+        Launcher.logger.info("BOSS SPAWN POSITION = X: {}, Y: {}", initialX, initialY);
 
         hitbox = new Rectangle(initialX, initialY, shipImageView.getFitWidth(), shipImageView.getFitHeight());
 

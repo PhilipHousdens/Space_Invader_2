@@ -13,24 +13,26 @@ import com.opcode.spaceinvader2.Player.PlayerSpecialBullet;
 import javafx.animation.AnimationTimer;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 
 public class Launcher extends Application {
+
+    public static final Logger logger = LogManager.getLogger(Launcher.class);
+
     LifeBar lifeBar = new LifeBar();
     // UI Element
     private Text scoreText;
@@ -65,8 +67,6 @@ public class Launcher extends Application {
     // Image
     private Image backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/bg_02_v.png")).toExternalForm());
     private Image heartImg = new Image(Objects.requireNonNull((Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/Heart.png"))).toExternalForm());
-
-
 
     // Boolean
     private boolean moveLeft = false;
@@ -120,8 +120,6 @@ public class Launcher extends Application {
         exitButton.setTextFill(Color.WHITE);
         exitButton.setStyle("-fx-background-color: #AF2492; -fx-background-radius: 25;");
 
-
-
         startButton.setOnAction(e -> {
             startGame(stage); // initiate the game when button is clicked
         });
@@ -129,7 +127,6 @@ public class Launcher extends Application {
         exitButton.setOnAction(e -> {
             stage.close(); // close the primary stage (window) to exit the program
         });
-
 
         startPane.getChildren().addAll(introImageView ,startButton, exitButton);
         stage.setScene(startScene);
@@ -205,8 +202,6 @@ public class Launcher extends Application {
         // Initialize the game again
         startGame(stage);
     }
-
-
 
     private void GameOver(Stage start) {
         Pane GameOver = new Pane();
@@ -316,6 +311,7 @@ public class Launcher extends Application {
                     platform.getChildren().add(playerSpeacialBullet.getBulletImagePreview());
                     break;
             }
+            logger.info("PLAYER SHIP MOVE X: {}, Y: {}", playerShip.getX(), playerShip.getY());
         });
 
         // Detect Released
@@ -331,6 +327,7 @@ public class Launcher extends Application {
                     RisPress = false;
                     break;
             }
+
         });
 
         //Set Live
@@ -345,7 +342,7 @@ public class Launcher extends Application {
         // Add Common enemy ships
         for (int i = 0; i < 4; i++) { // example, spawn 10 enemies
             EnemyShip enemy = new EnemyShip(randomXPosition(), randomYPosition(), PANE_WIDTH);
-            System.out.println("X: " + this.randomXPosition() +" Y: " + this.randomYPosition());
+            logger.info("ENEMY {} SPAWN X: {}, Y: {}", i+1, this.randomXPosition(), this.randomYPosition());
             enemyShips.add(enemy);
             platform.getChildren().add(enemy.getShipImageView());
             enemy.getShipImageView().setY(randomYPosition());
@@ -354,6 +351,7 @@ public class Launcher extends Application {
         // Add Uncommon enemy Ships
         for (int i = 0; i < 4; i++) {
             EnemyTeir2 enemyTeir2 = new EnemyTeir2(randomXPosition(), randomYPosition(), PANE_WIDTH);
+            logger.info("UNCOMMON ENEMY {} SPAWN X: {}, Y: {}", i+1, this.randomXPosition(), this.randomYPosition());
             uncommonEnemyShips.add(enemyTeir2);
             platform.getChildren().add(enemyTeir2.getShipImageView());
             enemyTeir2.getShipImageView().setY(randomYPosition() - 20);
@@ -449,10 +447,11 @@ public class Launcher extends Application {
                 bossBullets.forEach(BossBullet::moveDown);
             }
 
-
-
-                private void handleCollisions () {
+                private void handleCollisions (){
                     // Player Bullet Hit Enemy
+                    Platform.runLater(()->{
+
+                    });
                     playerBullets.forEach(playerBullet -> {
                         enemyShips.forEach(enemy -> {
                             if (playerBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
@@ -464,11 +463,13 @@ public class Launcher extends Application {
                                 delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
                                 delay.play();
 
-                                platform.getChildren().remove(playerBullet.getHitbox()); // Remove the hitbox
+                                // Remove Player bullet
+                                playerBullets.remove(playerBullet);
+                                platform.getChildren().remove(playerBullet.getBulletImagePreview());
 
+                                // Remove Enemy
+                                enemyShips.remove(enemy);
                                 platform.getChildren().remove(enemy.getShipImageView());
-                                platform.getChildren().remove(enemy.getHitBox());  // Remove the hitbox
-                                playerBullet.stop();
 
                                 score += 1;
 
@@ -488,10 +489,14 @@ public class Launcher extends Application {
                                 delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
                                 delay.play();
 
-                                platform.getChildren().remove(playerBullet.getHitbox()); // Remove the hitbox
+                                // Remove Player bullet
+                                playerBullets.remove(playerBullet);
+                                platform.getChildren().remove(playerBullet.getBulletImagePreview());
 
+                                // Remove Enemy
+                                enemyShips.remove(enemy);
                                 platform.getChildren().remove(enemy.getShipImageView());
-                                platform.getChildren().remove(enemy.getHitBox());  // Remove the hitbox
+
                                 playerBullet.stop();
 
                                 score += 2;
@@ -504,8 +509,8 @@ public class Launcher extends Application {
                         enemyBullets.forEach(enemyBullet -> {
                             if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
                                 // Remove enemy bullet
+                                enemyBullets.remove(enemyBullet);
                                 platform.getChildren().remove(enemyBullet.getBulletImagePreview());
-                                platform.getChildren().remove(enemyBullet.getHitbox());
                             }
                         });
                         if (uncommonEnemyShips.isEmpty() && enemyShips.isEmpty() && !spawnBoss) {
@@ -525,13 +530,116 @@ public class Launcher extends Application {
                             spawnDelay.play();
                         }
                     });
+                    playerSpeacialBullets.forEach(playerSpecialBullet -> {
+
+                        enemyShips.forEach(enemy -> {
+
+                            if (playerSpecialBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
+
+                                Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
+
+                                platform.getChildren().add(explosion.getExplosionImageView());
+
+                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
+
+                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
+
+                                delay.play();
+
+                                // Remove Player bullet
+                                playerSpeacialBullets.remove(playerSpecialBullet);
+                                platform.getChildren().remove(playerSpecialBullet.getBulletImagePreview());
+
+                                // Remove Enemy
+                                enemyShips.remove(enemy);
+                                platform.getChildren().remove(enemy.getShipImageView());
+
+                                score += 1;
+
+                                playerSpeacialBulletToRemove.add(playerSpecialBullet);
+
+                                enemyShipsToRemove.add(enemy);
+
+                            }
+
+                        });
+
+                        uncommonEnemyShips.forEach(enemy -> {
+
+                            if (playerSpecialBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
+
+                                Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
+
+                                platform.getChildren().add(explosion.getExplosionImageView());
+
+                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
+
+                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
+
+                                delay.play();
+
+                                // Remove Player bullet
+                                playerSpeacialBullets.remove(playerSpecialBullet);
+                                platform.getChildren().remove(playerSpecialBullet.getBulletImagePreview());
+
+                                // Remove Enemy
+                                enemyShips.remove(enemy);
+                                platform.getChildren().remove(enemy.getShipImageView());
+
+                                score += 2;
+
+                                playerSpeacialBulletToRemove.add(playerSpecialBullet);
+
+                                uncommonEnemyToRemove.add(enemy);
+
+                            }
+
+                        });
+                        // Enemy Bullet Hit Player Ship
+
+                        enemyBullets.forEach(enemyBullet -> {
+
+                            if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
+
+                                // Remove enemy bullet
+                                enemyBullets.remove(enemyBullet);
+                                platform.getChildren().remove(enemyBullet.getBulletImagePreview());
+
+                            }
+
+                        });
+                        if (uncommonEnemyShips.isEmpty() && enemyShips.isEmpty() && !spawnBoss) {
+
+                            PauseTransition spawnDelay = new PauseTransition(Duration.seconds(1));
+
+                            spawnDelay.setOnFinished(event -> {
+
+                                if (!platform.getChildren().contains(bossShip.getShipImageView())) {
+
+                                    platform.getChildren().add(bossShip.getShipImageView());
+
+                                }
+
+                                bossShip.getBossHitBox().setX(bossShip.getShipImageView().getX());
+
+                                bossShip.getBossHitBox().setY(bossShip.getShipImageView().getY());
+
+                                if (!platform.getChildren().contains(bossShip.getBossHitBox())) {
+
+                                    platform.getChildren().add(bossShip.getBossHitBox());
+
+                                }
+                                spawnBoss = true;
+                            });
+                            spawnDelay.play();
+                        }
+                    });
                     // Inside handleCollisions method where player is hit by enemy bullet:
                     for (EnemyBullet enemyBullet : enemyBullets) {
                         if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
                             long currentTime = System.currentTimeMillis();
                             if (currentTime - lastHitTime >= COOLDOWN_DURATION) {
                                 bulletHitsPlayerCounter++; // Increment the counter
-                                System.out.println("Bullet hits player: " + bulletHitsPlayerCounter);
 
                                 platform.getChildren().removeAll(enemyBullet.getBulletImagePreview());
 
@@ -543,12 +651,13 @@ public class Launcher extends Application {
 
                                 lastHitTime = currentTime;
 
-                                System.out.println("Losing a Life");
+                                logger.info("PLAYER HIT, LIVE REMAIN: {}", playerLives);
                                 break;
                             }
                         }
                         if (playerLives <= 0) {
                             this.stop();
+                            logger.info("PLAYER DIE");
                             GameOver(stage);
                             return;
                         }
@@ -571,8 +680,6 @@ public class Launcher extends Application {
 
                                     lifeBar.updateLifeBar(-20);
 
-                                    System.out.println("boss lose life");
-
                                     // Remove bossShip and playerBullet
                                     platform.getChildren().remove(playerBullet.getBulletImagePreview());
                                     platform.getChildren().remove(playerBullet.getHitbox());
@@ -589,7 +696,9 @@ public class Launcher extends Application {
                                     PlayerbulletsToRemove.clear();
 
                                     lastHitTime = currentTime;
-                                    
+
+                                    logger.info("BOSS HIT");
+
                                     break;
                                 }
 
@@ -597,6 +706,7 @@ public class Launcher extends Application {
                         }
                         if (lifeBar.getCurrentLife() <= 0) {
                             this.stop();
+                            logger.info("BOSS DIE");
                             score += 5;
                             victory();
                             return;
@@ -646,170 +756,6 @@ public class Launcher extends Application {
                     bossBullets.removeAll(bossBulletsToShoot);
                     bossBullets.clear();
 
-                    playerSpeacialBullets.forEach(playerSpecialBullet -> {
-
-                        enemyShips.forEach(enemy -> {
-
-                            if (playerSpecialBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
-
-                                Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
-
-                                platform.getChildren().add(explosion.getExplosionImageView());
-
-                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
-
-                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
-
-                                delay.play();
-
-                                platform.getChildren().remove(playerSpecialBullet.getHitbox()); // Remove the hitbox
-
-                                platform.getChildren().remove(enemy.getShipImageView());
-
-                                platform.getChildren().remove(enemy.getHitBox()); // Remove the hitbox
-                                // playerSpecialBullet.stop();
-
-                                score += 1;
-
-                                playerSpeacialBulletToRemove.add(playerSpecialBullet);
-
-                                enemyShipsToRemove.add(enemy);
-
-                            }
-
-                        });
-
-                        uncommonEnemyShips.forEach(enemy -> {
-
-                            if (playerSpecialBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
-
-                                Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
-
-                                platform.getChildren().add(explosion.getExplosionImageView());
-
-                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
-
-                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
-
-                                delay.play();
-
-                                platform.getChildren().remove(playerSpecialBullet.getHitbox()); // Remove the hitbox
-
-                                platform.getChildren().remove(enemy.getShipImageView());
-
-                                platform.getChildren().remove(enemy.getHitBox()); // Remove the hitbox
-                                // playerSpecialBullet.stop();
-
-                                score += 2;
-
-                                playerSpeacialBulletToRemove.add(playerSpecialBullet);
-
-                                uncommonEnemyToRemove.add(enemy);
-
-                            }
-
-                        });
-                        // Enemy Bullet Hit Player Ship
-
-                        enemyBullets.forEach(enemyBullet -> {
-
-                            if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
-                                // Remove enemy bullet
-
-                                platform.getChildren().remove(enemyBullet.getBulletImagePreview());
-
-                                platform.getChildren().remove(enemyBullet.getHitbox());
-
-                            }
-
-                        });
-
-                        if (uncommonEnemyShips.isEmpty() && enemyShips.isEmpty() && !spawnBoss) {
-
-                            PauseTransition spawnDelay = new PauseTransition(Duration.seconds(1));
-
-                            spawnDelay.setOnFinished(event -> {
-
-                                if (!platform.getChildren().contains(bossShip.getShipImageView())) {
-
-                                    platform.getChildren().add(bossShip.getShipImageView());
-
-                                }
-
-                                bossShip.getBossHitBox().setX(bossShip.getShipImageView().getX());
-
-                                bossShip.getBossHitBox().setY(bossShip.getShipImageView().getY());
-
-                                if (!platform.getChildren().contains(bossShip.getBossHitBox())) {
-
-                                    platform.getChildren().add(bossShip.getBossHitBox());
-
-                                }
-
-                                spawnBoss = true;
-
-                            });
-
-                            spawnDelay.play();
-
-                        }
-
-                    });
-                    for (PlayerSpecialBullet playerSpecialBullet : playerSpeacialBullets) {
-                        // Check if playerBullet hits bossShip
-
-                        if (playerSpecialBullet.getHitbox().getBoundsInParent().intersects(bossShip.getBossHitBox().getBoundsInParent())) {
-
-                            long currentTime = System.currentTimeMillis();
-                            // Handle collision logic
-
-                            if (currentTime - lastHitTime >= COOLDOWN_DURATION) {
-
-                                Explosion explosion = new Explosion(bossShip.getShipImageView().getX(), bossShip.getShipImageView().getY());
-
-                                platform.getChildren().add(explosion.getExplosionImageView());
-
-                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
-
-                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
-
-                                delay.play();
-
-                                lifeBar.updateLifeBar(-100);
-
-                                System.out.println("boss lose life");
-                                // Remove bossShip and playerBullet
-
-                                platform.getChildren().remove(playerSpecialBullet.getBulletImagePreview());
-
-                                platform.getChildren().remove(playerSpecialBullet.getHitbox());
-                                // Remove all bossBullets
-
-                                platform.getChildren().removeAll(bossBullets);
-
-                                bossBullets.clear();
-                                // Add bossShip and bossBulletsToRemove to their respective lists for removal
-
-                                bossesToRemove.add(bossShip);
-
-                                bossBulletsToRemove.addAll(bossBullets);
-                                // Clear playerBulletsToRemove
-
-                                PlayerbulletsToRemove.clear();
-
-                                lastHitTime = currentTime;
-
-                                break;
-
-                            }
-                        }
-                        if (lifeBar.getCurrentLife() <= 0) {
-                            this.stop();
-                            score += 5;
-                            victory();
-                            return;
-                        }
-                    }
                 }
         }.start();
         stage.show();
