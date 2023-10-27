@@ -461,9 +461,13 @@ public class Launcher extends Application {
                             EnemyShip enemy = enemyShipIterator.next();
 
                             if (playerBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
-                                // Your collision logic here
-                                Explosion explosion = new Explosion(bossShip.getShipImageView().getX(), bossShip.getShipImageView().getY());
+                                // collision logic here
+                                Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
                                 platform.getChildren().add(explosion.getExplosionImageView());
+
+                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
+                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
+                                delay.play();
 
                                 // Remove Player bullet
                                 playerBulletIterator.remove();
@@ -482,9 +486,13 @@ public class Launcher extends Application {
 
                         uncommonEnemyShips.forEach(enemy -> {
                             if (playerBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
-                                // Your collision logic here
-                                Explosion explosion = new Explosion(bossShip.getShipImageView().getX(), bossShip.getShipImageView().getY());
+                                // collision logic here
+                                Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
                                 platform.getChildren().add(explosion.getExplosionImageView());
+
+                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
+                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
+                                delay.play();
 
                                 // Remove Player bullet
                                 playerBulletIterator.remove();
@@ -667,12 +675,16 @@ public class Launcher extends Application {
                             EnemyShip enemy = enemyShipIterator.next();
 
                             if (playerSpecialBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
-                                // Your collision logic here
-                                Explosion explosion = new Explosion(bossShip.getShipImageView().getX(), bossShip.getShipImageView().getY());
+                                // collision logic here
+                                Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
                                 platform.getChildren().add(explosion.getExplosionImageView());
 
+                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
+                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
+                                delay.play();
+
                                 // Remove Player bullet
-                                playerSpecialBulletIterator.remove();
+
                                 platform.getChildren().remove(playerSpecialBullet.getBulletImagePreview());
 
                                 // Remove Enemy
@@ -688,12 +700,15 @@ public class Launcher extends Application {
 
                         uncommonEnemyShips.forEach(enemy -> {
                             if (playerSpecialBullet.getHitbox().getBoundsInParent().intersects(enemy.getHitBox().getBoundsInParent())) {
-                                // Your collision logic here
-                                Explosion explosion = new Explosion(bossShip.getShipImageView().getX(), bossShip.getShipImageView().getY());
+                                // collision logic here
+                                Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
                                 platform.getChildren().add(explosion.getExplosionImageView());
 
+                                PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
+                                delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
+                                delay.play();
+
                                 // Remove Player bullet
-                                playerSpecialBulletIterator.remove();
                                 platform.getChildren().remove(playerSpecialBullet.getBulletImagePreview());
 
                                 // Remove Enemy
