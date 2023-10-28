@@ -9251,3 +9251,654 @@
 [DEBUG] Fri 2023-10-27 23:35:26 [JavaFX Application Thread] Launcher.(Line - ) - No more special bullet text removed.
 [DEBUG] Fri 2023-10-27 23:35:26 [JavaFX Application Thread] Launcher.(Line - ) - No more special bullet text removed.
 [DEBUG] Fri 2023-10-27 23:35:27 [JavaFX Application Thread] Launcher.(Line - ) - No more special bullet text removed.
+[ INFO] Sat 2023-10-28 14:17:22 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sat 2023-10-28 14:17:22 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sat 2023-10-28 14:17:22 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 581.9635851744546, Y: 211.2537742422817
+[ INFO] Sat 2023-10-28 14:17:22 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 84.0867811183615, Y: 170.57431133528132
+[ INFO] Sat 2023-10-28 14:17:22 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 238.92345185371755, Y: 206.89096318395832
+[ INFO] Sat 2023-10-28 14:17:22 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 498.0678428148894, Y: 210.05101742792075
+[ INFO] Sat 2023-10-28 14:17:22 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 222.01996948457418, Y: 96.5115028922781
+[ INFO] Sat 2023-10-28 14:17:22 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 481.2596947807492, Y: 142.77399594282946
+[ INFO] Sat 2023-10-28 14:17:22 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 415.5591648649554, Y: 168.25382316186767
+[ INFO] Sat 2023-10-28 14:17:22 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 532.3213741590494, Y: 219.3952253027128
+[ INFO] Sat 2023-10-28 14:17:23 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:23 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 55.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:23 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 75.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:23 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 295.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:24 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 295.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:24 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 195.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:24 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 405.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:25 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:25 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 330.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:25 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:25 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:25 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:25 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 330.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:26 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 80.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:26 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:26 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:26 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:27 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:27 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 50.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:27 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:27 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:28 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 310.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:28 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 310.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:28 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:28 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 2
+[ INFO] Sat 2023-10-28 14:17:28 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:29 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:29 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:29 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 140.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:29 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:29 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:29 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:30 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 410.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:30 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:30 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 1
+[ INFO] Sat 2023-10-28 14:17:30 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:31 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 260.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:31 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:31 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:31 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:31 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 280.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:31 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 60.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 340.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 410.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:33 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:33 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 380.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:33 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 380.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 270.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 270.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 130.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 370.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 310.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 390.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 380.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:36 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 280.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:36 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 350.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:36 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:37 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:37 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:37 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:37 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:38 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 340.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:38 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:38 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:38 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 390.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:38 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 390.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:40 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:40 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:41 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:17:41 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sat 2023-10-28 14:17:41 [JavaFX Application Thread] Launcher.(Line - ) - BOSS DIE
+[ INFO] Sat 2023-10-28 14:18:00 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sat 2023-10-28 14:18:00 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sat 2023-10-28 14:18:00 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 127.04516713338607, Y: 179.9932557607376
+[ INFO] Sat 2023-10-28 14:18:00 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 52.040972514305295, Y: 117.73432918237978
+[ INFO] Sat 2023-10-28 14:18:00 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 415.041432132075, Y: 186.74372433587644
+[ INFO] Sat 2023-10-28 14:18:00 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 478.7382373833596, Y: 200.63422889883037
+[ INFO] Sat 2023-10-28 14:18:00 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 234.3211531346832, Y: 210.27292648094175
+[ INFO] Sat 2023-10-28 14:18:00 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 496.80268659594265, Y: 77.2869853012713
+[ INFO] Sat 2023-10-28 14:18:00 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 282.66215982999194, Y: 173.81063066257252
+[ INFO] Sat 2023-10-28 14:18:00 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 548.6766202001438, Y: 127.15280826002056
+[ INFO] Sat 2023-10-28 14:18:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 125.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 125.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 295.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 425.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 285.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:03 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 285.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 390.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 260.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 140.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:08 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sat 2023-10-28 14:18:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 10.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 210.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 210.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 20.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 20.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 20.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:12 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sat 2023-10-28 14:18:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 160.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 20.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 80.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:16 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 80.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:16 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:17 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:18 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:18 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:19 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:19 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:20 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:22 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:23 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:23 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:25 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:25 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:25 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:25 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:25 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER DIE
+[ INFO] Sat 2023-10-28 14:18:26 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:18:26 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 408.8975252732636, Y: 107.62092847430353
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 412.3047062230651, Y: 128.41170248383432
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 549.8785148031591, Y: 80.6231514468868
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 449.06740689733937, Y: 150.8891764242801
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 130.01557676104258, Y: 164.67080038719553
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 212.30028474991877, Y: 96.28551514244033
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 364.45303015535035, Y: 142.77839226089847
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 8.639219133590043, Y: 78.22577480246075
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 135.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 135.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 265.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 295.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 295.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 425.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 425.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:16 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 2
+[ INFO] Sat 2023-10-28 14:20:16 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 375.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:16 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 265.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:17 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 1
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 314.3124808143104, Y: 209.21504249412268
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 567.986843448849, Y: 106.64681696339576
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 540.0106962940368, Y: 107.40128490780917
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 106.91773207168143, Y: 168.86064786282418
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 455.2620673582403, Y: 130.27903798735355
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 127.68272962815145, Y: 86.47350214627835
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 295.97510749146295, Y: 161.88268703420368
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 41.88861751346592, Y: 218.28647399076436
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:40 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 155.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:41 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 155.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:42 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 315.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:42 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 195.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:43 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 345.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:43 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 165.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:43 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 165.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:44 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 375.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:45 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 235.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:45 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 435.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:45 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 435.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:46 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 435.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:46 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 435.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:47 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 435.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:47 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 325.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 235.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 235.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 315.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 215.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 215.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 335.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:20:50 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sat 2023-10-28 14:20:50 [JavaFX Application Thread] Launcher.(Line - ) - BOSS DIE
+[ INFO] Sat 2023-10-28 14:22:07 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sat 2023-10-28 14:22:07 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sat 2023-10-28 14:22:07 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 66.47910660427054, Y: 143.33538854053236
+[ INFO] Sat 2023-10-28 14:22:07 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 310.12988337234674, Y: 207.1410551030363
+[ INFO] Sat 2023-10-28 14:22:07 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 187.5509855422009, Y: 137.77530030237642
+[ INFO] Sat 2023-10-28 14:22:07 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 144.62993681176252, Y: 82.34646404669175
+[ INFO] Sat 2023-10-28 14:22:07 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 401.84946777765543, Y: 112.13471117241599
+[ INFO] Sat 2023-10-28 14:22:07 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 23.346705913384227, Y: 200.15239132678255
+[ INFO] Sat 2023-10-28 14:22:07 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 427.69242937106543, Y: 74.33442521138191
+[ INFO] Sat 2023-10-28 14:22:07 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 253.34790502317645, Y: 94.46421203464938
+[ INFO] Sat 2023-10-28 14:22:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 365.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 255.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 105.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 205.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 205.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 95.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 205.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 35.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 215.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 215.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 105.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 155.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 35.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 140.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:16 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:16 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:17 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 10.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:17 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:37 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sat 2023-10-28 14:22:37 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sat 2023-10-28 14:22:37 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 381.00198912265256, Y: 139.8913895234174
+[ INFO] Sat 2023-10-28 14:22:37 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 474.403379459901, Y: 160.9944575022623
+[ INFO] Sat 2023-10-28 14:22:37 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 208.8387568238567, Y: 144.69846310479807
+[ INFO] Sat 2023-10-28 14:22:37 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 342.35240551634536, Y: 84.19676682374192
+[ INFO] Sat 2023-10-28 14:22:37 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 562.6807361428818, Y: 126.95647656864938
+[ INFO] Sat 2023-10-28 14:22:37 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 367.4364879958004, Y: 139.05133336292576
+[ INFO] Sat 2023-10-28 14:22:37 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 115.71636210883706, Y: 86.00387420752818
+[ INFO] Sat 2023-10-28 14:22:37 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 327.93892366568133, Y: 88.04756964010124
+[ INFO] Sat 2023-10-28 14:22:37 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:38 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:38 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 385.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:40 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 275.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:40 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 195.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:41 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 195.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:41 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 105.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:41 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 105.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:42 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 2
+[ INFO] Sat 2023-10-28 14:22:42 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 235.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:42 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 95.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:42 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 205.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:43 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 205.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:43 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 295.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:43 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 1
+[ INFO] Sat 2023-10-28 14:22:44 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 175.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:44 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 255.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:45 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 255.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:45 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 165.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:45 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 95.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:46 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 95.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:46 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 195.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:47 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 195.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 305.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 305.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 305.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 305.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 305.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 305.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 305.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 305.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 225.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:51 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 225.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:51 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 225.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 225.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 225.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 225.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 325.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 235.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 85.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 85.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 105.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 185.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 185.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 135.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:22:55 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sat 2023-10-28 14:22:55 [JavaFX Application Thread] Launcher.(Line - ) - BOSS DIE
+[ INFO] Sat 2023-10-28 14:28:45 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sat 2023-10-28 14:28:45 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sat 2023-10-28 14:28:45 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 209.53143976796326, Y: 114.61955781815797
+[ INFO] Sat 2023-10-28 14:28:45 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 160.14450521374556, Y: 82.5580967694639
+[ INFO] Sat 2023-10-28 14:28:45 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 328.9034790173554, Y: 120.25595649054155
+[ INFO] Sat 2023-10-28 14:28:45 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 505.29591133259066, Y: 225.47539702720155
+[ INFO] Sat 2023-10-28 14:28:45 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 407.7060279533216, Y: 138.40789663009815
+[ INFO] Sat 2023-10-28 14:28:45 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 95.57971325802686, Y: 190.4201299040862
+[ INFO] Sat 2023-10-28 14:28:45 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 117.9262553262216, Y: 103.65444708230478
+[ INFO] Sat 2023-10-28 14:28:45 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 304.34184443618875, Y: 74.16977444364372
+[ INFO] Sat 2023-10-28 14:28:47 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:28:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 2
+[ INFO] Sat 2023-10-28 14:28:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 435.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:28:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:28:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 5.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:28:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 95.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:28:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 1
+[ INFO] Sat 2023-10-28 14:28:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 95.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:28:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 0
+[ INFO] Sat 2023-10-28 14:28:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER DIE
+[ INFO] Sat 2023-10-28 14:29:04 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sat 2023-10-28 14:29:04 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sat 2023-10-28 14:29:04 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 132.96840151357148, Y: 103.89775817715525
+[ INFO] Sat 2023-10-28 14:29:04 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 28.034941065766954, Y: 81.77432678067055
+[ INFO] Sat 2023-10-28 14:29:04 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 407.10770538315217, Y: 111.40873450905056
+[ INFO] Sat 2023-10-28 14:29:04 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 354.23106692252276, Y: 153.67420215057018
+[ INFO] Sat 2023-10-28 14:29:04 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 114.54793780643551, Y: 142.99474164705342
+[ INFO] Sat 2023-10-28 14:29:04 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 437.18579670827125, Y: 150.37567656204138
+[ INFO] Sat 2023-10-28 14:29:04 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 529.5174359465743, Y: 113.13982366384987
+[ INFO] Sat 2023-10-28 14:29:04 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 84.73485035576081, Y: 126.23154963648676
+[ INFO] Sat 2023-10-28 14:29:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 270.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 270.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 400.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 310.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 310.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 430.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 430.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 370.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 90.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 140.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 140.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 380.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 380.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 280.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 280.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 60.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 280.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 90.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 20.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 20.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 20.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 40.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:29:15 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sat 2023-10-28 14:29:15 [JavaFX Application Thread] Launcher.(Line - ) - BOSS DIE
+[ INFO] Sat 2023-10-28 14:30:30 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sat 2023-10-28 14:30:30 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sat 2023-10-28 14:30:30 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 374.6080600888974, Y: 145.44785123450202
+[ INFO] Sat 2023-10-28 14:30:30 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 556.0523570563294, Y: 203.746388388878
+[ INFO] Sat 2023-10-28 14:30:30 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 452.91602614926495, Y: 232.85803711454548
+[ INFO] Sat 2023-10-28 14:30:30 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 260.97515846530695, Y: 166.6454280951756
+[ INFO] Sat 2023-10-28 14:30:30 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 215.30140396794107, Y: 173.81759868414542
+[ INFO] Sat 2023-10-28 14:30:30 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 455.08393837693455, Y: 122.9327072190831
+[ INFO] Sat 2023-10-28 14:30:30 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 507.08209229547475, Y: 121.62937306245493
+[ INFO] Sat 2023-10-28 14:30:30 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 201.7184151178951, Y: 78.6906203350239
+[ INFO] Sat 2023-10-28 14:30:31 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:31 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 155.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:31 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 155.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 295.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 295.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 135.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 135.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 365.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 380.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 320.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:32 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 340.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:33 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:33 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:33 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 350.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:33 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 350.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:33 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:33 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:33 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 50.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 160.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 160.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 110.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 130.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 280.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:34 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 400.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 400.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 320.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:35 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 140.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:36 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 90.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:36 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 90.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:36 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:36 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:36 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 130.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:37 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:37 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 140.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 420.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 260.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 260.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 310.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 370.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:39 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 410.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:40 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 390.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:40 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:40 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:40 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:40 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sat 2023-10-28 14:30:40 [JavaFX Application Thread] Launcher.(Line - ) - BOSS DIE
+[ INFO] Sat 2023-10-28 14:30:57 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sat 2023-10-28 14:30:57 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sat 2023-10-28 14:30:57 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 48.80690186772457, Y: 112.36237648814321
+[ INFO] Sat 2023-10-28 14:30:57 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 509.9455783313663, Y: 83.83765512694222
+[ INFO] Sat 2023-10-28 14:30:57 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 379.54572840267053, Y: 178.35533831739963
+[ INFO] Sat 2023-10-28 14:30:57 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 38.93037634734358, Y: 210.71227181810377
+[ INFO] Sat 2023-10-28 14:30:57 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 509.57722736229357, Y: 159.79795141932863
+[ INFO] Sat 2023-10-28 14:30:57 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 279.0660121424352, Y: 147.981768688764
+[ INFO] Sat 2023-10-28 14:30:57 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 56.76409208296941, Y: 84.2894046632559
+[ INFO] Sat 2023-10-28 14:30:57 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 393.6837868893753, Y: 158.05161124995152
+[ INFO] Sat 2023-10-28 14:30:57 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 115.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 115.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 175.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 155.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 235.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 235.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 145.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 215.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 275.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 165.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 165.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 295.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 155.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 275.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 355.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 255.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 255.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:30:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 2
+[ INFO] Sat 2023-10-28 14:31:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 150.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:03 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:03 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:03 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 310.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:03 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:03 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:03 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 340.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 150.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 310.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 310.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 160.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 30.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 40.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 420.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:06 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sat 2023-10-28 14:31:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 150.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 150.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 340.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 440.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 150.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 340.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 20.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 370.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 370.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:09 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sat 2023-10-28 14:31:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 390.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 390.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:09 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sat 2023-10-28 14:31:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 380.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 140.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 140.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 140.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:11 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sat 2023-10-28 14:31:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 150.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 50.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 30.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 270.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 280.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 280.0, Y: 600.0
+[ INFO] Sat 2023-10-28 14:31:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER DIE
+[ INFO] Sat 2023-10-28 14:31:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:47 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sat 2023-10-28 21:46:47 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sat 2023-10-28 21:46:47 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 181.1843227128894, Y: 187.82800353888373
+[ INFO] Sat 2023-10-28 21:46:47 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 461.29895209443725, Y: 73.77109460878933
+[ INFO] Sat 2023-10-28 21:46:47 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 76.70432264947162, Y: 223.83015701831258
+[ INFO] Sat 2023-10-28 21:46:47 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 254.92558715688415, Y: 122.49496006583631
+[ INFO] Sat 2023-10-28 21:46:47 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 224.0763622167893, Y: 182.9209366604636
+[ INFO] Sat 2023-10-28 21:46:47 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 148.93735821361923, Y: 85.61646603098828
+[ INFO] Sat 2023-10-28 21:46:47 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 288.54179923404996, Y: 178.2755968877159
+[ INFO] Sat 2023-10-28 21:46:47 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 458.5115114309316, Y: 121.1643657207272
+[ INFO] Sat 2023-10-28 21:46:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 95.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 35.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 265.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 265.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 105.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 195.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 325.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 205.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 185.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 390.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 310.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 280.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 2
+[ INFO] Sat 2023-10-28 21:46:51 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:51 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 270.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:51 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 390.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 130.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 350.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:55 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 350.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:55 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:55 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 350.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 350.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[ INFO] Sat 2023-10-28 21:46:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0

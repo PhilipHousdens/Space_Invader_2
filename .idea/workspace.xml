@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Fixing Explosion">
+    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Finished Progress Bar">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/JarLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,15 +26,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "MERGED"
+      &quot;state&quot;: &quot;MERGED&quot;
     }
   ],
-  "lastFilter": {
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -72,6 +74,7 @@
       <recent name="C:\Users\Philip Housden\IdeaProjects\SpaceInvader2\src\main\resources\com\opcode\spaceinvader2\image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="C:\Users\Philip Housden\IdeaProjects\SpaceInvader2\src\main\resources\com\opcode\spaceinvader2\Pics" />
       <recent name="C:\Users\Philip Housden\IdeaProjects\SpaceInvader2\src\main\resources\com\opcode\spaceinvader2\image" />
     </key>
@@ -109,6 +112,7 @@
       <workItem from="1698253792413" duration="1478000" />
       <workItem from="1698296171512" duration="10885000" />
       <workItem from="1698377428777" duration="6916000" />
+      <workItem from="1698405144634" duration="4095000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1698130735862</created>
@@ -299,35 +303,7 @@
       <option name="project" value="LOCAL" />
       <updated>1698339730977</updated>
     </task>
-    <task id="LOCAL-00028" summary="Fixed Normal Player Bullet Bugs">
-      <created>1698414221865</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1698414221865</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Fixed SpeacialBullet AnimationSprite Bug and Adjust the Layout">
-      <created>1698414691434</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1698414691434</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Fixed SpeacialBullet Hit Enemy and boss bug">
-      <created>1698418594380</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1698418594380</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Fixing Explosion">
-      <created>1698419629288</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1698419629288</updated>
-    </task>
-    <option name="localTasksCounter" value="32" />
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,6 +321,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding Background Image to the Platform(Scene)" />
+    <MESSAGE value="Adding PlayerShip to the scene" />
+    <MESSAGE value="adding EnemyShip in the Scene(Platform.java)" />
+    <MESSAGE value="Setting up for player ship movement" />
     <MESSAGE value="Setting up for enemy ship movement" />
     <MESSAGE value="Successfully shoot out the bullet" />
     <MESSAGE value="Creating the new code format using AnimationTimer() in Launcher" />
@@ -366,11 +346,7 @@
     <MESSAGE value="Successfully Making the intro and Victory scene" />
     <MESSAGE value="Creating GameOver, Animated Player Bullet and Enemy Bullet." />
     <MESSAGE value="Finished Progress Bar" />
-    <MESSAGE value="Fixed Normal Player Bullet Bugs" />
-    <MESSAGE value="Fixed SpeacialBullet AnimationSprite Bug and Adjust the Layout" />
-    <MESSAGE value="Fixed SpeacialBullet Hit Enemy and boss bug" />
-    <MESSAGE value="Fixing Explosion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing Explosion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Progress Bar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
