@@ -10,11 +10,13 @@ import javafx.scene.shape.Rectangle;
 import java.util.Objects;
 
 public class PlayerShip extends Pane {
-    private static final int MOVE_STEP = 10;
+    static final int MOVE_STEP = 10;
     private static final int MIN_X = 0;
     private static final int MAX_X = 450;
     private AnimatedSprite shipImageView;
     private Rectangle hitbox;
+
+
 
     public PlayerShip() throws RuntimeException {
         // Load the image for the player's ship
@@ -51,8 +53,10 @@ public class PlayerShip extends Pane {
 
     public void moveLeft() {
         double newX = getTranslateX() - MOVE_STEP;
-        setTranslateX(Math.max(newX, MIN_X));
+        double clampedX = Math.max(newX, MIN_X);
+        setTranslateX(clampedX);
         updateHitboxPosition();
+        Launcher.logger.debug("After moveLeft: X = {}, Hitbox X = {}", getTranslateX(), hitbox.getX());
     }
 
     public void moveRight() {
