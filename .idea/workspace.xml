@@ -4,26 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Finished Progress Bar">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/opcode/spaceinvader2/Player/PlayerShipTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_54_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_54_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_8_21_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_8_21_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_26_2023_1_32_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_26_2023_1_32_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_26_2023_3_23_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_26_2023_3_23_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_26_2023_9_53_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_26_2023_9_53_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2023_AD__20_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2023_AD__20_17__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2023_AD__21_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2023_AD__21_20__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__15_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__15_59__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__17_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__17_46__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__21_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2023_AD__21_48__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__01_30__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__01_30__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__02_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__02_38__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__15_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2023_AD__15_05__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_10_2023_AD__14_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_10_2023_AD__14_17__Changes_.xml" afterDir="false" />
+    <list default="true" id="20540a3a-44a6-448c-bea0-6617aa5ba573" name="Changes" comment="Adding the bullet movement">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/audio/Bruh sound effect.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/audio/Menu Selection Click.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/audio/Pew Sound Effect.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/audio/Wii Music - Gaming Background Music (HD).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/audio/Yay.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/audio/chill-out (1).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/audio/explosion.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/audio/hehe boi!.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/opcode/spaceinvader2/audio/oof.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Player/PlayerShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Player/PlayerShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opcode/spaceinvader2/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +72,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Philip Housden/IdeaProjects/chapter4",
+    "last_opened_file_path": "C:/Users/Philip Housden/IdeaProjects/Space_Invader_2/src/main/resources/com/opcode/spaceinvader2/audio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,12 +84,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Philip Housden\IdeaProjects\Space_Invader_2\src\main\resources\com\opcode\spaceinvader2\audio" />
       <recent name="C:\Users\Philip Housden\IdeaProjects\SpaceInvader2\src\main\resources\com\opcode\spaceinvader2\image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Philip Housden\IdeaProjects\Space_Invader_2\src\main\resources\com\opcode\spaceinvader2\audio" />
+      <recent name="C:\Users\Philip Housden\IdeaProjects\Space_Invader_2\src\main\resources\com\opcode\spaceinvader2" />
+      <recent name="C:\Users\Philip Housden\IdeaProjects\Space_Invader_2\src\main\resources" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="C:\Users\Philip Housden\IdeaProjects\SpaceInvader2\src\main\resources\com\opcode\spaceinvader2\Pics" />
-      <recent name="C:\Users\Philip Housden\IdeaProjects\SpaceInvader2\src\main\resources\com\opcode\spaceinvader2\image" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -378,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698339730977</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Adding the bullet movement">
+      <created>1698578854956</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1698578854956</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +401,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding Background Image to the Platform(Scene)" />
     <MESSAGE value="Adding PlayerShip to the scene" />
     <MESSAGE value="adding EnemyShip in the Scene(Platform.java)" />
     <MESSAGE value="Setting up for player ship movement" />
@@ -421,7 +425,8 @@
     <MESSAGE value="Successfully Making the intro and Victory scene" />
     <MESSAGE value="Creating GameOver, Animated Player Bullet and Enemy Bullet." />
     <MESSAGE value="Finished Progress Bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Progress Bar" />
+    <MESSAGE value="Adding the bullet movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding the bullet movement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

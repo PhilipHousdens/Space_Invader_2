@@ -18,6 +18,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -25,7 +26,9 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import javafx.scene.media.Media;
 
+import java.io.File;
 import java.util.*;
 
 public class Launcher extends Application {
@@ -33,6 +36,7 @@ public class Launcher extends Application {
     public static final Logger logger = LogManager.getLogger(Launcher.class);
 
     LifeBar lifeBar = new LifeBar();
+    LifeBar lifeBar2 = new LifeBar();
     // UI Element
     private Text scoreText;
     public static final int PANE_WIDTH = 530;
@@ -63,6 +67,17 @@ public class Launcher extends Application {
     private int playerLives = 3;
     private int bossLives = 5;
 
+    // Audio
+    private String introMusic = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/chill-out (1).mp3").toExternalForm());
+    private String clickSound = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/Menu Selection Click.mp3").toExternalForm());
+    private String pewPew = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/Pew Sound Effect.mp3").toExternalForm());
+    private String explosionSound =  Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/explosion.mp3").toExternalForm());
+    private String bruhSFX = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/Bruh sound effect.mp3").toExternalForm());
+    private String gamePlayMusic = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/Wii Music - Gaming Background Music (HD).mp3").toExternalForm());
+    private String oof = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/oof.mp3").toExternalForm());
+    private String heheBoi = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/hehe boi!.mp3").toExternalForm());
+    private String yay = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/Yay.mp3").toExternalForm());
+
     // Image
     private Image backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/bg_02_v.png")).toExternalForm());
     private Image heartImg = new Image(Objects.requireNonNull((Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/Heart.png"))).toExternalForm());
@@ -83,6 +98,16 @@ public class Launcher extends Application {
     // Boss Life Bar
     private static final int INITIAL_LIFE = 100;
     private int currentLife = INITIAL_LIFE;
+    // Media Player
+    private MediaPlayer mediaPlayer;
+    private MediaPlayer clickSoundPlayer;
+    private MediaPlayer pewSound;
+    private MediaPlayer boom;
+    private MediaPlayer bruhSound;
+    private MediaPlayer BossHit;
+    private MediaPlayer boi;
+
+    private MediaPlayer gameMusicPlayer;
 
     Stage currentStage;
 
@@ -93,6 +118,19 @@ public class Launcher extends Application {
         // Load and set the background image
         ImageView backgroundImageView = new ImageView(backgroundImage);
         startPane.getChildren().add(backgroundImageView);  // Add background image to pane
+
+        // Initialize media player for background music
+        Media media = new Media(introMusic);
+        mediaPlayer = new MediaPlayer(media);
+        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
+        mediaPlayer.setVolume(0.6);
+        mediaPlayer.play();
+
+        // Initialize Click Sound
+        Media click = new Media(clickSound);
+        clickSoundPlayer = new MediaPlayer(click);
+        clickSoundPlayer.setVolume(1);
+
 
         Scene startScene = new Scene(startPane, PANE_WIDTH, PANE_HEIGHT);
 
@@ -118,7 +156,14 @@ public class Launcher extends Application {
         exitButton.setStyle("-fx-background-color: #AF2492; -fx-background-radius: 25;");
 
         startButton.setOnAction(e -> {
-            startGame(stage); // initiate the game when button is clicked
+            clickSoundPlayer.play();
+
+            PauseTransition pauseTransition = new PauseTransition(Duration.seconds(1));
+            pauseTransition.setOnFinished(event -> {
+                clickSoundPlayer.stop();
+            });
+            mediaPlayer.stop();
+            startGame(stage);
         });
 
         exitButton.setOnAction(e -> {
@@ -131,6 +176,44 @@ public class Launcher extends Application {
         stage.show();
     }
 
+    // Audio Functions
+    public void setPewPew() {
+        Media pew = new Media(pewPew);
+        pewSound = new MediaPlayer(pew);
+        pewSound.setVolume(0.5);
+        pewSound.play();
+    }
+    public void setExplosionSound() {
+        Media explosion = new Media(explosionSound);
+        boom = new MediaPlayer(explosion);
+        boom.setVolume(0.2);
+        boom.play();
+    }
+    public void setBruh() {
+        Media bruh = new Media(bruhSFX);
+        bruhSound = new MediaPlayer(bruh);
+        bruhSound.setVolume(0.5);
+        bruhSound.play();
+    }
+    public void setGamePlayMusic() {
+        Media music = new Media(gamePlayMusic);
+        gameMusicPlayer = new MediaPlayer(music);
+        gameMusicPlayer.setVolume(0.3);
+        gameMusicPlayer.play();
+    }
+    public void setHitBossOof() {
+        Media oofMedia = new Media(oof);
+        BossHit = new MediaPlayer(oofMedia);
+        BossHit.setVolume(0.6);
+        BossHit.play();
+    }
+    public void setBossSpawnAudio() {
+        Media hehe = new Media(heheBoi);
+        boi = new MediaPlayer(hehe);
+        boi.setVolume(0.8);
+        boi.play();
+    }
+
     private void victory() {
         currentStage.close();
 
@@ -140,6 +223,12 @@ public class Launcher extends Application {
         // Load and set the background image
         ImageView backgroundImageView = new ImageView(backgroundImage);
         victoryPane.getChildren().add(backgroundImageView);  // Add background image to pane
+
+        // Lounding Sound
+        Media happy = new Media(yay);
+        MediaPlayer happySound = new MediaPlayer(happy);
+        happySound.setVolume(0.8);
+        happySound.play();
 
         Scene victoryScene = new Scene(victoryPane, PANE_WIDTH, PANE_HEIGHT);
 
@@ -240,7 +329,11 @@ public class Launcher extends Application {
     }
 
     public void startGame(Stage stage) {
+        clickSoundPlayer.stop();
         currentStage = stage;
+
+        // Play the game play music
+        setGamePlayMusic();
 
         Pane platform = new Pane();
         backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/bg_02_v.png")).toExternalForm());
@@ -270,6 +363,7 @@ public class Launcher extends Application {
                 case SPACE:
                     PlayerBullet playerBullet = new PlayerBullet(playerShip.getX() + playerShip.getShipImageView().getFitWidth() / 2 + 10, playerShip.getY());
                     playerBullets.add(playerBullet);
+                    setPewPew();
                     platform.getChildren().add(playerBullet.getBulletImagePreview());
                     break;
                 case R:
@@ -437,6 +531,9 @@ public class Launcher extends Application {
                                 Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
                                 platform.getChildren().add(explosion.getExplosionImageView());
 
+                                // Sound
+                                setExplosionSound();
+
                                 PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
                                 delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
                                 delay.play();
@@ -461,6 +558,9 @@ public class Launcher extends Application {
                                 // collision logic here
                                 Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
                                 platform.getChildren().add(explosion.getExplosionImageView());
+
+                                // Sound
+                                setExplosionSound();
 
                                 PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
                                 delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
@@ -487,6 +587,7 @@ public class Launcher extends Application {
                         while (enemyShipIterator.hasNext()) {
                             EnemyBullet enemyBullet = enemyBulletIterator.next();
                             if (enemyBullet.getHitbox().getBoundsInParent().intersects(playerShip.getHitbox().getBoundsInParent())) {
+
                                 // Remove enemy bullet
                                 enemyBullets.remove(enemyBullet);
                                 platform.getChildren().remove(enemyBullet.getBulletImagePreview());
@@ -495,10 +596,11 @@ public class Launcher extends Application {
 
 
                         if (uncommonEnemyShips.isEmpty() && enemyShips.isEmpty() && !spawnBoss) {
-                            PauseTransition spawnDelay = new PauseTransition(Duration.seconds(1));
+                            PauseTransition spawnDelay = new PauseTransition(Duration.seconds(2));
                             spawnDelay.setOnFinished(event -> {
                                 if (!platform.getChildren().contains(bossShip.getShipImageView())) {
                                     lifeBar.initializeLifeBar(platform, 225, 10);
+                                    setBossSpawnAudio();
                                     platform.getChildren().add(bossShip.getShipImageView());
                                 }
                                 bossShip.getBossHitBox().setX(bossShip.getShipImageView().getX());
@@ -519,6 +621,9 @@ public class Launcher extends Application {
                                 bulletHitsPlayerCounter++; // Increment the counter
 
                                 platform.getChildren().removeAll(enemyBullet.getBulletImagePreview());
+
+                                // Sound
+                                setBruh();
 
                                 // Decrement Player's Life
                                 playerLives--;
@@ -554,6 +659,9 @@ public class Launcher extends Application {
                                     PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
                                     delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
                                     delay.play();
+
+                                    //Sound
+                                    setHitBossOof();
 
                                     lifeBar.updateLifeBar(-20);
 
@@ -599,6 +707,9 @@ public class Launcher extends Application {
 
                                 platform.getChildren().removeAll(bossBullet.getBulletImagePreview());
                                 bossBulletsToRemove.add(bossBullet);
+
+                                //Sound
+                                setBruh();
 
                                 // Decrement Player's life
                                 playerLives--;
@@ -651,6 +762,9 @@ public class Launcher extends Application {
                                 Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
                                 platform.getChildren().add(explosion.getExplosionImageView());
 
+                                // Sound
+                                setExplosionSound();
+
                                 PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
                                 delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
                                 delay.play();
@@ -675,6 +789,9 @@ public class Launcher extends Application {
                                 // collision logic here
                                 Explosion explosion = new Explosion(enemy.getShipImageView().getX(), enemy.getShipImageView().getY());
                                 platform.getChildren().add(explosion.getExplosionImageView());
+
+                                // Sound
+                                setExplosionSound();
 
                                 PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
                                 delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
@@ -708,7 +825,8 @@ public class Launcher extends Application {
                             PauseTransition spawnDelay = new PauseTransition(Duration.seconds(1));
                             spawnDelay.setOnFinished(event -> {
                                 if (!platform.getChildren().contains(bossShip.getShipImageView())) {
-                                    lifeBar.initializeLifeBar(platform, 225, 10);
+                                    lifeBar2.initializeLifeBar(platform, 225, 10);
+                                    setBossSpawnAudio();
                                     platform.getChildren().add(bossShip.getShipImageView());
                                 }
                                 bossShip.getBossHitBox().setX(bossShip.getShipImageView().getX());
@@ -732,12 +850,13 @@ public class Launcher extends Application {
                                 if (currentTime - lastHitTime >= COOLDOWN_DURATION) {
                                     Explosion explosion = new Explosion(bossShip.getShipImageView().getX(), bossShip.getShipImageView().getY());
                                     platform.getChildren().add(explosion.getExplosionImageView());
+                                    setHitBossOof();
 
                                     PauseTransition delay = new PauseTransition(Duration.seconds(0.5));
                                     delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
                                     delay.play();
 
-                                    lifeBar.updateLifeBar(-100);
+                                    lifeBar2.updateLifeBar(-100);
 
                                     // Remove bossShip and playerBullet
                                     platform.getChildren().remove(playerBullet.getBulletImagePreview());
@@ -763,7 +882,7 @@ public class Launcher extends Application {
 
                             }
                         }
-                        if (lifeBar.getCurrentLife() <= 0) {
+                        if (lifeBar2.getCurrentLife() <= 0) {
                             this.stop();
                             logger.info("BOSS DIE");
                             score += 5;
@@ -774,6 +893,12 @@ public class Launcher extends Application {
 
         }.start();
         stage.show();
+    }
+
+    public void stop() {
+        if (mediaPlayer != null) {
+            mediaPlayer.stop();
+        }
     }
 
     private double randomXPosition() {
