@@ -13,7 +13,6 @@ import com.opcode.spaceinvader2.Player.PlayerSpecialBullet;
 import javafx.animation.AnimationTimer;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
@@ -84,8 +83,6 @@ public class Launcher extends Application {
     // Boss Life Bar
     private static final int INITIAL_LIFE = 100;
     private int currentLife = INITIAL_LIFE;
-
-
 
     Stage currentStage;
 
@@ -332,7 +329,11 @@ public class Launcher extends Application {
             @Override
             public void handle(long now) {
                 // Player Movement
-                handlePlayerMovement();
+                try {
+                    handlePlayerMovement();
+                } catch (NullPointerException e){
+                    logger.error("catch an error {}", e);
+                }
 
                 // Handle Player Bullet Action
                 handlePlayerBulletAction();
@@ -363,7 +364,7 @@ public class Launcher extends Application {
             }
 
             // Player Movement
-            private void handlePlayerMovement() {
+            private void handlePlayerMovement() throws NullPointerException{
                 if (moveLeft) {
                     playerShip.moveLeft();
                 }
@@ -607,7 +608,7 @@ public class Launcher extends Application {
 
                                 lastHitTime = currentTime;
 
-                                System.out.println("Losing a life");
+                                logger.info("PLAYER HIT, LIVE REMAIN: {}", playerLives);
                                 break;
                             }
                         }
@@ -655,7 +656,7 @@ public class Launcher extends Application {
                                 delay.play();
 
                                 // Remove Player bullet
-
+                                playerSpecialBulletIterator.remove();
                                 platform.getChildren().remove(playerSpecialBullet.getBulletImagePreview());
 
                                 // Remove Enemy
@@ -680,6 +681,7 @@ public class Launcher extends Application {
                                 delay.play();
 
                                 // Remove Player bullet
+                                playerSpecialBulletIterator.remove();
                                 platform.getChildren().remove(playerSpecialBullet.getBulletImagePreview());
 
                                 // Remove Enemy
