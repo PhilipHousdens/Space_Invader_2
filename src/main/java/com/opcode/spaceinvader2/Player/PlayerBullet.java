@@ -10,7 +10,7 @@ import javafx.scene.shape.Rectangle;
 import java.util.Objects;
 
 public class PlayerBullet extends Pane {
-    private static final double BULLET_DURATION = 5.0;
+    static final double BULLET_DURATION = 5.0;
     private AnimatedSprite bulletImagePreview;
     private Rectangle hitbox;
     private boolean isActive = true;
