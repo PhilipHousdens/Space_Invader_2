@@ -15,6 +15,7 @@ import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -36,7 +37,7 @@ public class Launcher extends Application {
     public static final Logger logger = LogManager.getLogger(Launcher.class);
 
     LifeBar lifeBar = new LifeBar();
-    LifeBar lifeBar2 = new LifeBar();
+
     // UI Element
     private Text scoreText;
     public static final int PANE_WIDTH = 530;
@@ -825,7 +826,8 @@ public class Launcher extends Application {
                             PauseTransition spawnDelay = new PauseTransition(Duration.seconds(1));
                             spawnDelay.setOnFinished(event -> {
                                 if (!platform.getChildren().contains(bossShip.getShipImageView())) {
-                                    lifeBar2.initializeLifeBar(platform, 225, 10);
+                                    lifeBar = new LifeBar();
+                                    lifeBar.initializeLifeBar(platform, 225, 10);
                                     setBossSpawnAudio();
                                     platform.getChildren().add(bossShip.getShipImageView());
                                 }
@@ -856,7 +858,7 @@ public class Launcher extends Application {
                                     delay.setOnFinished(event -> platform.getChildren().remove(explosion.getExplosionImageView()));
                                     delay.play();
 
-                                    lifeBar2.updateLifeBar(-100);
+                                    lifeBar.updateLifeBar(-100);
 
                                     // Remove bossShip and playerBullet
                                     platform.getChildren().remove(playerBullet.getBulletImagePreview());
@@ -882,7 +884,7 @@ public class Launcher extends Application {
 
                             }
                         }
-                        if (lifeBar2.getCurrentLife() <= 0) {
+                        if (lifeBar.getCurrentLife() <= 0) {
                             this.stop();
                             logger.info("BOSS DIE");
                             score += 5;

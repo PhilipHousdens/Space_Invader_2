@@ -18562,3 +18562,778 @@
 [DEBUG] Sun 2023-10-29 19:43:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 10.0, Hitbox X = 45.0
 [DEBUG] Sun 2023-10-29 19:43:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
 [ INFO] Sun 2023-10-29 19:43:10 [JavaFX Application Thread] Launcher.(Line - ) - BOSS DIE
+[ INFO] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 186.05770320447243, Y: 172.7051728181387
+[ INFO] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 567.3617481664028, Y: 150.53426879986398
+[ INFO] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 184.73355639063368, Y: 81.63606331608837
+[ INFO] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 121.123237218524, Y: 150.3184062540683
+[ INFO] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 501.6134896853218, Y: 156.21479801139847
+[ INFO] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 189.9658423742038, Y: 217.34946350256422
+[ INFO] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 426.22510670953466, Y: 225.2531503810893
+[ INFO] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 197.87440480911175, Y: 156.93139534449296
+[ INFO] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 235.0, Hitbox X = 270.0
+[DEBUG] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 225.0, Hitbox X = 260.0
+[DEBUG] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 215.0, Hitbox X = 250.0
+[DEBUG] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 205.0, Hitbox X = 240.0
+[DEBUG] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 195.0, Hitbox X = 230.0
+[DEBUG] Sun 2023-10-29 19:44:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 185.0, Hitbox X = 220.0
+[ INFO] Sun 2023-10-29 19:44:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 185.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 185.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:44:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 175.0, Hitbox X = 210.0
+[DEBUG] Sun 2023-10-29 19:44:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 165.0, Hitbox X = 200.0
+[DEBUG] Sun 2023-10-29 19:44:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 155.0, Hitbox X = 190.0
+[DEBUG] Sun 2023-10-29 19:44:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 145.0, Hitbox X = 180.0
+[DEBUG] Sun 2023-10-29 19:44:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 135.0, Hitbox X = 170.0
+[DEBUG] Sun 2023-10-29 19:44:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 125.0, Hitbox X = 160.0
+[DEBUG] Sun 2023-10-29 19:44:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 115.0, Hitbox X = 150.0
+[ INFO] Sun 2023-10-29 19:44:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 115.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 165.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 165.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 440.0, Hitbox X = 475.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 430.0, Hitbox X = 465.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 420.0, Hitbox X = 455.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 410.0, Hitbox X = 445.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 400.0, Hitbox X = 435.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 390.0, Hitbox X = 425.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 380.0, Hitbox X = 415.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 370.0, Hitbox X = 405.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 360.0, Hitbox X = 395.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[ INFO] Sun 2023-10-29 19:44:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:55 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:55 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 340.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:44:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:44:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:44:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:44:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:44:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[ INFO] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[ INFO] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[ INFO] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 210.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[ INFO] Sun 2023-10-29 19:44:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 260.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[ INFO] Sun 2023-10-29 19:44:57 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 160.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 330.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:44:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:44:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:44:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:44:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:44:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:44:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:44:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[ INFO] Sun 2023-10-29 19:44:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 260.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:44:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 370.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:44:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 360.0, Hitbox X = 395.0
+[DEBUG] Sun 2023-10-29 19:44:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:44:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:44:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:44:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:44:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:44:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:44:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[ INFO] Sun 2023-10-29 19:44:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 290.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[ INFO] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 320.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[ INFO] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 260.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[ INFO] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 150.0, Hitbox X = 185.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 140.0, Hitbox X = 175.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 130.0, Hitbox X = 165.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 120.0, Hitbox X = 155.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 110.0, Hitbox X = 145.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 100.0, Hitbox X = 135.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 90.0, Hitbox X = 125.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 80.0, Hitbox X = 115.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 70.0, Hitbox X = 105.0
+[ INFO] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 60.0, Hitbox X = 95.0
+[DEBUG] Sun 2023-10-29 19:45:00 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 50.0, Hitbox X = 85.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 40.0, Hitbox X = 75.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 30.0, Hitbox X = 65.0
+[ INFO] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 30.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 150.0, Hitbox X = 185.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 140.0, Hitbox X = 175.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 130.0, Hitbox X = 165.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 120.0, Hitbox X = 155.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 110.0, Hitbox X = 145.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 100.0, Hitbox X = 135.0
+[DEBUG] Sun 2023-10-29 19:45:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 90.0, Hitbox X = 125.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 80.0, Hitbox X = 115.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 70.0, Hitbox X = 105.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 60.0, Hitbox X = 95.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 50.0, Hitbox X = 85.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 40.0, Hitbox X = 75.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 30.0, Hitbox X = 65.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 20.0, Hitbox X = 55.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 10.0, Hitbox X = 45.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[ INFO] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 80.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 80.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 70.0, Hitbox X = 105.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 60.0, Hitbox X = 95.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 50.0, Hitbox X = 85.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 40.0, Hitbox X = 75.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 30.0, Hitbox X = 65.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 20.0, Hitbox X = 55.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 10.0, Hitbox X = 45.0
+[DEBUG] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[ INFO] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 40.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:03 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:06 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 320.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 390.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 390.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 380.0, Hitbox X = 415.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 370.0, Hitbox X = 405.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 360.0, Hitbox X = 395.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[ INFO] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 150.0, Hitbox X = 185.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 140.0, Hitbox X = 175.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 130.0, Hitbox X = 165.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 120.0, Hitbox X = 155.0
+[ INFO] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 110.0, Hitbox X = 145.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 100.0, Hitbox X = 135.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 90.0, Hitbox X = 125.0
+[DEBUG] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 80.0, Hitbox X = 115.0
+[ INFO] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 80.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 120.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 340.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[ INFO] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 150.0, Hitbox X = 185.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 140.0, Hitbox X = 175.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 130.0, Hitbox X = 165.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 120.0, Hitbox X = 155.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 110.0, Hitbox X = 145.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 100.0, Hitbox X = 135.0
+[ INFO] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 90.0, Hitbox X = 125.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 80.0, Hitbox X = 115.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 70.0, Hitbox X = 105.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 60.0, Hitbox X = 95.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 50.0, Hitbox X = 85.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 40.0, Hitbox X = 75.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 30.0, Hitbox X = 65.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 20.0, Hitbox X = 55.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 10.0, Hitbox X = 45.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:45:08 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[ INFO] Sun 2023-10-29 19:45:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:09 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sun 2023-10-29 19:45:09 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 80.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 80.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 380.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 400.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:10 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 400.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:10 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 390.0, Hitbox X = 425.0
+[DEBUG] Sun 2023-10-29 19:45:11 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 380.0, Hitbox X = 415.0
+[DEBUG] Sun 2023-10-29 19:45:11 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 370.0, Hitbox X = 405.0
+[DEBUG] Sun 2023-10-29 19:45:11 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 360.0, Hitbox X = 395.0
+[DEBUG] Sun 2023-10-29 19:45:11 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:45:11 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:45:11 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:45:11 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:45:11 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:45:11 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[ INFO] Sun 2023-10-29 19:45:11 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 400.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 390.0, Hitbox X = 425.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 380.0, Hitbox X = 415.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 370.0, Hitbox X = 405.0
+[ INFO] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 370.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 360.0, Hitbox X = 395.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[ INFO] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[ INFO] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 210.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:12 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 210.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:13 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 340.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:13 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:45:13 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:45:13 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:45:13 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:45:13 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:45:13 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:45:13 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:45:13 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:45:13 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:45:13 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[ INFO] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 150.0, Hitbox X = 185.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 140.0, Hitbox X = 175.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 130.0, Hitbox X = 165.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 120.0, Hitbox X = 155.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 110.0, Hitbox X = 145.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 100.0, Hitbox X = 135.0
+[DEBUG] Sun 2023-10-29 19:45:14 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 90.0, Hitbox X = 125.0
+[ INFO] Sun 2023-10-29 19:45:15 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 90.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:45:16 [JavaFX Application Thread] Launcher.(Line - ) - BOSS DIE
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - SHIP SPAWN POSITION =  X: 245.0, 600.0
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - BOSS SPAWN POSITION = X: 200.0, Y: 60.0
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 1 SPAWN X: 280.3770414358822, Y: 87.53265648057274
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 2 SPAWN X: 210.1448237778086, Y: 206.3292423301025
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 3 SPAWN X: 185.9884725709701, Y: 175.22448599523506
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - ENEMY 4 SPAWN X: 411.29775914005734, Y: 109.37534600922515
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 1 SPAWN X: 362.44655365509414, Y: 214.11794223036296
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 2 SPAWN X: 169.83818615642568, Y: 174.44145489803316
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 3 SPAWN X: 90.48588693491403, Y: 151.7273169680564
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - UNCOMMON ENEMY 4 SPAWN X: 9.921739912297497, Y: 220.32683345728483
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 235.0, Hitbox X = 270.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 225.0, Hitbox X = 260.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 215.0, Hitbox X = 250.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 205.0, Hitbox X = 240.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 195.0, Hitbox X = 230.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 185.0, Hitbox X = 220.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 175.0, Hitbox X = 210.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 165.0, Hitbox X = 200.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 155.0, Hitbox X = 190.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 145.0, Hitbox X = 180.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 135.0, Hitbox X = 170.0
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 135.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 125.0, Hitbox X = 160.0
+[ INFO] Sun 2023-10-29 19:49:46 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 125.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:47 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 125.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 245.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 235.0, Hitbox X = 270.0
+[DEBUG] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 225.0, Hitbox X = 260.0
+[DEBUG] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 215.0, Hitbox X = 250.0
+[DEBUG] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 205.0, Hitbox X = 240.0
+[DEBUG] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 195.0, Hitbox X = 230.0
+[DEBUG] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 185.0, Hitbox X = 220.0
+[DEBUG] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 175.0, Hitbox X = 210.0
+[DEBUG] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 165.0, Hitbox X = 200.0
+[DEBUG] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 155.0, Hitbox X = 190.0
+[DEBUG] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 145.0, Hitbox X = 180.0
+[ INFO] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 145.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:48 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 195.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 325.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 445.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 440.0, Hitbox X = 475.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 430.0, Hitbox X = 465.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 420.0, Hitbox X = 455.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 410.0, Hitbox X = 445.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 400.0, Hitbox X = 435.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 390.0, Hitbox X = 425.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 380.0, Hitbox X = 415.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 370.0, Hitbox X = 405.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 360.0, Hitbox X = 395.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 150.0, Hitbox X = 185.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 140.0, Hitbox X = 175.0
+[ INFO] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 140.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 130.0, Hitbox X = 165.0
+[ INFO] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 130.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:49 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 120.0, Hitbox X = 155.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 110.0, Hitbox X = 145.0
+[ INFO] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 110.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 100.0, Hitbox X = 135.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 90.0, Hitbox X = 125.0
+[ INFO] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 90.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 80.0, Hitbox X = 115.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 70.0, Hitbox X = 105.0
+[ INFO] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 70.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 60.0, Hitbox X = 95.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 50.0, Hitbox X = 85.0
+[ INFO] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 50.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 40.0, Hitbox X = 75.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 30.0, Hitbox X = 65.0
+[ INFO] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 30.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 20.0, Hitbox X = 55.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 10.0, Hitbox X = 45.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[ INFO] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[ INFO] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[ INFO] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:50 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 210.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 320.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER HIT, LIVE REMAIN: 2
+[ INFO] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 340.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[ INFO] Sun 2023-10-29 19:49:51 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[DEBUG] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 150.0, Hitbox X = 185.0
+[ INFO] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 150.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 150.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 260.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 280.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:52 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 150.0, Hitbox X = 185.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 140.0, Hitbox X = 175.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 130.0, Hitbox X = 165.0
+[ INFO] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 130.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 120.0, Hitbox X = 155.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 110.0, Hitbox X = 145.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 100.0, Hitbox X = 135.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 90.0, Hitbox X = 125.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 80.0, Hitbox X = 115.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 70.0, Hitbox X = 105.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 60.0, Hitbox X = 95.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 50.0, Hitbox X = 85.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 40.0, Hitbox X = 75.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 30.0, Hitbox X = 65.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 20.0, Hitbox X = 55.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 10.0, Hitbox X = 45.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[ INFO] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[ INFO] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[ INFO] Sun 2023-10-29 19:49:53 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 160.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 150.0, Hitbox X = 185.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 140.0, Hitbox X = 175.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 130.0, Hitbox X = 165.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 120.0, Hitbox X = 155.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 110.0, Hitbox X = 145.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 100.0, Hitbox X = 135.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 90.0, Hitbox X = 125.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 80.0, Hitbox X = 115.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 70.0, Hitbox X = 105.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 60.0, Hitbox X = 95.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 50.0, Hitbox X = 85.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 40.0, Hitbox X = 75.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 30.0, Hitbox X = 65.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 20.0, Hitbox X = 55.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 10.0, Hitbox X = 45.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[ INFO] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[DEBUG] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 0.0, Hitbox X = 35.0
+[ INFO] Sun 2023-10-29 19:49:54 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 0.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 340.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 440.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 430.0, Hitbox X = 465.0
+[ INFO] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 430.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 420.0, Hitbox X = 455.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 410.0, Hitbox X = 445.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 400.0, Hitbox X = 435.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 390.0, Hitbox X = 425.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 380.0, Hitbox X = 415.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 370.0, Hitbox X = 405.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 360.0, Hitbox X = 395.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[ INFO] Sun 2023-10-29 19:49:55 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 440.0, Hitbox X = 475.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 430.0, Hitbox X = 465.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 420.0, Hitbox X = 455.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 410.0, Hitbox X = 445.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 400.0, Hitbox X = 435.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 390.0, Hitbox X = 425.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 380.0, Hitbox X = 415.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 370.0, Hitbox X = 405.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 360.0, Hitbox X = 395.0
+[ INFO] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 380.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 370.0, Hitbox X = 405.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 360.0, Hitbox X = 395.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:49:56 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[ INFO] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 280.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[ INFO] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 270.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 450.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 440.0, Hitbox X = 475.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 430.0, Hitbox X = 465.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 420.0, Hitbox X = 455.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 410.0, Hitbox X = 445.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 400.0, Hitbox X = 435.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 390.0, Hitbox X = 425.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 380.0, Hitbox X = 415.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 370.0, Hitbox X = 405.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 360.0, Hitbox X = 395.0
+[ INFO] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[ INFO] Sun 2023-10-29 19:49:57 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 330.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:49:58 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 330.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:49:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:49:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:49:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:49:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:49:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:49:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:49:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:49:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:49:58 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[ INFO] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 230.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 150.0, Hitbox X = 185.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 140.0, Hitbox X = 175.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 130.0, Hitbox X = 165.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 120.0, Hitbox X = 155.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 110.0, Hitbox X = 145.0
+[DEBUG] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 100.0, Hitbox X = 135.0
+[ INFO] Sun 2023-10-29 19:49:59 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 100.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:00 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 220.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 330.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[ INFO] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 180.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[ INFO] Sun 2023-10-29 19:50:01 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[ INFO] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 240.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 150.0, Hitbox X = 185.0
+[ INFO] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 150.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 140.0, Hitbox X = 175.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 130.0, Hitbox X = 165.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 120.0, Hitbox X = 155.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 110.0, Hitbox X = 145.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 100.0, Hitbox X = 135.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 90.0, Hitbox X = 125.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 80.0, Hitbox X = 115.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 70.0, Hitbox X = 105.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 60.0, Hitbox X = 95.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 50.0, Hitbox X = 85.0
+[DEBUG] Sun 2023-10-29 19:50:02 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 40.0, Hitbox X = 75.0
+[ INFO] Sun 2023-10-29 19:50:03 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 40.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:03 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 40.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:03 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 200.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 300.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[ INFO] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 170.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:04 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 360.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 350.0, Hitbox X = 385.0
+[DEBUG] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 340.0, Hitbox X = 375.0
+[DEBUG] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 330.0, Hitbox X = 365.0
+[DEBUG] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[ INFO] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:05 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 250.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 330.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 320.0, Hitbox X = 355.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 310.0, Hitbox X = 345.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 300.0, Hitbox X = 335.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 290.0, Hitbox X = 325.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 280.0, Hitbox X = 315.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 270.0, Hitbox X = 305.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 260.0, Hitbox X = 295.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 250.0, Hitbox X = 285.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 240.0, Hitbox X = 275.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 230.0, Hitbox X = 265.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 220.0, Hitbox X = 255.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 210.0, Hitbox X = 245.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 200.0, Hitbox X = 235.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 190.0, Hitbox X = 225.0
+[ INFO] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[ INFO] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - PLAYER SHIP MOVE X: 190.0, Y: 600.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 180.0, Hitbox X = 215.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 170.0, Hitbox X = 205.0
+[DEBUG] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - After moveLeft: X = 160.0, Hitbox X = 195.0
+[ INFO] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - BOSS HIT
+[ INFO] Sun 2023-10-29 19:50:07 [JavaFX Application Thread] Launcher.(Line - ) - BOSS DIE
