@@ -78,6 +78,8 @@ public class Launcher extends Application {
     private String oof = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/oof.mp3").toExternalForm());
     private String heheBoi = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/hehe boi!.mp3").toExternalForm());
     private String yay = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/Yay.mp3").toExternalForm());
+    private String yeay = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/YEAY Sound Effect.mp3").toExternalForm());
+    private String bossMusic = Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/audio/Workaday World.mp3").toExternalForm());
 
     // Image
     private Image backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/bg_02_v.png")).toExternalForm());
@@ -107,10 +109,17 @@ public class Launcher extends Application {
     private MediaPlayer bruhSound;
     private MediaPlayer BossHit;
     private MediaPlayer boi;
+    private MediaPlayer yeayyy;
 
     private MediaPlayer gameMusicPlayer;
+    private MediaPlayer bossMusicPlayer;
 
     Stage currentStage;
+
+    // Logo
+    public void setLogo(Stage stage) {
+        stage.getIcons().add(new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/logo.png")).toExternalForm()));
+    }
 
     @Override
     public void start(Stage stage) {
@@ -132,6 +141,7 @@ public class Launcher extends Application {
         clickSoundPlayer = new MediaPlayer(click);
         clickSoundPlayer.setVolume(1);
 
+        setLogo(stage);
 
         Scene startScene = new Scene(startPane, PANE_WIDTH, PANE_HEIGHT);
 
@@ -214,12 +224,27 @@ public class Launcher extends Application {
         boi.setVolume(0.8);
         boi.play();
     }
+    public void rocketSoot() {
+        Media rocket = new Media(yeay);
+        yeayyy = new MediaPlayer(rocket);
+        yeayyy.setVolume(0.6);
+        yeayyy.play();
+    }
+    public void setBossMusic() {
+        Media bm = new Media(bossMusic);
+        bossMusicPlayer = new MediaPlayer(bm);
+        bossMusicPlayer.setVolume(0.7);
+        bossMusicPlayer.play();
+    }
 
     private void victory() {
         currentStage.close();
+        setGamePlayMusic();
 
         Pane victoryPane = new Pane();
         Stage stage = new Stage();
+
+        setLogo(stage);
 
         // Load and set the background image
         ImageView backgroundImageView = new ImageView(backgroundImage);
@@ -264,6 +289,9 @@ public class Launcher extends Application {
     private void GameOver(Stage start) {
         Pane GameOver = new Pane();
         Stage stage = new Stage();
+        setGamePlayMusic();
+
+        setLogo(stage);
 
         // Load and set the background image
         ImageView backgroundImageView = new ImageView(backgroundImage);
@@ -336,6 +364,8 @@ public class Launcher extends Application {
         // Play the game play music
         setGamePlayMusic();
 
+        setLogo(stage);
+
         Pane platform = new Pane();
         backgroundImage = new Image(Objects.requireNonNull(Launcher.class.getResource("/com/opcode/spaceinvader2/Pics/bg_02_v.png")).toExternalForm());
         ImageView backgroundImg = new ImageView(backgroundImage);
@@ -371,6 +401,7 @@ public class Launcher extends Application {
                     RisPress = true;
                     PlayerSpecialBullet playerSpeacialBullet = new PlayerSpecialBullet(playerShip.getX() + playerShip.getShipImageView().getFitWidth()/2, playerShip.getY() - 20);
                     playerSpeacialBullets.add(playerSpeacialBullet);
+                    rocketSoot();
                     platform.getChildren().add(playerSpeacialBullet.getBulletImagePreview());
                     break;
             }
@@ -601,7 +632,9 @@ public class Launcher extends Application {
                             spawnDelay.setOnFinished(event -> {
                                 if (!platform.getChildren().contains(bossShip.getShipImageView())) {
                                     lifeBar.initializeLifeBar(platform, 225, 10);
+                                    gameMusicPlayer.stop();
                                     setBossSpawnAudio();
+                                    setBossMusic();
                                     platform.getChildren().add(bossShip.getShipImageView());
                                 }
                                 bossShip.getBossHitBox().setX(bossShip.getShipImageView().getX());
@@ -692,6 +725,7 @@ public class Launcher extends Application {
                         }
                         if (lifeBar.getCurrentLife() <= 0) {
                             this.stop();
+                            bossMusicPlayer.stop();
                             logger.info("BOSS DIE");
                             score += 5;
                             victory();
@@ -726,6 +760,7 @@ public class Launcher extends Application {
                         }
                         if (playerLives <= 0) {
                             this.stop();
+                            bossMusicPlayer.stop();
                             GameOver(stage);
                             return;
                         }
@@ -828,6 +863,8 @@ public class Launcher extends Application {
                                 if (!platform.getChildren().contains(bossShip.getShipImageView())) {
                                     lifeBar = new LifeBar();
                                     lifeBar.initializeLifeBar(platform, 225, 10);
+                                    gameMusicPlayer.stop();
+                                    setBossMusic();
                                     setBossSpawnAudio();
                                     platform.getChildren().add(bossShip.getShipImageView());
                                 }
@@ -886,6 +923,7 @@ public class Launcher extends Application {
                         }
                         if (lifeBar.getCurrentLife() <= 0) {
                             this.stop();
+                            bossMusicPlayer.stop();
                             logger.info("BOSS DIE");
                             score += 5;
                             victory();
